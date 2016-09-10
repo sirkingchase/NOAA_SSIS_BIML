@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDBC"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{391823F9-F7AF-48C3-AAE4-5E77B41AA605}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{F70AFB88-84AD-4817-987A-19E00901692D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -218,11 +218,11 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD0Q7y5biEeCgBU6LX2AcSfc2UPNETETxHyHCidZ9kt4gAAAAAOgAAAAAIAACAAAAAyPGuozXSpjpvbmbUjCjxkwCxQ9VbkBTPyadLn8wHJ0hAAAAACejk51TD9jdSdTThVblR0QAAAAFkY9CTWw77H8OtqmjcFiLq0c8L4PyrdOTutn5evPVxExySy8KRtHPVlvt3kylBD2ceXQMEq2jfk6W24BGhIkR0</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAWrs6W12qper8nYBUPs58zeW16PiSWn6NVecagsEP9hwAAAAAOgAAAAAIAACAAAADy+fo2VIrzyC8titD/wyCzW+T6q2UmMt5KSVTwS8EAYhAAAADfZW4N4arp6MqiskUNb3p7QAAAAB1fxbu7heptCCd/+tREGuAznCvyayJyb6zHuKsc/SOo2EQBQzFCPOqhB/BLjSeDmm3/+vmI50Uo46haQ7AZ04M</DTS:Property>
             <DTS:Property
               DTS:Name="ProxyPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABG45K+0u+0sJ0nDkyBjneWQ6aV0yRYUUAtBzNeJjB1nwAAAAAOgAAAAAIAACAAAABPZyh7e5JU4odTdKp6T3doawZX1eep1mqMvGyPxUDSmhAAAAChk7oXsC71+ZbRjF2vMz0rQAAAAJDO0MHu+7LyjCxClI94+Vb9xyAbkunMB6nXyrzPX+Jwy7xCtzQkpBOrr5x62+7NlWzkuVkZViy8yP+1ZlIeceU</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACHGt+Y/6YzVdUyoQa8/d8J5fIvGhG3O60US8XUuJrk/wAAAAAOgAAAAAIAACAAAABD873cQ/8QzmM/A72O8qwx6+ApJYuNPsBtl6qckvAckRAAAABrWDft4uEZi1kOGPa0+CrAQAAAAGKJpoUWRW87tHiTPoZCGtzucQA5I8HbQGIRwAceGoKTQ0OhQ41UExqoIHsj8C/HQmuYM+Rf/Nx2kymENX0AkzU</DTS:Property>
           </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -1750,13 +1750,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DBTIMESTAMP)([SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[YY ]},1,4) + "-" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM]},1,2) + "-" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD]},1,2) + " " + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh]},1,2) + ":" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm]},1,2))</property>
+                          name="Expression">(DT_DBTIMESTAMP)([SUBSTRING]([TRIM](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[YY ]}),1,4) + "-" + [SUBSTRING]([TRIM](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM]}),1,2) + "-" + [SUBSTRING]([TRIM](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD]}),1,2) + " " + [SUBSTRING]([TRIM](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh]}),1,2) + ":" + [SUBSTRING]([TRIM](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm]}),1,2))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DBTIMESTAMP)(SUBSTRING(YY,1,4) + "-" + SUBSTRING(MM,1,2) + "-" + SUBSTRING(DD,1,2) + " " + SUBSTRING(hh,1,2) + ":" + SUBSTRING(mm,1,2))</property>
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(SUBSTRING(TRIM(YY),1,4) + "-" + SUBSTRING(TRIM(MM),1,2) + "-" + SUBSTRING(TRIM(DD),1,2) + " " + SUBSTRING(TRIM(hh),1,2) + ":" + SUBSTRING(TRIM(mm),1,2))</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -3318,14 +3318,14 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
         <NodeLayout
           Size="205,42"
           Id="Package\Initalize NDBC Buoy Cache"
-          TopLeft="226,177" />
+          TopLeft="225,177" />
         <NodeLayout
           Size="154,42"
           Id="Package\Process Flat File"
           TopLeft="247,274" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="326.25,219">
+          TopLeft="325.75,219">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3347,7 +3347,7 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="327.75,139">
+          TopLeft="327.25,139">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3426,57 +3426,25 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
           Id="Package\Process Flat File\Derived Errror"
           TopLeft="913,190" />
         <NodeLayout
-          Size="151,42"
-          Id="Package\Process Flat File\Flat File Source"
-          TopLeft="643,26" />
+          Size="113,42"
+          Id="Package\Process Flat File\Lookup"
+          TopLeft="411,233" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Process Flat File\ODBC Destination"
+          TopLeft="668,237" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Process Flat File\Match"
+          TopLeft="420,324" />
         <NodeLayout
           Size="154,42"
           Id="Package\Process Flat File\Derived Column"
           TopLeft="623,140" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Process Flat File\ODBC Destination"
-          TopLeft="668,237" />
-        <EdgeLayout
-          Id="Package\Process Flat File.Paths[Derived Column Error Output]"
-          TopLeft="777,161">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="136,50"
-              Start="0,0"
-              End="128.5,50">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="64,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="64,0"
-                    Point2="68,0"
-                    Point3="68,4" />
-                  <mssgle:LineSegment
-                    End="68,46" />
-                  <mssgle:CubicBezierSegment
-                    Point1="68,46"
-                    Point2="68,50"
-                    Point3="72,50" />
-                  <mssgle:LineSegment
-                    End="128.5,50" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-5.83003906249999,-22,147.660078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Process Flat File\Lookup"
-          TopLeft="411,233" />
+          Size="151,42"
+          Id="Package\Process Flat File\Flat File Source"
+          TopLeft="643,26" />
         <EdgeLayout
           Id="Package\Process Flat File.Paths[Lookup No Match Output]"
           TopLeft="524,256">
@@ -3501,10 +3469,6 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Process Flat File\Match"
-          TopLeft="420,324" />
         <EdgeLayout
           Id="Package\Process Flat File.Paths[Lookup Match Output]"
           TopLeft="470.5,275">
@@ -3527,6 +3491,40 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
             <mssgm:EdgeLabel
               BoundingBox="-48.19138671875,14.9453125,96.3827734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Process Flat File.Paths[Flat File Source Output]"
+          TopLeft="718.5,68">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.5,72"
+              Start="0,0"
+              End="-18.5,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="-4,36" />
+                  <mssgle:LineSegment
+                    End="-14.5,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.5,36"
+                    Point2="-18.5,36"
+                    Point3="-18.5,40" />
+                  <mssgle:LineSegment
+                    End="-18.5,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3564,37 +3562,39 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Process Flat File.Paths[Flat File Source Output]"
-          TopLeft="718.5,68">
+          Id="Package\Process Flat File.Paths[Derived Column Error Output]"
+          TopLeft="777,161">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-18.5,72"
+              EndConnector="136,50"
               Start="0,0"
-              End="-18.5,64.5">
+              End="128.5,50">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32" />
+                    End="64,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,32"
-                    Point2="0,36"
-                    Point3="-4,36" />
+                    Point1="64,0"
+                    Point2="68,0"
+                    Point3="68,4" />
                   <mssgle:LineSegment
-                    End="-14.5,36" />
+                    End="68,46" />
                   <mssgle:CubicBezierSegment
-                    Point1="-14.5,36"
-                    Point2="-18.5,36"
-                    Point3="-18.5,40" />
+                    Point1="68,46"
+                    Point2="68,50"
+                    Point3="72,50" />
                   <mssgle:LineSegment
-                    End="-18.5,64.5" />
+                    End="128.5,50" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="3.03861328125001,-17.609375,129.9227734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDBC"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{7A944008-4476-4679-A5FD-139DE4A9D874}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{391823F9-F7AF-48C3-AAE4-5E77B41AA605}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,162 +33,164 @@
           DTS:DataRowsToSkip="1"
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\sirki\Desktop\42067.txt">
+          DTS:ConnectionString="C:\Users\sirki\Desktop\42012.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="5"
-              DTS:MaximumWidth="5"
+              DTS:ColumnWidth="4"
+              DTS:MaximumWidth="4"
               DTS:DataType="129"
-              DTS:ObjectName="#YY  "
-              DTS:DTSID="{A497406B-A8BC-407E-A42D-65D82F152DD6}"
+              DTS:ObjectName="#YY "
+              DTS:DTSID="{FBACB273-3994-44E7-81C9-6BAB6967B63F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="3"
               DTS:MaximumWidth="3"
               DTS:DataType="129"
-              DTS:ObjectName="MM "
-              DTS:DTSID="{565749D6-5135-41C4-9FCC-4CDD85DF541D}"
+              DTS:ObjectName=" MM"
+              DTS:DTSID="{67E44BD1-4AFF-41ED-A7FA-A4437D47821B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="3"
               DTS:MaximumWidth="3"
               DTS:DataType="129"
-              DTS:ObjectName="DD "
-              DTS:DTSID="{624BEA02-31BE-4C56-B1FD-21C87BE49C70}"
+              DTS:ObjectName=" DD"
+              DTS:DTSID="{11FC9260-9F68-4EB3-BEBF-6DFFEB4F397B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="3"
               DTS:MaximumWidth="3"
               DTS:DataType="129"
-              DTS:ObjectName="hh "
-              DTS:DTSID="{C3B0D7FE-1594-443D-869D-5E84D425992B}"
+              DTS:ObjectName=" hh"
+              DTS:DTSID="{82E04E45-F8AD-4CF3-8077-C9569312F560}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="3"
               DTS:MaximumWidth="3"
               DTS:DataType="129"
-              DTS:ObjectName="mm "
-              DTS:DTSID="{A806BA4E-F551-4E80-A1A4-3503F17B6D8B}"
+              DTS:ObjectName=" mm"
+              DTS:DTSID="{24C5E5D6-7794-44B5-8E89-6B6339CD9465}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="5"
               DTS:MaximumWidth="5"
               DTS:DataType="129"
-              DTS:ObjectName="WDIR "
-              DTS:DTSID="{54C0887F-6F08-493D-94C3-4E8AFDD53961}"
+              DTS:ObjectName=" WDIR"
+              DTS:DTSID="{811CB2D5-972A-45D2-8765-69A19D9395A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="5"
               DTS:MaximumWidth="5"
               DTS:DataType="129"
-              DTS:ObjectName="WSPD "
-              DTS:DTSID="{5DE3C994-E91B-4C7B-A3CB-93665CCE9A6C}"
+              DTS:ObjectName=" WSPD"
+              DTS:DTSID="{CF513DA6-EBA4-4B26-A8E3-24D66EF1C638}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="4"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:ObjectName=" GST"
+              DTS:DTSID="{E0D9D75D-7229-4968-A0AE-84FDA8A8F5C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="  WVHT"
+              DTS:DTSID="{2059CB52-B165-4110-878D-752F6A61883C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="   DPD"
+              DTS:DTSID="{49A047AC-A68A-4736-9672-173E881D81F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="   APD"
+              DTS:DTSID="{E2A0898C-746A-474C-87E9-401C830A0AA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="5"
               DTS:MaximumWidth="5"
               DTS:DataType="129"
-              DTS:ObjectName="GST  "
-              DTS:DTSID="{552CC8AB-D06D-4007-9908-279C1FD3BC48}"
+              DTS:ObjectName=" MWD "
+              DTS:DTSID="{1FFD977A-4AC5-43C4-AC1F-874E4253B2FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="  PRES"
+              DTS:DTSID="{26430815-2E0E-4459-A569-AB22D9784517}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="  ATMP"
+              DTS:DTSID="{A2EDC32C-EA0C-41FB-8B48-DACE1899D0CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="  WTMP"
+              DTS:DTSID="{37709795-9A8C-4BDC-B4A5-9F5B0A2C29C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="  DEWP"
+              DTS:DTSID="{82351EA7-1BD4-4C27-A7BC-006C63B326C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:ObjectName="  VIS"
+              DTS:DTSID="{BE19C155-52C8-41B4-A24F-AA56CF02E584}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:ColumnWidth="7"
               DTS:MaximumWidth="7"
               DTS:DataType="129"
-              DTS:ObjectName="WVHT   "
-              DTS:DTSID="{54B37576-C5E6-47F2-95F4-899BA6A888E5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="6"
-              DTS:MaximumWidth="6"
-              DTS:DataType="129"
-              DTS:ObjectName="DPD   "
-              DTS:DTSID="{511C82BA-9AD7-4885-9771-2A8CFDA50C84}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="4"
-              DTS:MaximumWidth="4"
-              DTS:DataType="129"
-              DTS:ObjectName="APD "
-              DTS:DTSID="{C171A5CC-5B3A-401D-AFAD-D2534C172B86}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="4"
-              DTS:MaximumWidth="4"
-              DTS:DataType="129"
-              DTS:ObjectName="MWD "
-              DTS:DTSID="{D60F17BC-9BBC-444A-988B-7CD97A934B1B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="8"
-              DTS:MaximumWidth="8"
-              DTS:DataType="129"
-              DTS:ObjectName="  PRES  "
-              DTS:DTSID="{2499F55D-ADD4-4D3E-AA50-D9B4FF0002AE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="6"
-              DTS:MaximumWidth="6"
-              DTS:DataType="129"
-              DTS:ObjectName="ATMP  "
-              DTS:DTSID="{A397DED4-7046-4386-A349-9C8821512368}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="6"
-              DTS:MaximumWidth="6"
-              DTS:DataType="129"
-              DTS:ObjectName="WTMP  "
-              DTS:DTSID="{358A5D3C-6804-43CF-8A12-06FA87A1999F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="6"
-              DTS:MaximumWidth="6"
-              DTS:DataType="129"
-              DTS:ObjectName="DEWP  "
-              DTS:DTSID="{7C132AA9-2755-44F5-8298-A14D3A07D1CC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="4"
-              DTS:MaximumWidth="4"
-              DTS:DataType="129"
-              DTS:ObjectName="VIS "
-              DTS:DTSID="{E67CD38B-D603-4978-80B7-855C2C861906}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="6"
-              DTS:MaximumWidth="6"
-              DTS:DataType="129"
-              DTS:ObjectName="PTDY  "
-              DTS:DTSID="{CF406B0F-3AEB-4267-A380-9976D9556D67}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="5"
-              DTS:MaximumWidth="5"
-              DTS:DataType="129"
-              DTS:ObjectName="TIDE "
-              DTS:DTSID="{42627E94-B1BE-4369-9C7D-ED9BF8040544}"
+              DTS:ObjectName="  TIDE "
+              DTS:DTSID="{4FC0E6E2-C470-4F67-96D7-BBAD1E2E550E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[NDBC Source]"
+      DTS:CreationName="ADO.NET:System.Data.Odbc.OdbcConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C7216103-639D-4CB1-BBF2-EFDD1AF9066B}"
+      DTS:ObjectName="NDBC Source">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=postgres;Dsn=PostgreSQL30;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -202,13 +204,27 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[PostgreSQL35W.postgres]"
-      DTS:CreationName="ADO.NET:System.Data.Odbc.OdbcConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{C7216103-639D-4CB1-BBF2-EFDD1AF9066B}"
-      DTS:ObjectName="PostgreSQL35W.postgres">
+      DTS:refId="Package.ConnectionManagers[Realtime NDBC Meteorological]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{1723E62D-AB11-4E54-8C97-51392DE86157}"
+      DTS:ObjectName="Realtime NDBC Meteorological">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::Conn_NDBC_Meteorological]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="uid=postgres;Dsn=PostgreSQL30;" />
+          DTS:ConnectionString="http://www.ndbc.noaa.gov/view_text_file.php?filename=42012h2015.txt.gz&amp;dir=data/historical/stdmet/">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://www.ndbc.noaa.gov/view_text_file.php?filename=42012h2015.txt.gz&amp;dir=data/historical/stdmet/">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD0Q7y5biEeCgBU6LX2AcSfc2UPNETETxHyHCidZ9kt4gAAAAAOgAAAAAIAACAAAAAyPGuozXSpjpvbmbUjCjxkwCxQ9VbkBTPyadLn8wHJ0hAAAAACejk51TD9jdSdTThVblR0QAAAAFkY9CTWw77H8OtqmjcFiLq0c8L4PyrdOTutn5evPVxExySy8KRtHPVlvt3kylBD2ceXQMEq2jfk6W24BGhIkR0</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABG45K+0u+0sJ0nDkyBjneWQ6aV0yRYUUAtBzNeJjB1nwAAAAAOgAAAAAIAACAAAABPZyh7e5JU4odTdKp6T3doawZX1eep1mqMvGyPxUDSmhAAAAChk7oXsC71+ZbRjF2vMz0rQAAAAJDO0MHu+7LyjCxClI94+Vb9xyAbkunMB6nXyrzPX+Jwy7xCtzQkpBOrr5x62+7NlWzkuVkZViy8yP+1ZlIeceU</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -300,12 +316,23 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{6D555D12-6937-4B1B-875E-6E8D8358300C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;http://www.ndbc.noaa.gov/view_text_file.php?filename=42012h2015.txt.gz&amp;dir=data/historical/stdmet/&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Conn_NDBC_Meteorological">
+      <DTS:VariableValue
+        DTS:DataType="8">http://www.ndbc.noaa.gov/view_text_file.php?filename=42012h2015.txt.gz&amp;dir=data/historical/stdmet/</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{821C202F-BF42-4EF2-9D68-44DD01E6059C}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="CurentBuoy">
       <DTS:VariableValue
-        DTS:DataType="8">42067</DTS:VariableValue>
+        DTS:DataType="8">42012</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -330,20 +357,662 @@
        "Sea Level Pressure", "Air Temperature", "Water Temperature", 
        "Dewpoint Temperature", "Pressure Tendency", "StationId"
   FROM ndbc_meteorological
-  where "StationId" = '42067'</DTS:VariableValue>
+  where "StationId" = '42012'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{21D1B398-6434-4EF1-ABEC-CFB28C4499E1}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="Variable">
+      DTS:ObjectName="URL_Realtime_NDBC_Meteorological">
       <DTS:VariableValue
-        DTS:DataType="8"
-        xml:space="preserve"></DTS:VariableValue>
+        DTS:DataType="8">http://www.ndbc.noaa.gov/data/realtime2/</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\GET Meteorological FF"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{7947BB44-D758-4868-A358-0210AD0EAC2F}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="GET Meteorological FF"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_85d7fbfed4104faea05cc36930b4e788"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::CurentBuoy,User::FileDirectory">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="ST_85d7fbfed4104faea05cc36930b4e788.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4a800e6d-5eb8-4d7d-83cd-b6c0d9fe80f1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_85d7fbfed4104faea05cc36930b4e788</RootNamespace>
+    <AssemblyName>ST_85d7fbfed4104faea05cc36930b4e788</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+         <Generator>ResXFileCodeGenerator</Generator>
+         <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+             <AutoGen>True</AutoGen>
+         <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+         <Generator>SettingsSingleFileGenerator</Generator>
+         <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+         <AutoGen>True</AutoGen>
+         <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+         <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptTask"
+                           HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}"
+                           ApplicationType="usd"
+                           Language="cs"
+                           TemplatesPath=""
+                           DebugInfoCommandLine=""
+                           DebugInfoWorkingDir=""
+                           IconImageList=""/>
+        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex="">
+        </Host>
+        <ProjectClient>
+            <HostIdentifier>SSIS_ST130</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
+/* The Script Task allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services control flow. 
+ * 
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script task. */
+#endregion
+
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+#endregion
+
+namespace ST_85d7fbfed4104faea05cc36930b4e788
+{
+    /// <summary>
+    /// ScriptMain is the entry point class of the script.  Do not change the name, attributes,
+    /// or parent of this class.
+    /// </summary>
+	[Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+	public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+	{
+        #region Help:  Using Integration Services variables and parameters in a script
+        /* To use a variable in this script, first ensure that the variable has been added to 
+         * either the list contained in the ReadOnlyVariables property or the list contained in 
+         * the ReadWriteVariables property of this script task, according to whether or not your
+         * code needs to write to the variable.  To add the variable, save this script, close this instance of
+         * Visual Studio, and update the ReadOnlyVariables and 
+         * ReadWriteVariables properties in the Script Transformation Editor window.
+         * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+         * 
+         * Example of reading from a variable:
+         *  DateTime startTime = (DateTime) Dts.Variables["System::StartTime"].Value;
+         * 
+         * Example of writing to a variable:
+         *  Dts.Variables["User::myStringVariable"].Value = "new value";
+         * 
+         * Example of reading from a package parameter:
+         *  int batchId = (int) Dts.Variables["$Package::batchId"].Value;
+         *  
+         * Example of reading from a project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].Value;
+         * 
+         * Example of reading from a sensitive project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].GetSensitiveValue();
+         * */
+
+        #endregion
+
+        #region Help:  Firing Integration Services events from a script
+        /* This script task can fire events for logging purposes.
+         * 
+         * Example of firing an error event:
+         *  Dts.Events.FireError(18, "Process Values", "Bad value", "", 0);
+         * 
+         * Example of firing an information event:
+         *  Dts.Events.FireInformation(3, "Process Values", "Processing has started", "", 0, ref fireAgain)
+         * 
+         * Example of firing a warning event:
+         *  Dts.Events.FireWarning(14, "Process Values", "No values received for input", "", 0);
+         * */
+        #endregion
+
+        #region Help:  Using Integration Services connection managers in a script
+        /* Some types of connection managers can be used in this script task.  See the topic 
+         * "Working with Connection Managers Programatically" for details.
+         * 
+         * Example of using an ADO.Net connection manager:
+         *  object rawConnection = Dts.Connections["Sales DB"].AcquireConnection(Dts.Transaction);
+         *  SqlConnection myADONETConnection = (SqlConnection)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Sales DB"].ReleaseConnection(rawConnection);
+         *
+         * Example of using a File connection manager
+         *  object rawConnection = Dts.Connections["Prices.zip"].AcquireConnection(Dts.Transaction);
+         *  string filePath = (string)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Prices.zip"].ReleaseConnection(rawConnection);
+         * */
+        #endregion
+
+
+		/// <summary>
+        /// This method is called when this script task executes in the control flow.
+        /// Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+        /// To open Help, press F1.
+        /// </summary>
+		public void Main()
+		{
+            Microsoft.SqlServer.Dts.Runtime.HttpClientConnection httpConn;
+            Object obj;
+
+            try
+            {
+                obj = Dts.Connections["Realtime NDBC Meteorological"].AcquireConnection(null);
+                httpConn = new HttpClientConnection(obj);
+                //httpConn.DownloadFile("C:\\Users\\sirki\\Desktop\\42067.txt", true);
+                
+                var file = (string)Dts.Variables["User::FileDirectory"].Value + (string)Dts.Variables["User::CurentBuoy"].Value + ".txt";
+                httpConn.DownloadFile(file, true);
+            }
+            catch (Exception e)
+            {
+                Dts.Events.FireError(1, e.TargetSite.ToString(), e.Message, "", 0);
+            }
+            // TODO: Add your code here
+            Dts.TaskResult = (int)ScriptResults.Success;
+        }
+
+        #region ScriptResults declaration
+        /// <summary>
+        /// This enum provides a convenient shorthand within the scope of this class for setting the
+        /// result of the script.
+        /// 
+        /// This code was generated automatically.
+        /// </summary>
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+	}
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>ST_85d7fbfed4104faea05cc36930b4e788</msb:CodeName>
+		<msb:DisplayName>ST_85d7fbfed4104faea05cc36930b4e788</msb:DisplayName>
+		<msb:ProjectId>{DA49B1F0-B73F-4E1C-82CC-8947530A870A}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_85d7fbfed4104faea05cc36930b4e788.csproj"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ScriptMain.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_85d7fbfed4104faea05cc36930b4e788.Properties.Settings.get_Default():ST_85d7fbfed4104faea05cc36930b4e788.Properties.Sett" +
+    "ings")]
+
+namespace ST_85d7fbfed4104faea05cc36930b4e788.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_85d7fbfed4104faea05cc36930b4e788")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_85d7fbfed4104faea05cc36930b4e788")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_85d7fbfed4104faea05cc36930b4e788.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_85d7fbfed4104faea05cc36930b4e788.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_85d7fbfed4104faea05cc36930b4e788.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_85d7fbfed4104faea05cc36930b4e788.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_85d7fbfed4104faea05cc36930b4e788.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_85d7fbfed4104faea05cc36930b4e788.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAPYz1FcAAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAA4i8A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAJAvAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA6A8AAAAgAAAAEAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAASAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADE
+LwAAAAAAAEgAAAACAAUAgCEAAFgNAAABAAAAAAAAANguAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBgCrAAAAAQAAEQIoEAAACm8RAAAKcgEAAHBvEgAAChRv
+EwAACnMUAAAKAigQAAAKbxUAAApyOwAAcG8WAAAKbxcAAAp0HwAAAQIoEAAACm8VAAAKcmMAAHBv
+FgAACm8XAAAKdB8AAAFyhQAAcCgYAAAKCgYXbxkAAAreLAsCKBAAAApvGgAAChcHbxsAAApvHAAA
+CgdvHQAACnKPAABwFm8eAAAKJt4AAigQAAAKFm8fAAAKKgABEAAAAAAAAHJyACwPAAABHgIoIAAA
+CioeAighAAAKKq5+AQAABC0ecpEAAHDQAwAAAigiAAAKbyMAAApzJAAACoABAAAEfgEAAAQqGn4C
+AAAEKh4CgAIAAAQqGn4DAAAEKh4CKCUAAAoqLnMIAAAGgAMAAAQqAABCU0pCAQABAAAAAAAMAAAA
+djQuMC4zMDMxOQAAAAAFAGwAAAAkBAAAI34AAJAEAAAUBgAAI1N0cmluZ3MAAAAApAoAAAQBAAAj
+VVMAqAsAABAAAAAjR1VJRAAAALgLAACgAQAAI0Jsb2IAAAAAAAAAAgAAAVcdogEJAwAAAPoBMwAW
+AAABAAAAJAAAAAUAAAAGAAAACQAAAAEAAAAlAAAAAgAAABAAAAABAAAAAgAAAAMAAAAEAAAAAQAA
+AAQAAAABAAAAAQAAAAAAqAMBAAAAAAAGAFgC2QQGAOcC2QQGAKQBxgQPAE0FAAAGANEBJgQGADsC
+JgQGABwCJgQGAM4CJgQGAHgCJgQGAJECJgQGAOgBJgQGAAMCFQMKAKwCVwMKABQBVwMGAF8E2QMG
+AOAD2QMGAIcBxgQGAOIF2QMGAHkE+QQGAGkEEQQOAEgBkgMOALgBkgMOADAB/AMGAGwB2QQKAIAD
+VwMSAKYFtAASAIkEtAASAEoEtAASAI8FtAASAHoAtAAGADED2QMKAJsEVwMGAAkBJgQGANQA2QMG
+AIMA2QMGAAgGJgQAAAAAJQAAAAAAAQABAAEAEADxAwEAOQABAAEAAAAQAAAFXAVJAAEAAwAAARAA
+mQVcBV0AAwAHAAMBAADCBQAAQQAEAAoAEQDlA6MAEQD5AKcAEQBeAKsABgZNAK8AVoCyBbIAVoDZ
+ALIAUCAAAAAAhgD3AwYAAQAYIQAAAACGGLkEBgABACAhAAAAAIMYuQQGAAEAKCEAAAAAkwh1BLYA
+AQBUIQAAAACTCOEAuwABAFshAAAAAJMI7QDAAAEAYyEAAAAAlgjpBcYAAgBqIQAAAACGGLkEBgAC
+AHIhAAAAAJEYvwTLAAIAAAABAA8DCQC5BAEAEQC5BAYAGQC5BAoAKQC5BBAAMQC5BBAAOQC5BBAA
+QQC5BBAASQC5BBAAUQC5BBAAWQC5BBAAYQC5BBAAaQC5BAYAiQC5BAYAsQC5BBUAwQC5BAYAcQC6
+BSEAyQCiBSYA0QDQAysA2QA4BDEA4QC5BDYAyQCLBTsA6QDQA0AA8QAFA0YA+QDbBUoA4QCnAFEA
+yQDQBVcAeQBdAV0AkQAvA2MAeQBuAGMAAQGvBGcAyQD1BQEAcQC5BAYAkQC5BAYAEQGVAHAAEQEE
+BnkAmQC5BH8AuQC5BAYACAAUAJkACAAYAJ4AKQBzAAYBLgALAN4ALgATAOcALgAbAAYBLgAjAA8B
+LgArADgBLgAzADgBLgA7ADgBLgBDAA8BLgBLAD4BLgBTADgBLgBbAFUBQwBjAJ4ASQBzAAYBYQB7
+AJ4AYwBrAJ4AGwADAAEABAADAAAAeQTPAAAAAQHUAAAA7QXZAAIABAADAAIABQAFAAEABgAFAAIA
+BwAHAASAAAABAAAA0RdTUAAAAAAAAAEAAAAEAAAAAAAAAAAAAACHAFUAAAAAAA0AAAAAAAAAAAAA
+AJAAOAMAAAAABAAAAAAAAAAAAAAAhwDZAwAAAAANAAAAAAAAAAAAAACQAC4AAAAAAAAAAAABAAAA
+CgUAAAUAAgAAAAAAAFNUXzg1ZDdmYmZlZDQxMDRmYWVhMDVjYzM2OTMwYjRlNzg4ADxNb2R1bGU+
+AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwB2YWx1ZV9fAG1zY29ybGliAGRlZmF1bHRJ
+bnN0YW5jZQBnZXRfTWVzc2FnZQBWYXJpYWJsZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJv
+bUhhbmRsZQBEb3dubG9hZEZpbGUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUnVudGltZQBUeXBl
+AEZhaWx1cmUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAE1ldGhvZEJh
+c2UAVlNUQVJUU2NyaXB0T2JqZWN0TW9kZWxCYXNlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVk
+aXRvckJyb3dzYWJsZVN0YXRlAGdldF9UYXJnZXRTaXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmli
+dXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0
+b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRl
+bWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0
+aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxh
+eGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmln
+aHRBdHRyaWJ1dGUAU1NJU1NjcmlwdFRhc2tFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29t
+cGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBnZXRfVmFsdWUAdmFs
+dWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUb1N0cmluZwBNaWNyb3NvZnQuU3FsU2VydmVy
+LlNjcmlwdFRhc2sATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuVGFza3MuU2NyaXB0VGFzawBTY3Jp
+cHRPYmplY3RNb2RlbABTeXN0ZW0uQ29tcG9uZW50TW9kZWwAU1RfODVkN2ZiZmVkNDEwNGZhZWEw
+NWNjMzY5MzBiNGU3ODguZGxsAGdldF9JdGVtAFN5c3RlbQBFbnVtAHJlc291cmNlTWFuAFNjcmlw
+dE1haW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJl
+ZmxlY3Rpb24AQWNxdWlyZUNvbm5lY3Rpb24ASHR0cENsaWVudENvbm5lY3Rpb24ARXhjZXB0aW9u
+AEN1bHR1cmVJbmZvAGdldF9SZXNvdXJjZU1hbmFnZXIAQ29ubmVjdGlvbk1hbmFnZXIARXZlbnRz
+T2JqZWN0V3JhcHBlcgBGaXJlRXJyb3IALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBT
+eXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU1RfODVkN2Zi
+ZmVkNDEwNGZhZWEwNWNjMzY5MzBiNGU3ODguUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2Vz
+AERlYnVnZ2luZ01vZGVzAFNUXzg1ZDdmYmZlZDQxMDRmYWVhMDVjYzM2OTMwYjRlNzg4LlByb3Bl
+cnRpZXMAZ2V0X1ZhcmlhYmxlcwBTZXR0aW5ncwBnZXRfQ29ubmVjdGlvbnMAU3VjY2VzcwBnZXRf
+RHRzAFNjcmlwdFJlc3VsdHMAZ2V0X0V2ZW50cwBDb25jYXQAT2JqZWN0AGdldF9EZWZhdWx0AHNl
+dF9UYXNrUmVzdWx0AGdldF9Bc3NlbWJseQAAAAAAOVIAZQBhAGwAdABpAG0AZQAgAE4ARABCAEMA
+IABNAGUAdABlAG8AcgBvAGwAbwBnAGkAYwBhAGwAACdVAHMAZQByADoAOgBGAGkAbABlAEQAaQBy
+AGUAYwB0AG8AcgB5AAAhVQBzAGUAcgA6ADoAQwB1AHIAZQBuAHQAQgB1AG8AeQAACS4AdAB4AHQA
+AAEAcVMAVABfADgANQBkADcAZgBiAGYAZQBkADQAMQAwADQAZgBhAGUAYQAwADUAYwBjADMANgA5
+ADMAMABiADQAZQA3ADgAOAAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUA
+cwAAABs6/Q+kMRdFp1CPfQVgSswABCABAQgDIAABBSABARERBCABAQ4FIAEBEVUFBwIOEj0EIAAS
+ZQQgABJpBSABEm0cBCABHBwEIAEBHAQgABJ1BSABEnkcAyAAHAYAAw4ODg4FIAIBDgIFIAASgIEF
+IAASgIUDIAAOCCAFAggODg4ICAABEoCJEYCNBSAAEoCRByACAQ4SgJEIt3pcVhk04IkIiYRdzYCA
+zJEEAAAAAAQBAAAAAwYSTQMGElEDBhIQAgYIAwYRFAQAABJNBAAAElEFAAEBElEEAAASEAMAAAEE
+CAASTQQIABJRBAgAEhAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEA
+AgAAAAAAKAEAI1NUXzg1ZDdmYmZlZDQxMDRmYWVhMDVjYzM2OTMwYjRlNzg4AAAFAQAAAAAWAQAR
+Q29weXJpZ2h0IEAgIDIwMTYAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNQEAVA4URnJh
+bWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC41ALQAAADOyu++AQAAAJEAAABsU3lz
+dGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwg
+Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5S
+ZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAC4LwAAAAAA
+AAAAAADSLwAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxC8AAAAAAAAAAAAAAABfQ29yRGxsTWFp
+bgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAA
+AABIAAAAWEAAABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
+AAAAAAC9BO/+AAABAAAAAQBTUNEXAAABAFNQ0Rc/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
+RAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBv
+AG4AAAAAAAAAsAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAA
+MAAwADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABh
+AG4AeQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4A
+AAAAAFMAVABfADgANQBkADcAZgBiAGYAZQBkADQAMQAwADQAZgBhAGUAYQAwADUAYwBjADMANgA5
+ADMAMABiADQAZQA3ADgAOAAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAA
+LgA2ADAAOQA3AC4AMgAwADUANgAzAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
+AFMAVABfADgANQBkADcAZgBiAGYAZQBkADQAMQAwADQAZgBhAGUAYQAwADUAYwBjADMANgA5ADMA
+MABiADQAZQA3ADgAOAAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0
+AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMQA2AAAAKgABAAEATABlAGcAYQBsAFQA
+cgBhAGQAZQBtAGEAcgBrAHMAAAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBu
+AGEAbQBlAAAAUwBUAF8AOAA1AGQANwBmAGIAZgBlAGQANAAxADAANABmAGEAZQBhADAANQBjAGMA
+MwA2ADkAMwAwAGIANABlADcAOAA4AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBt
+AGUAAAAAAFMAVABfADgANQBkADcAZgBiAGYAZQBkADQAMQAwADQAZgBhAGUAYQAwADUAYwBjADMA
+NgA5ADMAMABiADQAZQA3ADgAOAAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAA
+ADEALgAwAC4ANgAwADkANwAuADIAMAA1ADYAMwAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
+VgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANgAwADkANwAuADIAMAA1ADYAMwAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAwAAADkPwAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
+        </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Initalize NDBC Buoy Cache"
       DTS:CreationName="Microsoft.Pipeline"
@@ -354,6 +1023,13 @@
       DTS:ObjectName="Initalize NDBC Buoy Cache"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="[ADO NET Source].[SqlCommand]">"SELECT \"TimeStamp\", \"Wind Direction\", \"Wind Speed\", \"Wind Gust\", \"Wave Height\", 
+       \"Dominant Wave period\", \"Average Wave Period\", \"Wave Direction\", 
+       \"Sea Level Pressure\", \"Air Temperature\", \"Water Temperature\", 
+       \"Dewpoint Temperature\", \"Pressure Tendency\", \"StationId\"
+  FROM ndbc_meteorological
+  where \"StationId\" = '" + @[User::CurentBuoy] + "'"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -372,7 +1048,12 @@
                   description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT "TimeStamp", "Wind Direction", "Wind Speed", "Wind Gust", "Wave Height", 
+       "Dominant Wave period", "Average Wave Period", "Wave Direction", 
+       "Sea Level Pressure", "Air Temperature", "Water Temperature", 
+       "Dewpoint Temperature", "Pressure Tendency", "StationId"
+  FROM ndbc_meteorological
+  where "StationId" = '42012'</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -391,7 +1072,7 @@
                   dataType="System.Int32"
                   description="Specify the mode to retrieve external column information"
                   name="AccessMode"
-                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -399,8 +1080,8 @@
               <connections>
                 <connection
                   refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[PostgreSQL35W.postgres]"
-                  connectionManagerRefId="Package.ConnectionManagers[PostgreSQL35W.postgres]"
+                  connectionManagerID="Package.ConnectionManagers[NDBC Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[NDBC Source]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -696,7 +1377,8 @@
               componentClassID="Microsoft.Cache"
               contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
-              name="Cache Transform">
+              name="Cache Transform"
+              version="1">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -938,117 +1620,111 @@
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[#YY  ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="5"
-                      cachedName="#YY  "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[#YY  ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[MM ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="MM "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[DD ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="DD "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[hh ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="hh "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[mm ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="mm "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WVHT   ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="7"
-                      cachedName="WVHT   "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT   ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WDIR ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="5"
-                      cachedName="WDIR "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WSPD ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="5"
-                      cachedName="WSPD "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[GST  ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="5"
-                      cachedName="GST  "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST  ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[DPD   ]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="6"
-                      cachedName="DPD   "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD   ]" />
-                    <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[APD ]"
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[YY]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="4"
-                      cachedName="APD "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD ]" />
+                      cachedName="YY "
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[YY ]"
+                      name="YY" />
                     <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[  PRES  ]"
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[MM]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="  PRES  "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[  PRES  ]" />
+                      cachedLength="3"
+                      cachedName="MM"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM]" />
                     <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[ATMP  ]"
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[DD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="DD"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[hh]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="hh"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[mm]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="mm"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WDIR]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="WDIR"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WSPD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="WSPD"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[GST]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="GST"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WVHT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="6"
-                      cachedName="ATMP  "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP  ]" />
+                      cachedName="WVHT"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT]" />
                     <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WTMP  ]"
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[DPD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="6"
-                      cachedName="WTMP  "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP  ]" />
+                      cachedName="DPD"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD]" />
                     <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[DEWP  ]"
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[APD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="6"
-                      cachedName="DEWP  "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP  ]" />
+                      cachedName="APD"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD]" />
                     <inputColumn
-                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[PTDY  ]"
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[PRES]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="6"
-                      cachedName="PTDY  "
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PTDY  ]" />
+                      cachedName="PRES"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[ATMP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="ATMP"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[WTMP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="WTMP"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP]" />
+                    <inputColumn
+                      refId="Package\Process Flat File\Derived Column.Inputs[Derived Column Input].Columns[DEWP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="DEWP"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1074,13 +1750,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DBTIMESTAMP)([SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[#YY  ]},1,4) + "-" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM ]},1,2) + "-" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD ]},1,2) + " " + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh ]},1,2) + ":" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm ]},1,2))</property>
+                          name="Expression">(DT_DBTIMESTAMP)([SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[YY ]},1,4) + "-" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM]},1,2) + "-" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD]},1,2) + " " + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh]},1,2) + ":" + [SUBSTRING](#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm]},1,2))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DBTIMESTAMP)(SUBSTRING([#YY  ],1,4) + "-" + SUBSTRING([MM ],1,2) + "-" + SUBSTRING([DD ],1,2) + " " + SUBSTRING([hh ],1,2) + ":" + SUBSTRING([mm ],1,2))</property>
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(SUBSTRING(YY,1,4) + "-" + SUBSTRING(MM,1,2) + "-" + SUBSTRING(DD,1,2) + " " + SUBSTRING(hh,1,2) + ":" + SUBSTRING(mm,1,2))</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1121,13 +1797,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT   ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT   ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT   ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[WVHT   ] == (DT_DECIMAL,2)[WVHT   ] ? (DT_DECIMAL,2)[WVHT   ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)WVHT == (DT_DECIMAL,2)WVHT ? (DT_DECIMAL,2)WVHT : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1143,13 +1819,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]} == (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]} ? (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]} : 0</property>
+                          name="Expression">(DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]} == (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]} ? (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_I4)[WDIR ] == (DT_I4)[WDIR ] ? (DT_I4)[WDIR ] : 0</property>
+                          name="FriendlyExpression">(DT_I4)WDIR == (DT_I4)WDIR ? (DT_I4)WDIR : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1167,13 +1843,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[WSPD ] == (DT_DECIMAL,2)[WSPD ] ? (DT_DECIMAL,2)[WSPD ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)WSPD == (DT_DECIMAL,2)WSPD ? (DT_DECIMAL,2)WSPD : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1191,13 +1867,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST  ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST  ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST  ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[GST  ] == (DT_DECIMAL,2)[GST  ] ? (DT_DECIMAL,2)[GST  ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)GST == (DT_DECIMAL,2)GST ? (DT_DECIMAL,2)GST : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1213,13 +1889,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD   ]} == (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD   ]} ? (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD   ]} : 0</property>
+                          name="Expression">(DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD]} == (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD]} ? (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_I4)[DPD   ] == (DT_I4)[DPD   ] ? (DT_I4)[DPD   ] : 0</property>
+                          name="FriendlyExpression">(DT_I4)DPD == (DT_I4)DPD ? (DT_I4)DPD : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1237,13 +1913,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[APD ] == (DT_DECIMAL,2)[APD ] ? (DT_DECIMAL,2)[APD ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)APD == (DT_DECIMAL,2)APD ? (DT_DECIMAL,2)APD : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1259,13 +1935,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]} == (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]} ? (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]} : 0</property>
+                          name="Expression">(DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]} == (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]} ? (DT_I4)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_I4)[WDIR ] == (DT_I4)[WDIR ] ? (DT_I4)[WDIR ] : 0</property>
+                          name="FriendlyExpression">(DT_I4)WDIR == (DT_I4)WDIR ? (DT_I4)WDIR : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1283,13 +1959,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[  PRES  ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[  PRES  ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[  PRES  ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[  PRES  ] == (DT_DECIMAL,2)[  PRES  ] ? (DT_DECIMAL,2)[  PRES  ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)PRES == (DT_DECIMAL,2)PRES ? (DT_DECIMAL,2)PRES : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1307,13 +1983,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP  ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP  ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP  ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[ATMP  ] == (DT_DECIMAL,2)[ATMP  ] ? (DT_DECIMAL,2)[ATMP  ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)ATMP == (DT_DECIMAL,2)ATMP ? (DT_DECIMAL,2)ATMP : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1331,13 +2007,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP  ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP  ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP  ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[WTMP  ] == (DT_DECIMAL,2)[WTMP  ] ? (DT_DECIMAL,2)[WTMP  ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)WTMP == (DT_DECIMAL,2)WTMP ? (DT_DECIMAL,2)WTMP : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1355,13 +2031,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP  ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP  ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP  ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[DEWP  ] == (DT_DECIMAL,2)[DEWP  ] ? (DT_DECIMAL,2)[DEWP  ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)DEWP == (DT_DECIMAL,2)DEWP ? (DT_DECIMAL,2)DEWP : 0</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1379,13 +2055,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PTDY  ]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PTDY  ]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PTDY  ]} : 0</property>
+                          name="Expression">(DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]} == (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]} ? (DT_DECIMAL,2)#{Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]} : 0</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DECIMAL,2)[PTDY  ] == (DT_DECIMAL,2)[PTDY  ] ? (DT_DECIMAL,2)[PTDY  ] : 0</property>
+                          name="FriendlyExpression">(DT_DECIMAL,2)PRES == (DT_DECIMAL,2)PRES ? (DT_DECIMAL,2)PRES : 0</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -1472,235 +2148,235 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[#YY  ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[YY ]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[#YY  ]"
-                      length="5"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[#YY  ]"
-                      name="#YY  "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MM ]"
-                      length="3"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM ]"
-                      name="MM "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DD ]"
-                      length="3"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD ]"
-                      name="DD "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hh ]"
-                      length="3"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh ]"
-                      name="hh "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[mm ]"
-                      length="3"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm ]"
-                      name="mm "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WDIR ]"
-                      length="5"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR ]"
-                      name="WDIR "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WSPD ]"
-                      length="5"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD ]"
-                      name="WSPD "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST  ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GST  ]"
-                      length="5"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST  ]"
-                      name="GST  "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT   ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WVHT   ]"
-                      length="7"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT   ]"
-                      name="WVHT   "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD   ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DPD   ]"
-                      length="6"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD   ]"
-                      name="DPD   "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[APD ]"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[#YY ]"
                       length="4"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD ]"
-                      name="APD "
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[YY ]"
+                      name="YY "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ MM]"
+                      length="3"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MM]"
+                      name="MM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ DD]"
+                      length="3"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DD]"
+                      name="DD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ hh]"
+                      length="3"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[hh]"
+                      name="hh"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ mm]"
+                      length="3"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[mm]"
+                      name="mm"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ WDIR]"
+                      length="5"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WDIR]"
+                      name="WDIR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ WSPD]"
+                      length="5"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WSPD]"
+                      name="WSPD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ GST]"
+                      length="4"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[GST]"
+                      name="GST"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  WVHT]"
+                      length="6"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WVHT]"
+                      name="WVHT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[   DPD]"
+                      length="6"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DPD]"
+                      name="DPD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[   APD]"
+                      length="6"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[APD]"
+                      name="APD"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1719,8 +2395,8 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MWD ]"
-                      length="4"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ MWD ]"
+                      length="5"
                       lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[MWD ]"
                       name="MWD "
                       truncationRowDisposition="FailComponent">
@@ -1736,37 +2412,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[  PRES  ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  PRES  ]"
-                      length="8"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[  PRES  ]"
-                      name="  PRES  "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP  ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ATMP  ]"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  PRES]"
                       length="6"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP  ]"
-                      name="ATMP  "
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PRES]"
+                      name="PRES"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1780,15 +2434,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP  ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WTMP  ]"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  ATMP]"
                       length="6"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP  ]"
-                      name="WTMP  "
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[ATMP]"
+                      name="ATMP"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1802,15 +2456,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP  ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEWP  ]"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  WTMP]"
                       length="6"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP  ]"
-                      name="DEWP  "
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[WTMP]"
+                      name="WTMP"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1824,37 +2478,37 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[VIS ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VIS ]"
-                      length="4"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[VIS ]"
-                      name="VIS "
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PTDY  ]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PTDY  ]"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  DEWP]"
                       length="6"
-                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[PTDY  ]"
-                      name="PTDY  "
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[DEWP]"
+                      name="DEWP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[VIS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  VIS]"
+                      length="5"
+                      lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[VIS]"
+                      name="VIS"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1873,8 +2527,8 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIDE ]"
-                      length="5"
+                      externalMetadataColumnId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  TIDE ]"
+                      length="7"
                       lineageId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].Columns[TIDE ]"
                       name="TIDE "
                       truncationRowDisposition="FailComponent">
@@ -1893,119 +2547,113 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[#YY  ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[#YY ]"
                       codePage="1252"
                       dataType="str"
-                      length="5"
-                      name="#YY  " />
+                      length="4"
+                      name="#YY " />
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MM ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="3"
-                      name="MM " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DD ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ MM]"
                       codePage="1252"
                       dataType="str"
                       length="3"
-                      name="DD " />
+                      name=" MM" />
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hh ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ DD]"
                       codePage="1252"
                       dataType="str"
                       length="3"
-                      name="hh " />
+                      name=" DD" />
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[mm ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ hh]"
                       codePage="1252"
                       dataType="str"
                       length="3"
-                      name="mm " />
+                      name=" hh" />
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WDIR ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ mm]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name=" mm" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ WDIR]"
                       codePage="1252"
                       dataType="str"
                       length="5"
-                      name="WDIR " />
+                      name=" WDIR" />
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WSPD ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ WSPD]"
                       codePage="1252"
                       dataType="str"
                       length="5"
-                      name="WSPD " />
+                      name=" WSPD" />
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GST  ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ GST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name=" GST" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  WVHT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="  WVHT" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[   DPD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="   DPD" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[   APD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="   APD" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ MWD ]"
                       codePage="1252"
                       dataType="str"
                       length="5"
-                      name="GST  " />
+                      name=" MWD " />
                     <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WVHT   ]"
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  PRES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="  PRES" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  ATMP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="  ATMP" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  WTMP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="  WTMP" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  DEWP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="  DEWP" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  VIS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="  VIS" />
+                    <externalMetadataColumn
+                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  TIDE ]"
                       codePage="1252"
                       dataType="str"
                       length="7"
-                      name="WVHT   " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DPD   ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="DPD   " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[APD ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="4"
-                      name="APD " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MWD ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="4"
-                      name="MWD " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[  PRES  ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="  PRES  " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ATMP  ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="ATMP  " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WTMP  ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="WTMP  " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEWP  ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="DEWP  " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VIS ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="4"
-                      name="VIS " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PTDY  ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="PTDY  " />
-                    <externalMetadataColumn
-                      refId="Package\Process Flat File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIDE ]"
-                      codePage="1252"
-                      dataType="str"
-                      length="5"
-                      name="TIDE " />
+                      name="  TIDE " />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2642,6 +3290,14 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Process Flat File" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{7C9C8A06-AEFD-4DEC-9F50-55439498B029}"
+      DTS:From="Package\GET Meteorological FF"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Initalize NDBC Buoy Cache" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -2654,41 +3310,33 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154,42"
-          Id="Package\Process Flat File"
-          TopLeft="232,167" />
+          Size="184,42"
+          Id="Package\GET Meteorological FF"
+          TopLeft="235,97" />
         <NodeLayout
           Size="205,42"
           Id="Package\Initalize NDBC Buoy Cache"
-          TopLeft="223,83" />
+          TopLeft="226,177" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Process Flat File"
+          TopLeft="247,274" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="325.5,125">
+          TopLeft="326.25,219">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-16.5,42"
+              EndConnector="0,55"
               Start="0,0"
-              End="-16.5,34.5">
+              End="0,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17"
-                    Point2="0,21"
-                    Point3="-4,21" />
-                  <mssgle:LineSegment
-                    End="-12.5,21" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-12.5,21"
-                    Point2="-16.5,21"
-                    Point3="-16.5,25" />
-                  <mssgle:LineSegment
-                    End="-16.5,34.5" />
+                    End="0,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2697,33 +3345,9 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </Package>
-  <TaskHost
-    design-time-name="Package\Process Flat File">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="145,42"
-          Id="Package\Process Flat File\Derived Errror"
-          TopLeft="913,190" />
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Process Flat File\Flat File Source"
-          TopLeft="628,60" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Process Flat File\Derived Column"
-          TopLeft="622,140" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Process Flat File\ODBC Destination"
-          TopLeft="668,237" />
         <EdgeLayout
-          Id="Package\Process Flat File.Paths[Flat File Source Output]"
-          TopLeft="701.25,102">
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="327.75,139">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2743,39 +3367,109 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Initalize NDBC Buoy Cache">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Initalize NDBC Buoy Cache\ADO NET Source"
+          TopLeft="313,127" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Initalize NDBC Buoy Cache\Cache Transform"
+          TopLeft="318,207" />
         <EdgeLayout
-          Id="Package\Process Flat File.Paths[Derived Column Error Output]"
-          TopLeft="776,161">
+          Id="Package\Initalize NDBC Buoy Cache.Paths[ADO NET Source Output]"
+          TopLeft="394.75,169">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="137,50"
+              EndConnector="0,38"
               Start="0,0"
-              End="129.5,50">
+              End="0,30.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="64.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="64.5,0"
-                    Point2="68.5,0"
-                    Point3="68.5,4" />
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Initalize NDBC Buoy Cache\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Process Flat File">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Process Flat File\Derived Errror"
+          TopLeft="913,190" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Process Flat File\Flat File Source"
+          TopLeft="643,26" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Process Flat File\Derived Column"
+          TopLeft="623,140" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Process Flat File\ODBC Destination"
+          TopLeft="668,237" />
+        <EdgeLayout
+          Id="Package\Process Flat File.Paths[Derived Column Error Output]"
+          TopLeft="777,161">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136,50"
+              Start="0,0"
+              End="128.5,50">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="68.5,46" />
+                    End="64,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="68.5,46"
-                    Point2="68.5,50"
-                    Point3="72.5,50" />
+                    Point1="64,0"
+                    Point2="68,0"
+                    Point3="68,4" />
                   <mssgle:LineSegment
-                    End="129.5,50" />
+                    End="68,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="68,46"
+                    Point2="68,50"
+                    Point3="72,50" />
+                  <mssgle:LineSegment
+                    End="128.5,50" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="3.53861328125001,-17.609375,129.9227734375,11.609375"
+              BoundingBox="-5.83003906249999,-22,147.660078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2837,13 +3531,13 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Process Flat File.Paths[Derived Column Output]"
-          TopLeft="699,182">
+          TopLeft="700,182">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-231.5,51"
+              EndConnector="-232.5,51"
               Start="0,0"
-              End="-231.5,43.5">
+              End="-232.5,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2854,13 +3548,47 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
                     Point2="0,25.5"
                     Point3="-4,25.5" />
                   <mssgle:LineSegment
-                    End="-227.5,25.5" />
+                    End="-228.5,25.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-227.5,25.5"
-                    Point2="-231.5,25.5"
-                    Point3="-231.5,29.5" />
+                    Point1="-228.5,25.5"
+                    Point2="-232.5,25.5"
+                    Point3="-232.5,29.5" />
                   <mssgle:LineSegment
-                    End="-231.5,43.5" />
+                    End="-232.5,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Process Flat File.Paths[Flat File Source Output]"
+          TopLeft="718.5,68">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.5,72"
+              Start="0,0"
+              End="-18.5,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="-4,36" />
+                  <mssgle:LineSegment
+                    End="-14.5,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.5,36"
+                    Point2="-18.5,36"
+                    Point3="-18.5,40" />
+                  <mssgle:LineSegment
+                    End="-18.5,64.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2872,6 +3600,29 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Process Flat File\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Process Flat File\ODBC Destination">
     <Properties>
@@ -2882,66 +3633,5 @@ where [refTable].[TimeStamp] = ? and [refTable].[StationId] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Process Flat File\Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Initalize NDBC Buoy Cache">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Initalize NDBC Buoy Cache\ADO NET Source"
-          TopLeft="312,127" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Initalize NDBC Buoy Cache\Cache Transform"
-          TopLeft="318,207" />
-        <EdgeLayout
-          Id="Package\Initalize NDBC Buoy Cache.Paths[ADO NET Source Output]"
-          TopLeft="394.25,169">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38"
-              Start="0,0"
-              End="0,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

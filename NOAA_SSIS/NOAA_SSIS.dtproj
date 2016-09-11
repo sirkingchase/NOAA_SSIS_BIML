@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-27AKM97</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAADmI986E/SjDM6dDqws/jQJ/fyIEWIVf76qqysiX9I5iwAAAAAOgAAAAAIAACAAAAD8xIfh7PtQxEdmT2B9SDYJnDLezH+Rlx0X7SvxvR4YPJAAAAC6sE3ik2uxUc2N4kBLhlPyB0jHixTPgMtoR9yjNJ6yOyStd2DVx8YfSUb+YSqTdEy0KTVEtN1gMnElZlG1CJ6izQSHqRj88YsErT11BgNi5DZ/egDFbgzG1z3o9e5oLyMSZ2iKMfuTwIGd5HG24olawyoVzSbFFLxOfJ6nbWbRLjTPXYiP2FqWF+DiKAe3g9tAAAAAtM5Vf+LbJhI7/XAHXc7IIybK60fpefqKQHF1U0ZnVcctDtySQsQcq4AqSyuHPqTo0bZTOBGab9ErdXVVb3Fi+A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAACs6HRI9JMD8msa1DVKJws7PVghZmzqMbxn9O1npGXtRQAAAAAOgAAAAAIAACAAAADLlbBQO9WTbCaYwR14cP95DSueuhdqHU+gjtk5l9LTLZAAAACSV1QSI4Y9J9gT45YXTt+UWe8tk66dYoJnpNkoq5Am6qEKqYr2CIkK8OLXkU5/kRkcVUfiJxgkndoYnu0erhKMHuEdARPazRRm8QTYiwHPIg7kLXIstvn/GaMaFFQiREUxjYzx0uHXpjN0FaDMprGSstZOd5MFdjp7zt6qS/KxtlD2O+sr8jnwpy6hUnYz1fpAAAAAKe3mwrnzjv9y3uEEAZkad8dYZ+E139DR+HjsIlhCithrQkAC9kW96tE51/BBWzodoqQz9uvikaIKmKv/FbLVWw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -45,7 +45,7 @@
                 <SSIS:Property SSIS:Name="VersionBuild">72</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{603687FD-F587-4166-A18A-E9D68F0D621D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AB50D179-EC9F-4F43-A388-E7F71DBA874E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -714,7 +714,7 @@
         <ConnectionProviderMappings />
         <ConnectionSecurityMappings />
         <DatabaseStorageLocations />
-        <TargetServerVersion>SQLServer2016</TargetServerVersion>
+        <TargetServerVersion>SQLServer2014</TargetServerVersion>
         <ParameterConfigurationValues>
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>

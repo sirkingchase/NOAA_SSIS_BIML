@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DTS:Executable DTS:CreationDate="09/23/2016 21:39:54" DTS:CreationName="Microsoft.Package" DTS:CreatorComputerName="DESKTOP-27AKM97" DTS:CreatorName="sirki" DTS:DTSID="{0FEE71A8-4F1F-4A60-A524-27C59BE1A955}" DTS:ExecutableType="Microsoft.Package" DTS:LastModifiedProductVersion="" DTS:LocaleID="1033" DTS:ObjectName="PickupLoad" DTS:ProtectionLevel="0" DTS:refId="Package" DTS:VersionBuild="0" DTS:VersionGUID="{C1A2AED2-4F22-4F3A-9A9B-CB27F6217252}" DTS:VersionMajor="0" xmlns:DTS="www.microsoft.com/SqlServer/Dts">
+  <DTS:Property DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager DTS:CreationName="FLATFILE" DTS:DTSID="{0E01E0DA-1787-4F23-8A0E-FB258DD4697E}" DTS:ObjectName="FF Pickup" DTS:refId="Package.ConnectionManagers[FF Pickup]">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager DTS:CodePage="1252" DTS:ColumnNamesInFirstDataRow="True" DTS:ConnectionString="C:\Users\sirki\Desktop\42012.txt" DTS:Format="RaggedRight" DTS:HeaderRowDelimiter="_x000A_" DTS:HeaderRowsToSkip="1" DTS:LocaleID="1033" DTS:RowDelimiter="" DTS:TextQualifier="_x003C_none_x003E_">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{EFABBB1E-7DA1-438D-AD04-C9CFD4380473}" DTS:MaximumWidth="4" DTS:ObjectName="#YY"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{6DD8775B-2805-46E8-B342-6220D61D6896}" DTS:MaximumWidth="3" DTS:ObjectName="MM"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{01AB2DF3-E1AB-4955-B6DB-78700E2FDCB4}" DTS:MaximumWidth="3" DTS:ObjectName="DD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{2F3957A7-5FFA-4031-B279-A46C7DD85FBB}" DTS:MaximumWidth="3" DTS:ObjectName="hh"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{AB2A3734-1C43-44F9-B130-D2B0AE760A15}" DTS:MaximumWidth="3" DTS:ObjectName="minutes"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{CA064EFC-6B49-429E-92CB-E68F4B564440}" DTS:MaximumWidth="5" DTS:ObjectName="WDIR"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{6920ADBE-09E4-4419-8473-0C011218BB21}" DTS:MaximumWidth="5" DTS:ObjectName="WSPD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{20DBDB68-17BA-4A64-A6C5-6F0B6CE2C3A5}" DTS:MaximumWidth="4" DTS:ObjectName="GST"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{E3053C97-CD08-4CD7-95FD-83A84FB3885D}" DTS:MaximumWidth="6" DTS:ObjectName="WVHT"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{38F9852D-6EC6-48E0-B4A4-D497404B5F4C}" DTS:MaximumWidth="6" DTS:ObjectName="DPD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{C9976C72-4B77-41FE-B0A0-CD8ADEB2F53F}" DTS:MaximumWidth="6" DTS:ObjectName="APD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{2C2EB50A-9605-45E0-9711-801F1BADCF09}" DTS:MaximumWidth="5" DTS:ObjectName="MWD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{6FFB0418-FDB4-4066-A104-A334D75043C7}" DTS:MaximumWidth="6" DTS:ObjectName="PRES"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{090B75B2-79DB-417D-8632-3165DB9987DD}" DTS:MaximumWidth="6" DTS:ObjectName="ATMP"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{9A81617C-0217-4EB2-AB08-82888798D655}" DTS:MaximumWidth="6" DTS:ObjectName="WTMP"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="_x000A_" DTS:ColumnWidth="50" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{35404976-E0FB-40BA-BD80-C695BFA249CD}" DTS:MaximumWidth="50" DTS:ObjectName="DEWP  VIS  TIDE"></DTS:FlatFileColumn>
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Executables>
+    <DTS:Executable DTS:CreationName="Microsoft.Pipeline" DTS:DTSID="{E06F818F-9465-4EDA-A95D-329A42EBCD6F}" DTS:ExecutableType="Microsoft.Pipeline" DTS:LocaleID="-1" DTS:ObjectName="DFT Load Pickups" DTS:refId="Package\DFT Load Pickups" DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <pipeline BLOBTempStoragePath="" bufferTempStoragePath="" version="1">
+          <components>
+            <component componentClassID="Microsoft.FlatFileSource" contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1" localeId="1033" name="OLE_SRC Pickup" refId="Package\DFT Load Pickups\OLE_SRC Pickup" usesDispositions="true" version="1">
+              <connections>
+                <connection connectionManagerID="{0E01E0DA-1787-4F23-8A0E-FB258DD4697E}:external" connectionManagerRefId="Package.ConnectionManagers[FF Pickup]" name="FlatFileConnection" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Connections[FlatFileConnection]"></connection>
+              </connections>
+              <outputs>
+                <output name="Output" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output]">
+                  <externalMetadataColumns isUsed="True">
+                    <externalMetadataColumn codePage="1252" dataType="str" length="4" name="#YY" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[#YY]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="3" name="MM" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[MM]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="3" name="DD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[DD]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="3" name="hh" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[hh]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="3" name="minutes" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[minutes]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="5" name="WDIR" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WDIR]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="5" name="WSPD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WSPD]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="4" name="GST" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[GST]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="6" name="WVHT" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WVHT]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="6" name="DPD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[DPD]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="6" name="APD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[APD]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="5" name="MWD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[MWD]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="6" name="PRES" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[PRES]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="6" name="ATMP" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[ATMP]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="6" name="WTMP" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WTMP]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="50" name="DEWP  VIS  TIDE" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[DEWP  VIS  TIDE]"></externalMetadataColumn>
+                  </externalMetadataColumns>
+                  <outputColumns>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[#YY]" length="4" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[#YY]" name="#YY" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[#YY]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[MM]" length="3" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[MM]" name="MM" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[MM]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[DD]" length="3" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[DD]" name="DD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[DD]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[hh]" length="3" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[hh]" name="hh" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[hh]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[minutes]" length="3" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[minutes]" name="minutes" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[minutes]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WDIR]" length="5" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WDIR]" name="WDIR" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WDIR]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WSPD]" length="5" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WSPD]" name="WSPD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WSPD]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[GST]" length="4" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[GST]" name="GST" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[GST]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WVHT]" length="6" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WVHT]" name="WVHT" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WVHT]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[DPD]" length="6" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[DPD]" name="DPD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[DPD]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[APD]" length="6" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[APD]" name="APD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[APD]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[MWD]" length="5" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[MWD]" name="MWD" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[MWD]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[PRES]" length="6" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[PRES]" name="PRES" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[PRES]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[ATMP]" length="6" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[ATMP]" name="ATMP" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[ATMP]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[WTMP]" length="6" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WTMP]" name="WTMP" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[WTMP]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].ExternalColumns[DEWP  VIS  TIDE]" length="50" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[DEWP  VIS  TIDE]" name="DEWP  VIS  TIDE" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output].Columns[DEWP  VIS  TIDE]" truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
+                        <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                </output>
+                <output isErrorOut="true" name="Error" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Error]">
+                  <externalMetadataColumns></externalMetadataColumns>
+                  <outputColumns>
+                    <outputColumn codePage="1252" dataType="text" description="Flat File Source Error Output Column" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Error].Columns[Flat File Source Error Output Column]" name="Flat File Source Error Output Column" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Error].Columns[Flat File Source Error Output Column]"></outputColumn>
+                    <outputColumn dataType="i4" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Error].Columns[ErrorCode]" name="ErrorCode" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Error].Columns[ErrorCode]" specialFlags="1"></outputColumn>
+                    <outputColumn dataType="i4" lineageId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Error].Columns[ErrorColumn]" name="ErrorColumn" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Error].Columns[ErrorColumn]" specialFlags="2"></outputColumn>
+                  </outputColumns>
+                </output>
+              </outputs>
+              <properties>
+                <property dataType="System.Boolean" description="Specifies whether zero-length columns are treated as null." name="RetainNulls">true</property>
+                <property dataType="System.String" description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated." name="FileNameColumnName"></property>
+              </properties>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+</DTS:Executable>

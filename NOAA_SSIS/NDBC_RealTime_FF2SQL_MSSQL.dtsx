@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-27AKM97"
   DTS:CreatorName="DESKTOP-27AKM97\sirki"
-  DTS:DTSID="{443FC10B-47A2-4367-AA35-51C2FE2C3444}"
+  DTS:DTSID="{7CFA177C-C9F3-49A1-9ACD-1CEAD927763F}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="13.0.2150.2"
   DTS:LocaleID="1033"
-  DTS:ObjectName="NDBC_RealTime_FF2SQL"
+  DTS:ObjectName="NDBC_RealTime_FF2SQL_MSSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{67A07925-0C6E-4C13-A8DA-30DB56935E4E}">
+  DTS:VersionBuild="85"
+  DTS:VersionGUID="{938F28AF-F7E1-4764-824D-030C1F609575}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Cache Connection Manager]"
       DTS:CreationName="CACHE"
-      DTS:DTSID="{0F549F4B-646A-4282-A322-0D10E4E19D03}"
+      DTS:DTSID="{FE40CF2D-CBA7-4019-A6A6-8F590D89F281}"
       DTS:ObjectName="Cache Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager>
@@ -28,64 +28,64 @@
               DTS:DataType="135"
               DTS:IndexPosition="1"
               DTS:ObjectName="Date"
-              DTS:DTSID="{5C49ACC1-74B7-409F-9BF4-C66CCE13B41B}"
+              DTS:DTSID="{8C662942-9ECA-4E70-B122-460E6657C85A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
-              DTS:DataType="2"
+              DTS:DataType="130"
+              DTS:Length="5"
+              DTS:IndexPosition="2"
+              DTS:ObjectName="StationId"
+              DTS:DTSID="{173ED323-24BF-464C-9EF1-E72C3060B8D2}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="3"
               DTS:ObjectName="WindDirection"
-              DTS:DTSID="{6B7CCEE4-00F0-46B0-9F73-2D71668E1695}"
+              DTS:DTSID="{77FDB2AD-A9F2-4CE2-BAE3-C1C5D63FAC87}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="WindSpeed"
-              DTS:DTSID="{88A7F48A-1EAF-4FFE-8716-FAC61A7A6540}"
+              DTS:DTSID="{84AAA797-9B6D-4496-BA0B-5E889ACFDC48}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="WindGust"
-              DTS:DTSID="{F9D788A7-0506-49D5-BE83-A02BAA32865A}"
+              DTS:DTSID="{B12590A4-8B2C-4762-8BC1-4442BD8DEBAE}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="WaveHeight"
-              DTS:DTSID="{F37F1E1F-9E82-4243-9293-D266C0E41F02}"
+              DTS:DTSID="{4F6B4F53-C2BA-4A59-A39D-3206FFB3EC54}"
               DTS:CreationName="" />
             <DTS:CacheColumn
-              DTS:DataType="2"
+              DTS:DataType="3"
               DTS:ObjectName="DominantWavePeriod"
-              DTS:DTSID="{B646F98F-28BB-4CFC-9BEB-175B0F206211}"
+              DTS:DTSID="{B80F667B-1B0B-49F0-B2C7-F156E3890F01}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="AverageWavePeriod"
-              DTS:DTSID="{62F2A940-DCC5-4EA5-B9BC-080088643022}"
+              DTS:DTSID="{B3004046-B164-4247-97A9-EBCF538D64FB}"
               DTS:CreationName="" />
             <DTS:CacheColumn
-              DTS:DataType="2"
+              DTS:DataType="3"
               DTS:ObjectName="WaveDirection"
-              DTS:DTSID="{0EE06374-A682-40C7-970E-9B0BD53E14CA}"
+              DTS:DTSID="{680AA287-ACF8-47F2-97D7-3ABB2C00418C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
-              DTS:ObjectName="SeaLevelPressure"
-              DTS:DTSID="{7A0DA4AC-5466-434A-BC81-7ECF7932110C}"
+              DTS:ObjectName="SeaLevelPressue"
+              DTS:DTSID="{69E5B81F-3EE8-47B9-B19A-E00CE0D9CB7B}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="AirTemperature"
-              DTS:DTSID="{2B83A971-DECC-4AC0-A80E-C01093874283}"
+              DTS:DTSID="{D77645C3-B6A5-4F73-A134-3C302454EA89}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="WaterTemperature"
-              DTS:DTSID="{92C323DE-06D6-4021-9B1B-162DA25FF1B3}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="130"
-              DTS:Length="10"
-              DTS:IndexPosition="2"
-              DTS:ObjectName="StationId"
-              DTS:DTSID="{8E52DE7E-216C-4EDA-92D0-CE400868F5C1}"
+              DTS:DTSID="{4375FECF-1F35-4380-A43C-E032DAFA855C}"
               DTS:CreationName="" />
           </DTS:CacheColumns>
         </DTS:ConnectionManager>
@@ -94,7 +94,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[FF NDBC]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B786448D-2AE7-4341-9E3D-336162558DCE}"
+      DTS:DTSID="{9F65F61F-33CE-48B3-8255-6C3A488A4B6C}"
       DTS:ObjectName="FF NDBC">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FileDirectory] + @[User::CurentBuoy] + ".txt"</DTS:PropertyExpression>
@@ -108,7 +108,7 @@
           DTS:DataRowsToSkip="1"
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\sirki\Desktop\dpia1.txt">
+          DTS:ConnectionString="C:\Users\sirki\Desktop\42012.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -116,7 +116,7 @@
               DTS:MaximumWidth="4"
               DTS:DataType="129"
               DTS:ObjectName="#YY "
-              DTS:DTSID="{74EE8875-7D26-4E2E-A755-13449F7C113E}"
+              DTS:DTSID="{F5D05396-49FF-4484-86F8-A7BECAEEFDA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -124,7 +124,7 @@
               DTS:MaximumWidth="3"
               DTS:DataType="129"
               DTS:ObjectName=" MM"
-              DTS:DTSID="{96074F91-B09B-41F4-9EF3-AFE328419960}"
+              DTS:DTSID="{6C7950CD-B0E1-4460-9383-DF267C75FEA1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -132,7 +132,7 @@
               DTS:MaximumWidth="3"
               DTS:DataType="129"
               DTS:ObjectName=" DD"
-              DTS:DTSID="{2F721EF3-F990-41B4-81F7-154AE9A8B7E7}"
+              DTS:DTSID="{DE00A671-A4E6-477D-8DB5-27FD10E690B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -140,7 +140,7 @@
               DTS:MaximumWidth="3"
               DTS:DataType="129"
               DTS:ObjectName=" hh"
-              DTS:DTSID="{AE543C54-0653-426C-A842-1114050EE8FB}"
+              DTS:DTSID="{D9DBA957-4912-4F78-95E8-62BEFF2EE563}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -148,7 +148,7 @@
               DTS:MaximumWidth="3"
               DTS:DataType="129"
               DTS:ObjectName=" mm"
-              DTS:DTSID="{E5705CFC-4EF8-4069-8301-49489CEFBB2C}"
+              DTS:DTSID="{F2E63CDE-95BB-4706-AC25-2A34F8A1E5A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -156,7 +156,7 @@
               DTS:MaximumWidth="5"
               DTS:DataType="129"
               DTS:ObjectName=" WDIR"
-              DTS:DTSID="{762F5B3A-C714-4110-83B5-07602928AB20}"
+              DTS:DTSID="{213C5837-E84E-48E1-B571-FEF2AE638205}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -164,7 +164,7 @@
               DTS:MaximumWidth="5"
               DTS:DataType="129"
               DTS:ObjectName=" WSPD"
-              DTS:DTSID="{8F9AFA89-79E7-459D-94FE-A8434ED9F377}"
+              DTS:DTSID="{8E5C57F0-844F-4048-A645-B2EF37FDDDD1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -172,7 +172,7 @@
               DTS:MaximumWidth="4"
               DTS:DataType="129"
               DTS:ObjectName=" GST"
-              DTS:DTSID="{4EFC3E74-37D9-46D6-B079-D0B8252E7A79}"
+              DTS:DTSID="{91BD5502-B9D1-4909-994A-5FF642ECD519}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -180,7 +180,7 @@
               DTS:MaximumWidth="6"
               DTS:DataType="129"
               DTS:ObjectName="  WVHT"
-              DTS:DTSID="{BA46A845-35F6-4076-9D84-F2CC6187D4BA}"
+              DTS:DTSID="{75559E43-06EA-4541-87CE-6B6D81D4B715}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -188,7 +188,7 @@
               DTS:MaximumWidth="6"
               DTS:DataType="129"
               DTS:ObjectName="   DPD"
-              DTS:DTSID="{2228123D-B7B9-484B-BF7D-DB170A3DB3F0}"
+              DTS:DTSID="{EF8DDCEC-1BA7-4DAE-AFA1-135540BB027A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -196,7 +196,7 @@
               DTS:MaximumWidth="6"
               DTS:DataType="129"
               DTS:ObjectName="   APD"
-              DTS:DTSID="{72A17F90-551F-4693-A59F-C4D83B25E91F}"
+              DTS:DTSID="{9B18E8EC-F12A-46DE-BC60-9431F74A637D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -204,7 +204,7 @@
               DTS:MaximumWidth="5"
               DTS:DataType="129"
               DTS:ObjectName=" MWD "
-              DTS:DTSID="{467E6CDC-2E20-42A3-A992-8B155743D02C}"
+              DTS:DTSID="{1C9241F9-29F5-462B-9E73-A5E2AAC3E49F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -212,7 +212,7 @@
               DTS:MaximumWidth="6"
               DTS:DataType="129"
               DTS:ObjectName="  PRES"
-              DTS:DTSID="{91DA571F-96B7-46CC-A94E-E477D19C8DD9}"
+              DTS:DTSID="{976B5B80-E1FA-46B2-B75D-C999BF7C1DB5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -220,7 +220,7 @@
               DTS:MaximumWidth="6"
               DTS:DataType="129"
               DTS:ObjectName="  ATMP"
-              DTS:DTSID="{BD934711-58C5-4AD5-8AD1-1AD7A7F7A556}"
+              DTS:DTSID="{02B90D9B-EF27-4A8F-B211-3DD7ACFF58F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -228,7 +228,7 @@
               DTS:MaximumWidth="6"
               DTS:DataType="129"
               DTS:ObjectName="  WTMP"
-              DTS:DTSID="{B5B3A0DF-592A-4A88-BBA9-E54CC1A3544A}"
+              DTS:DTSID="{8A43CC39-0161-4989-BB70-C7420DD5FC0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -237,52 +237,42 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="  DEWP  VIS  TIDE"
-              DTS:DTSID="{07BB6D81-8497-4670-A3DF-31DFF6ADC5D0}"
+              DTS:DTSID="{E9A916FF-369A-42B9-BB1C-42B7E53BB72D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[NDBC Source]"
-      DTS:CreationName="ADO.NET:System.Data.Odbc.OdbcConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{C7216103-639D-4CB1-BBF2-EFDD1AF9066B}"
-      DTS:ObjectName="NDBC Source">
+      DTS:refId="Package.ConnectionManagers[NOAA MSSQL]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{4D567F13-5502-41CA-99A1-0417114F0FB1}"
+      DTS:ObjectName="NOAA MSSQL">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="uid=postgres;Dsn=PostgreSQL30;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[PostgreSQL30]"
-      DTS:CreationName="ODBC"
-      DTS:DTSID="{4653930D-8299-49EF-8BD6-253A1D116E8E}"
-      DTS:ObjectName="PostgreSQL30">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Dsn=PostgreSQL30;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NOAA;Integrated Security=True;Application Name=SSIS-NDBC_RealTime_FF2SQL_MSSQL-{4D567F13-5502-41CA-99A1-0417114F0FB1}localhost.NOAA;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Realtime NDBC Meteorological]"
       DTS:CreationName="HTTP"
-      DTS:DTSID="{1723E62D-AB11-4E54-8C97-51392DE86157}"
+      DTS:DTSID="{B6DD0149-5099-4B51-B1B4-758BB39B8423}"
       DTS:ObjectName="Realtime NDBC Meteorological">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::Conn_NDBC_Meteorological]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="http://www.ndbc.noaa.gov/data/realtime2/dpia1.txt">
+          DTS:ConnectionString="http://www.ndbc.noaa.gov/data/realtime2/42012.txt">
           <DTS:HttpConnection
-            DTS:ServerURL="http://www.ndbc.noaa.gov/data/realtime2/dpia1.txt">
+            DTS:ServerURL="http://www.ndbc.noaa.gov/data/realtime2/42012.txt">
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC9PcHwjmEkWI0TojYXpusFp2G0vrXD3wJoDfT6rfZBHQAAAAAOgAAAAAIAACAAAAB0h/cD9T+pe+/rrxjHmzPXXCCCsDBwzgoDi4L2rVswhhAAAABdQCsuhMlRK2Uy53Lpia/cQAAAAPPHdKWcorExbAsMZ4dmiD6E5DNVFSucbWJiVCYSelIn5SfY+RBvuEiLBwd5FOJIV4qb51bI3hxSJTVvtjvMUdE</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACtGQX4T8xVk1QJTG0496ZB6wg0XG99C6F3l52b3iGwTwAAAAAOgAAAAAIAACAAAADuqX352+BKV3bIL7j0BCNKX/f0JJPeaprBm0PioTtmFxAAAAA2S0BYOyrVmOERkXBsmP59QAAAAImiF65pxjr4YlljsJvhi9W+w7X2Cfxy1NGq5ug1LfxJQIiHOeyABnHog2UXjACCQ94jFYeXI3frEWcM/6Oo+J8</DTS:Property>
             <DTS:Property
               DTS:Name="ProxyPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADHUI6Q5KlvQXDZzpJWQrCMHIPhkKTs4PBGzY9FeZGx3wAAAAAOgAAAAAIAACAAAADGArMuX0JGdukkwFcxmlMB8dOq1aR2A/VPTODSsQfEshAAAAAZkuiWIwO01BWJGLlijk8hQAAAAHmIIdxoqEJdSwRouVc/A6ZqbHl3xgJC3CLni9YGBosY8hvfxVFb5q8iKIfuqkHgNPhfSAW0zWy5BVNs3j+25vU</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAMdrPg37MofHyqLH2SXoPzPtfkrpC4ip7VKbXF2dW2FQAAAAAOgAAAAAIAACAAAADWMgog/qx76pMrg9RHPBr2Mg9euP5ucrMQsmA8DYFz6RAAAAB+rIp5KvueVc5AbiCx92BJQAAAAOKxLR7/lY25ONcsxMTl8IPAyOzbaPjGVU3CnntDqSs1XtB1inbLp4RZACo5RjGjo2PbsrLDFusZVd919Q72U6Q</DTS:Property>
           </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -291,27 +281,54 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6D555D12-6937-4B1B-875E-6E8D8358300C}"
+      DTS:DTSID="{D70C149E-5F02-4D37-8D98-26065B861EA4}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::URL_Realtime_NDBC_Meteorological] + @[User::CurentBuoy]  + &quot;.txt&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Conn_NDBC_Meteorological">
       <DTS:VariableValue
-        DTS:DataType="8">http://www.ndbc.noaa.gov/data/realtime2/dpia1.txt</DTS:VariableValue>
+        DTS:DataType="8">http://www.ndbc.noaa.gov/data/realtime2/42012.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{821C202F-BF42-4EF2-9D68-44DD01E6059C}"
+      DTS:DTSID="{0158DAF1-CEA4-4A77-BD49-5FD6314A962C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count_Duplicate">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{62ED739B-EECF-4A2C-B68D-0F1F4D0C70C9}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count_Error">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F509E226-083D-428B-AB66-7DC2AC2B1296}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count_Match">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1B44C9D7-A03B-46ED-A0B4-D2B608A76918}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="CurentBuoy">
       <DTS:VariableValue
-        DTS:DataType="8">dpia1</DTS:VariableValue>
+        DTS:DataType="8">42012</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F0B863B2-699D-4097-A576-FB870545A96D}"
+      DTS:DTSID="{0DDBBB9B-7369-4125-BC40-16C44F262EA4}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FileDirectory">
@@ -320,7 +337,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FAF320E6-A66C-4CEE-AEFF-6F16862AE0F3}"
+      DTS:DTSID="{2BE8A75A-1157-4E31-9C19-06D5EF2AF609}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;SELECT \&quot;Date\&quot;, \&quot;WindDirection\&quot;, \&quot;WindSpeed\&quot;, \&quot;WindGust\&quot;, \&quot;WaveHeight\&quot;, &#xA;       \&quot;DominantWavePeriod\&quot;, \&quot;AverageWavePeriod\&quot;, \&quot;WaveDirection\&quot;, &#xA;       \&quot;SeaLevelPressure\&quot;, \&quot;AirTemperature\&quot;, \&quot;WaterTemperature\&quot;, \&quot;StationId\&quot;&#xA;  FROM ndbc_meteorological&#xA;  where \&quot;Date\&quot; &gt;  CURRENT_DATE - INTERVAL '50 day'&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -335,7 +352,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3645B375-E573-4CD1-B719-C255A4D0EA3F}"
+      DTS:DTSID="{B2197B50-487A-4F13-B8E1-8BDF15B02638}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Stations">
@@ -353,7 +370,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{21D1B398-6434-4EF1-ABEC-CFB28C4499E1}"
+      DTS:DTSID="{58AC9582-F7AC-4C3C-83F6-4B13207F82E6}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="URL_Realtime_NDBC_Meteorological">
@@ -366,14 +383,14 @@
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{46227291-CF7A-4187-853C-E881EDFC5A86}"
+      DTS:DTSID="{A177B765-51AB-44F0-ADC8-4D954E38FB7B}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Foreach Loop Container">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachADOEnumerator"
-        DTS:DTSID="{AD9DF882-29E4-462B-BE0D-F92981D15DDF}"
-        DTS:ObjectName="{AD9DF882-29E4-462B-BE0D-F92981D15DDF}">
+        DTS:DTSID="{8FCA3113-D1C4-4A30-B0DC-B5BEE6137572}"
+        DTS:ObjectName="{8FCA3113-D1C4-4A30-B0DC-B5BEE6137572}">
         <DTS:ObjectData>
           <FEEADO
             EnumType="EnumerateRowsInFirstTable"
@@ -386,7 +403,7 @@
           DTS:refId="Package\Foreach Loop Container\GET Meteorological FF"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{7947BB44-D758-4868-A358-0210AD0EAC2F}"
+          DTS:DTSID="{0F7397E9-BD6C-4AD6-9B22-D29DCEAFC5DB}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="GET Meteorological FF"
@@ -1015,7 +1032,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           DTS:refId="Package\Foreach Loop Container\Process Flat File"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{88E35E4F-7A08-4EA2-9CE7-CD82446B0D55}"
+          DTS:DTSID="{51C941DE-A899-48AA-B2B5-008AD5AEDFC3}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Process Flat File"
@@ -1039,7 +1056,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       description="The Destination database table name."
                       expressionType="Notify"
                       name="TableOrViewName"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"public"."ndbc_meteorological"</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."ndbc_meteorological"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -1062,8 +1079,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Connections[IDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[NDBC Source]"
-                      connectionManagerRefId="Package.ConnectionManagers[NDBC Source]"
+                      connectionManagerID="Package.ConnectionManagers[NOAA MSSQL]"
+                      connectionManagerRefId="Package.ConnectionManagers[NOAA MSSQL]"
                       description="Managed connection manager"
                       name="IDbConnection" />
                   </connections>
@@ -1121,13 +1138,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WaveDirection]"
                           lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[WaveDirection]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SeaLevelPressure]"
-                          cachedDataType="decimal"
-                          cachedName="SeaLevelPressure"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SeaLevelPressure]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[SeaLevelPressure]" />
-                        <inputColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AirTemperature]"
                           cachedDataType="decimal"
                           cachedName="AirTemperature"
@@ -1154,6 +1164,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           cachedName="StationId"
                           externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StationId]"
                           lineageId="Package\Foreach Loop Container\Process Flat File\Derived Column.Outputs[Derived Column Output].Columns[StationId]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SeaLevelPressure]"
+                          cachedDataType="decimal"
+                          cachedName="SeaLevelPressure"
+                          cachedScale="1"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SeaLevelPressue]"
+                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[SeaLevelPressure]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1162,8 +1179,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           dataType="dbTimeStamp"
                           name="Date" />
                         <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StationId]"
+                          dataType="wstr"
+                          length="5"
+                          name="StationId" />
+                        <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WindDirection]"
-                          dataType="i2"
+                          dataType="i4"
                           name="WindDirection" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WindSpeed]"
@@ -1179,7 +1201,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="WaveHeight" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DominantWavePeriod]"
-                          dataType="i2"
+                          dataType="i4"
                           name="DominantWavePeriod" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AverageWavePeriod]"
@@ -1187,12 +1209,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="AverageWavePeriod" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WaveDirection]"
-                          dataType="i2"
+                          dataType="i4"
                           name="WaveDirection" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SeaLevelPressure]"
+                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SeaLevelPressue]"
                           dataType="r8"
-                          name="SeaLevelPressure" />
+                          name="SeaLevelPressue" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AirTemperature]"
                           dataType="r8"
@@ -1201,11 +1223,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WaterTemperature]"
                           dataType="r8"
                           name="WaterTemperature" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StationId]"
-                          dataType="wstr"
-                          length="10"
-                          name="StationId" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1816,24 +1833,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                 </component>
                 <component
                   refId="Package\Foreach Loop Container\Process Flat File\Duplicate Error"
-                  componentClassID="Microsoft.Multicast"
-                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-                  description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
                   name="Duplicate Error">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::Count_Duplicate</property>
+                  </properties>
                   <inputs>
                     <input
-                      refId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Inputs[Multicast Input 1]"
-                      name="Multicast Input 1">
+                      refId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
                       <externalMetadataColumns />
                     </input>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Outputs[Multicast Output 1]"
-                      dangling="true"
-                      deleteOutputOnPathDetached="true"
-                      name="Multicast Output 1"
-                      synchronousInputId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Inputs[Multicast Input 1]">
+                      refId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Inputs[Row Count Input 1]">
                       <externalMetadataColumns />
                     </output>
                   </outputs>
@@ -2403,7 +2425,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                     <property
                       dataType="System.String"
                       description="Indicates whether to reference metadata in an XML format."
-                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WindDirection" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WindSpeed" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WindGust" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WaveHeight" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DominantWavePeriod" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AverageWavePeriod" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WaveDirection" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SeaLevelPressure" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AirTemperature" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WaterTemperature" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StationId" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StationId" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WindDirection" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WindSpeed" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WindGust" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WaveHeight" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DominantWavePeriod" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AverageWavePeriod" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WaveDirection" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SeaLevelPressue" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AirTemperature" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WaterTemperature" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                     <property
                       containsID="true"
                       dataType="System.String"
@@ -2480,7 +2502,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                           refId="Package\Foreach Loop Container\Process Flat File\Lookup.Outputs[Lookup Match Output].Columns[StationId]"
                           dataType="wstr"
                           errorOrTruncationOperation="Copy Column"
-                          length="10"
+                          length="5"
                           lineageId="Package\Foreach Loop Container\Process Flat File\Lookup.Outputs[Lookup Match Output].Columns[StationId]"
                           name="StationId"
                           truncationRowDisposition="FailComponent">
@@ -2541,25 +2563,30 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Foreach Loop Container\Process Flat File\Match"
-                  componentClassID="Microsoft.Multicast"
-                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-                  description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
-                  name="Match">
+                  refId="Package\Foreach Loop Container\Process Flat File\Matches"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Matches">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::Count_Match</property>
+                  </properties>
                   <inputs>
                     <input
-                      refId="Package\Foreach Loop Container\Process Flat File\Match.Inputs[Multicast Input 1]"
-                      name="Multicast Input 1">
+                      refId="Package\Foreach Loop Container\Process Flat File\Matches.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
                       <externalMetadataColumns />
                     </input>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Foreach Loop Container\Process Flat File\Match.Outputs[Multicast Output 1]"
-                      dangling="true"
-                      deleteOutputOnPathDetached="true"
-                      name="Multicast Output 1"
-                      synchronousInputId="Package\Foreach Loop Container\Process Flat File\Match.Inputs[Multicast Input 1]">
+                      refId="Package\Foreach Loop Container\Process Flat File\Matches.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Foreach Loop Container\Process Flat File\Matches.Inputs[Row Count Input 1]">
                       <externalMetadataColumns />
                     </output>
                   </outputs>
@@ -2568,7 +2595,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
               <paths>
                 <path
                   refId="Package\Foreach Loop Container\Process Flat File.Paths[ADO NET Destination Error Output]"
-                  endId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Inputs[Multicast Input 1]"
+                  endId="Package\Foreach Loop Container\Process Flat File\Duplicate Error.Inputs[Row Count Input 1]"
                   name="ADO NET Destination Error Output"
                   startId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Outputs[ADO NET Destination Error Output]" />
                 <path
@@ -2588,7 +2615,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                   startId="Package\Foreach Loop Container\Process Flat File\Flat File Source.Outputs[Flat File Source Output]" />
                 <path
                   refId="Package\Foreach Loop Container\Process Flat File.Paths[Lookup Match Output]"
-                  endId="Package\Foreach Loop Container\Process Flat File\Match.Inputs[Multicast Input 1]"
+                  endId="Package\Foreach Loop Container\Process Flat File\Matches.Inputs[Row Count Input 1]"
                   name="Lookup Match Output"
                   startId="Package\Foreach Loop Container\Process Flat File\Lookup.Outputs[Lookup Match Output]" />
                 <path
@@ -2605,7 +2632,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{094A376B-E980-4206-A8D2-807FA4FA6341}"
+          DTS:DTSID="{D1F0220A-BACE-4469-A8A0-F4A9E831AFD2}"
           DTS:From="Package\Foreach Loop Container\GET Meteorological FF"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -2614,8 +2641,8 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{67CB7E4B-14D8-40D7-8F7A-C7A7632AC9C0}"
-          DTS:ObjectName="{67CB7E4B-14D8-40D7-8F7A-C7A7632AC9C0}"
+          DTS:DTSID="{7548A6FE-EB86-41D4-945E-EE91F5C9BAEA}"
+          DTS:ObjectName="{7548A6FE-EB86-41D4-945E-EE91F5C9BAEA}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::CurentBuoy" />
       </DTS:ForEachVariableMappings>
@@ -2624,7 +2651,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
       DTS:refId="Package\Get Stations"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{B3F6437A-6375-465B-BA9A-8C44242347D9}"
+      DTS:DTSID="{F354D9B2-5C02-4B4E-9D82-4A04DBBC84A5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Get Stations"
@@ -2635,140 +2662,139 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
           version="1">
           <components>
             <component
-              refId="Package\Get Stations\ODBC Source"
-              componentClassID="Attunity.SSISODBCSrc"
-              contactInfo="ODBC Source;Connector for Open Database Connectivity (ODBC) by Attunity; Attunity Ltd.; All Rights Reserved; http://www.attunity.com;6"
-              description="ODBC Source"
-              name="ODBC Source"
+              refId="Package\Get Stations\ADO NET Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
               usesDispositions="true"
               version="4">
               <properties>
                 <property
                   dataType="System.String"
-                  description="The name of the table to be fetched."
+                  description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
-                  name="TableName">"public"."ndbc_stations"</property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  expressionType="Notify"
-                  name="SqlCommand"></property>
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.Int32"
-                  description="Specify the number of rows fetched per batch."
-                  expressionType="Notify"
-                  name="BatchSize">1000</property>
-                <property
-                  dataType="System.Int32"
-                  description="Determines the chunk size allocation for LOB columns"
-                  expressionType="Notify"
-                  name="LobChunkSize">32768</property>
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
                 <property
                   dataType="System.Boolean"
-                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
                   expressionType="Notify"
-                  name="ExposeCharColumnsAsUnicode">false</property>
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."ndbc_stations"</property>
                 <property
                   dataType="System.Int32"
-                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
-                  expressionType="Notify"
-                  name="StatementTimeout">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="The code page to use when code page information is unavailable from the data source."
-                  expressionType="Notify"
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Int32"
-                  description="The mode used to access the database."
+                  description="Specify the mode to retrieve external column information"
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
                 <property
-                  dataType="System.Int32"
-                  description="The method used for fetching data."
-                  expressionType="Notify"
-                  name="FetchMethod"
-                  typeConverter="FetchMethod">1</property>
-                <property
-                  dataType="System.Int32"
-                  description="The ODBC C data type for binding numeric data."
-                  expressionType="Notify"
-                  name="BindNumericAs"
-                  typeConverter="BindNumericAs">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
-                  expressionType="Notify"
-                  name="BindCharColumnsAs"
-                  typeConverter="BindCharColumnsAs">0</property>
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Get Stations\ODBC Source.Connections[ODBCConnection]"
-                  connectionManagerID="Package.ConnectionManagers[PostgreSQL30]"
-                  connectionManagerRefId="Package.ConnectionManagers[PostgreSQL30]"
-                  description="The ODBC runtime connection"
-                  name="ODBCConnection" />
+                  refId="Package\Get Stations\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[NOAA MSSQL]"
+                  connectionManagerRefId="Package.ConnectionManagers[NOAA MSSQL]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output]"
-                  errorRowDisposition="FailComponent"
-                  name="ODBC Source Output"
-                  truncationRowDisposition="FailComponent">
+                  refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].Columns[StationId]"
-                      codePage="1252"
-                      dataType="str"
-                      externalMetadataColumnId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[StationId]"
-                      length="10"
-                      lineageId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].Columns[StationId]"
-                      name="StationId" />
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StationId]"
+                      length="5"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]"
+                      name="StationId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].Columns[Buoy]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Buoy]"
+                      length="50"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].Columns[Buoy]"
+                      name="Buoy"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].Columns[OfficalName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OfficalName]"
+                      length="150"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].Columns[OfficalName]"
+                      name="OfficalName"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[StationId]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StationId]"
+                      dataType="wstr"
+                      length="5"
                       name="StationId" />
                     <externalMetadataColumn
-                      refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[Buoy]"
-                      codePage="1252"
-                      dataType="text"
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Buoy]"
+                      dataType="wstr"
+                      length="50"
                       name="Buoy" />
                     <externalMetadataColumn
-                      refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[Offical Name]"
-                      codePage="1252"
-                      dataType="text"
-                      name="Offical Name" />
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OfficalName]"
+                      dataType="wstr"
+                      length="150"
+                      name="OfficalName" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Error Output]"
+                  refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output]"
                   isErrorOut="true"
-                  name="ODBC Source Error Output">
+                  name="ADO NET Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Error Output].Columns[StationId]"
-                      codePage="1252"
-                      dataType="str"
-                      externalMetadataColumnId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[StationId]"
-                      length="10"
-                      lineageId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Error Output].Columns[StationId]"
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StationId]"
+                      dataType="wstr"
+                      length="5"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StationId]"
                       name="StationId" />
                     <outputColumn
-                      refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Buoy]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Buoy]"
+                      name="Buoy" />
+                    <outputColumn
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OfficalName]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OfficalName]"
+                      name="OfficalName" />
+                    <outputColumn
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2796,11 +2822,10 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Get Stations\Recordset Destination.Inputs[Recordset Destination Input].Columns[StationId]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
+                      cachedDataType="wstr"
+                      cachedLength="5"
                       cachedName="StationId"
-                      lineageId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output].Columns[StationId]" />
+                      lineageId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2809,10 +2834,10 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Get Stations.Paths[ODBC Source Output]"
+              refId="Package\Get Stations.Paths[ADO NET Source Output]"
               endId="Package\Get Stations\Recordset Destination.Inputs[Recordset Destination Input]"
-              name="ODBC Source Output"
-              startId="Package\Get Stations\ODBC Source.Outputs[ODBC Source Output]" />
+              name="ADO NET Source Output"
+              startId="Package\Get Stations\ADO NET Source.Outputs[ADO NET Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2821,7 +2846,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
       DTS:refId="Package\Initalize NDBC Buoy Cache"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{BB919443-DD9A-4EC0-B34A-B781BD860241}"
+      DTS:DTSID="{9408792B-0A33-4401-8751-3A9A838F2EA6}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Initalize NDBC Buoy Cache"
@@ -2865,12 +2890,12 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                   description="The Source database table name."
                   expressionType="Notify"
                   name="TableOrViewName"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"public"."ndbc_meteorological"</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."ndbc_meteorological"</property>
                 <property
                   dataType="System.Int32"
                   description="Specify the mode to retrieve external column information"
                   name="AccessMode"
-                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -2878,8 +2903,8 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
               <connections>
                 <connection
                   refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[NDBC Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[NDBC Source]"
+                  connectionManagerID="Package.ConnectionManagers[NOAA MSSQL]"
+                  connectionManagerRefId="Package.ConnectionManagers[NOAA MSSQL]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -2898,8 +2923,18 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       name="Date"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StationId]"
+                      length="5"
+                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]"
+                      name="StationId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[WindDirection]"
-                      dataType="i2"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[WindDirection]"
@@ -2935,7 +2970,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[DominantWavePeriod]"
-                      dataType="i2"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DominantWavePeriod]"
@@ -2953,7 +2988,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[WaveDirection]"
-                      dataType="i2"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[WaveDirection]"
@@ -2961,13 +2996,13 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       name="WaveDirection"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[SeaLevelPressure]"
+                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[SeaLevelPressue]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[SeaLevelPressure]"
-                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[SeaLevelPressure]"
-                      name="SeaLevelPressure"
+                      externalMetadataColumnId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[SeaLevelPressue]"
+                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[SeaLevelPressue]"
+                      name="SeaLevelPressue"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[AirTemperature]"
@@ -2987,16 +3022,6 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[WaterTemperature]"
                       name="WaterTemperature"
                       truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StationId]"
-                      length="10"
-                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]"
-                      name="StationId"
-                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3005,8 +3030,13 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       dataType="dbTimeStamp"
                       name="Date" />
                     <externalMetadataColumn
+                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StationId]"
+                      dataType="wstr"
+                      length="5"
+                      name="StationId" />
+                    <externalMetadataColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[WindDirection]"
-                      dataType="i2"
+                      dataType="i4"
                       name="WindDirection" />
                     <externalMetadataColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[WindSpeed]"
@@ -3022,7 +3052,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       name="WaveHeight" />
                     <externalMetadataColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DominantWavePeriod]"
-                      dataType="i2"
+                      dataType="i4"
                       name="DominantWavePeriod" />
                     <externalMetadataColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AverageWavePeriod]"
@@ -3030,12 +3060,12 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       name="AverageWavePeriod" />
                     <externalMetadataColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[WaveDirection]"
-                      dataType="i2"
+                      dataType="i4"
                       name="WaveDirection" />
                     <externalMetadataColumn
-                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[SeaLevelPressure]"
+                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[SeaLevelPressue]"
                       dataType="r8"
-                      name="SeaLevelPressure" />
+                      name="SeaLevelPressue" />
                     <externalMetadataColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AirTemperature]"
                       dataType="r8"
@@ -3044,11 +3074,6 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[WaterTemperature]"
                       dataType="r8"
                       name="WaterTemperature" />
-                    <externalMetadataColumn
-                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StationId]"
-                      dataType="wstr"
-                      length="10"
-                      name="StationId" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3062,8 +3087,14 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Date]"
                       name="Date" />
                     <outputColumn
+                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StationId]"
+                      dataType="wstr"
+                      length="5"
+                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StationId]"
+                      name="StationId" />
+                    <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[WindDirection]"
-                      dataType="i2"
+                      dataType="i4"
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[WindDirection]"
                       name="WindDirection" />
                     <outputColumn
@@ -3083,7 +3114,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       name="WaveHeight" />
                     <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DominantWavePeriod]"
-                      dataType="i2"
+                      dataType="i4"
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DominantWavePeriod]"
                       name="DominantWavePeriod" />
                     <outputColumn
@@ -3093,14 +3124,14 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       name="AverageWavePeriod" />
                     <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[WaveDirection]"
-                      dataType="i2"
+                      dataType="i4"
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[WaveDirection]"
                       name="WaveDirection" />
                     <outputColumn
-                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[SeaLevelPressure]"
+                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[SeaLevelPressue]"
                       dataType="r8"
-                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[SeaLevelPressure]"
-                      name="SeaLevelPressure" />
+                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[SeaLevelPressue]"
+                      name="SeaLevelPressue" />
                     <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AirTemperature]"
                       dataType="r8"
@@ -3111,12 +3142,6 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       dataType="r8"
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[WaterTemperature]"
                       name="WaterTemperature" />
-                    <outputColumn
-                      refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StationId]"
-                      dataType="wstr"
-                      length="10"
-                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StationId]"
-                      name="StationId" />
                     <outputColumn
                       refId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -3173,8 +3198,21 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\Initalize NDBC Buoy Cache\Cache Transform.Inputs[Cache Input].Columns[StationId]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="StationId"
+                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">StationId</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\Initalize NDBC Buoy Cache\Cache Transform.Inputs[Cache Input].Columns[WindDirection]"
-                      cachedDataType="i2"
+                      cachedDataType="i4"
                       cachedName="WindDirection"
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[WindDirection]">
                       <properties>
@@ -3222,7 +3260,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                     </inputColumn>
                     <inputColumn
                       refId="Package\Initalize NDBC Buoy Cache\Cache Transform.Inputs[Cache Input].Columns[DominantWavePeriod]"
-                      cachedDataType="i2"
+                      cachedDataType="i4"
                       cachedName="DominantWavePeriod"
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[DominantWavePeriod]">
                       <properties>
@@ -3246,7 +3284,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                     </inputColumn>
                     <inputColumn
                       refId="Package\Initalize NDBC Buoy Cache\Cache Transform.Inputs[Cache Input].Columns[WaveDirection]"
-                      cachedDataType="i2"
+                      cachedDataType="i4"
                       cachedName="WaveDirection"
                       lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[WaveDirection]">
                       <properties>
@@ -3257,15 +3295,15 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Initalize NDBC Buoy Cache\Cache Transform.Inputs[Cache Input].Columns[SeaLevelPressure]"
+                      refId="Package\Initalize NDBC Buoy Cache\Cache Transform.Inputs[Cache Input].Columns[SeaLevelPressue]"
                       cachedDataType="r8"
-                      cachedName="SeaLevelPressure"
-                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[SeaLevelPressure]">
+                      cachedName="SeaLevelPressue"
+                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[SeaLevelPressue]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">SeaLevelPressure</property>
+                          name="CacheColumnName">SeaLevelPressue</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -3290,19 +3328,6 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
                           dataType="System.String"
                           description="The cache column associated with the input column."
                           name="CacheColumnName">WaterTemperature</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Initalize NDBC Buoy Cache\Cache Transform.Inputs[Cache Input].Columns[StationId]"
-                      cachedDataType="wstr"
-                      cachedLength="10"
-                      cachedName="StationId"
-                      lineageId="Package\Initalize NDBC Buoy Cache\ADO NET Source.Outputs[ADO NET Source Output].Columns[StationId]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="The cache column associated with the input column."
-                          name="CacheColumnName">StationId</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -3334,7 +3359,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{F772C153-E1D7-484F-8DA2-0028E524A066}"
+      DTS:DTSID="{00150F5D-28F1-497A-9172-B5329F72C8C4}"
       DTS:From="Package\Get Stations"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -3342,7 +3367,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{11E3ED3B-9AD1-42A1-A555-7AE66F2B9557}"
+      DTS:DTSID="{976FD149-B053-47CA-BE1B-8FFDEB2750CF}"
       DTS:From="Package\Initalize NDBC Buoy Cache"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -3458,143 +3483,21 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="113,42"
-          Id="Package\Foreach Loop Container\Process Flat File\Lookup"
-          TopLeft="118,198" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Foreach Loop Container\Process Flat File\Match"
-          TopLeft="71,323" />
-        <NodeLayout
           Size="151,42"
           Id="Package\Foreach Loop Container\Process Flat File\Flat File Source"
           TopLeft="92,27" />
         <NodeLayout
-          Size="149,49"
-          Id="Package\Foreach Loop Container\Process Flat File\Duplicate Error"
-          TopLeft="740,201" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Process Flat File.Paths[Lookup Match Output]"
-          TopLeft="174.5,240">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-50,83"
-              Start="0,0"
-              End="-50,75.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.5"
-                    Point2="0,41.5"
-                    Point3="-4,41.5" />
-                  <mssgle:LineSegment
-                    End="-46,41.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-46,41.5"
-                    Point2="-50,41.5"
-                    Point3="-50,45.5" />
-                  <mssgle:LineSegment
-                    End="-50,75.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-73.19138671875,46.5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="154,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Derived Column"
+          TopLeft="354,108" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Lookup"
+          TopLeft="118,198" />
         <NodeLayout
           Size="156,42"
           Id="Package\Foreach Loop Container\Process Flat File\Data Conversion"
           TopLeft="356,32" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Process Flat File.Paths[Flat File Source Output]"
-          TopLeft="243,50.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="113,0"
-              Start="0,0"
-              End="105.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="105.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Foreach Loop Container\Process Flat File\Derived Column"
-          TopLeft="354,109" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Process Flat File.Paths[Data Conversion Output]"
-          TopLeft="432.5,74">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Process Flat File.Paths[Derived Column Output]"
-          TopLeft="431,151">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-256.5,47"
-              Start="0,0"
-              End="-256.5,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.5"
-                    Point2="0,23.5"
-                    Point3="-4,23.5" />
-                  <mssgle:LineSegment
-                    End="-252.5,23.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-252.5,23.5"
-                    Point2="-256.5,23.5"
-                    Point3="-256.5,27.5" />
-                  <mssgle:LineSegment
-                    End="-256.5,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="179,42"
           Id="Package\Foreach Loop Container\Process Flat File\ADO NET Destination"
@@ -3624,26 +3527,148 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Foreach Loop Container\Process Flat File.Paths[ADO NET Destination Error Output]"
-          TopLeft="573,223.75">
+          Id="Package\Foreach Loop Container\Process Flat File.Paths[Flat File Source Output]"
+          TopLeft="243,50.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="167,0"
+              EndConnector="113,0"
               Start="0,0"
-              End="159.5,0">
+              End="105.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="159.5,0" />
+                    End="105.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Process Flat File.Paths[Derived Column Output]"
+          TopLeft="431,150">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-256.5,48"
+              Start="0,0"
+              End="-256.5,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="-4,24" />
+                  <mssgle:LineSegment
+                    End="-252.5,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-252.5,24"
+                    Point2="-256.5,24"
+                    Point3="-256.5,28" />
+                  <mssgle:LineSegment
+                    End="-256.5,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Process Flat File.Paths[Data Conversion Output]"
+          TopLeft="432.5,74">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34"
+              Start="0,0"
+              End="0,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="118,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Matches"
+          TopLeft="105,298" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Process Flat File.Paths[Lookup Match Output]"
+          TopLeft="174.5,240">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.5,58"
+              Start="0,0"
+              End="-10.5,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="-4,29" />
+                  <mssgle:LineSegment
+                    End="-6.5,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.5,29"
+                    Point2="-10.5,29"
+                    Point3="-10.5,33" />
+                  <mssgle:LineSegment
+                    End="-10.5,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="2.53554687499998,5,154.42890625,11.43359375"
+              BoundingBox="-53.44138671875,34,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Duplicate Error"
+          TopLeft="767,195" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Process Flat File.Paths[ADO NET Destination Error Output]"
+          TopLeft="573,219">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="194,0"
+              Start="0,0"
+              End="186.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="186.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="16.035546875,5,154.42890625,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3673,53 +3698,69 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\Process Flat File\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Get Stations">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Get Stations\ADO NET Source"
+          TopLeft="262,103" />
         <NodeLayout
           Size="182,42"
           Id="Package\Get Stations\Recordset Destination"
           TopLeft="523,90" />
-        <NodeLayout
-          Size="142,42"
-          Id="Package\Get Stations\ODBC Source"
-          TopLeft="265,90" />
         <EdgeLayout
-          Id="Package\Get Stations.Paths[ODBC Source Output]"
-          TopLeft="407,111">
+          Id="Package\Get Stations.Paths[ADO NET Source Output]"
+          TopLeft="420,124">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="116,0"
+              EndConnector="103,-13"
               Start="0,0"
-              End="108.5,0">
+              End="95.5,-13">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="108.5,0" />
+                    End="47.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.5,0"
+                    Point2="51.5,0"
+                    Point3="51.5,-4" />
+                  <mssgle:LineSegment
+                    End="51.5,-9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.5,-9"
+                    Point2="51.5,-13"
+                    Point3="55.5,-13" />
+                  <mssgle:LineSegment
+                    End="95.5,-13" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Get Stations\ODBC Source">
+    design-time-name="Package\Get Stations\ADO NET Source">
     <Properties>
       <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -3735,33 +3776,33 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
         <NodeLayout
           Size="159,42"
           Id="Package\Initalize NDBC Buoy Cache\Cache Transform"
-          TopLeft="356,239" />
+          TopLeft="327,236" />
         <EdgeLayout
           Id="Package\Initalize NDBC Buoy Cache.Paths[ADO NET Source Output]"
           TopLeft="392,169">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="43.5,70"
+              EndConnector="14.5,67"
               Start="0,0"
-              End="43.5,62.5">
+              End="14.5,59.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31" />
+                    End="0,29.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31"
-                    Point2="0,35"
-                    Point3="4,35" />
+                    Point1="0,29.5"
+                    Point2="0,33.5"
+                    Point3="4,33.5" />
                   <mssgle:LineSegment
-                    End="39.5,35" />
+                    End="10.5,33.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.5,35"
-                    Point2="43.5,35"
-                    Point3="43.5,39" />
+                    Point1="10.5,33.5"
+                    Point2="14.5,33.5"
+                    Point3="14.5,37.5" />
                   <mssgle:LineSegment
-                    End="43.5,62.5" />
+                    End="14.5,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3775,14 +3816,6 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Initalize NDBC Buoy Cache\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Process Flat File\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -1,0 +1,30 @@
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+<# 		
+    var importSrcSchemas = new[] {"dbo"};
+	var importTables = new[]{"ndbc_meteorological","ndbc_stations"};
+	//var srcDB = RootNode.DbConnections["src"].GetDatabaseSchema(importSrcSchemas, importTables,ImportOptions.ExcludeForeignKey|ImportOptions.ExcludeColumnDefault|ImportOptions.ExcludeViews);
+    var srcDB = RootNode.DbConnections["NOAA MS SQL"].GetDatabaseSchema();
+#>		
+	<Databases>
+		<Database Name="NOAA" ConnectionName ="NOAA MS SQL"></Database>
+	</Databases>
+	<Schemas>
+		<# foreach (var schemaNode in srcDB.SchemaNodes) {  #>
+			<Schema Name="<#=schemaNode.Name#>" DatabaseName="NOAA"></Schema>
+		<# } #>  
+	</Schemas>
+	<Tables>
+	<# foreach (var tableNode in srcDB.TableNodes) {  #>
+			<Table Name="<#=tableNode.Name#>" SchemaName="NOAA.<#=tableNode.SchemaName#>">
+				<Columns>
+					<#=tableNode.Columns.GetBiml()#>
+				</Columns>
+			</Table>
+		<# } #>  
+	</Tables>
+	  <Packages>
+
+  </Packages>
+</Biml>
+<#@ template language="C#" tier="2"#>	
+<#@ import namespace="Varigence.Biml.CoreLowerer.SchemaManagement" #>	

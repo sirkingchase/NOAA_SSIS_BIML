@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DTS:Executable DTS:CreationDate="09/23/2016 21:39:54" DTS:CreationName="Microsoft.Package" DTS:CreatorComputerName="DESKTOP-27AKM97" DTS:CreatorName="sirki" DTS:DTSID="{0FEE71A8-4F1F-4A60-A524-27C59BE1A955}" DTS:ExecutableType="Microsoft.Package" DTS:LastModifiedProductVersion="" DTS:LocaleID="1033" DTS:ObjectName="PickupLoad" DTS:ProtectionLevel="0" DTS:refId="Package" DTS:VersionBuild="0" DTS:VersionGUID="{C1A2AED2-4F22-4F3A-9A9B-CB27F6217252}" DTS:VersionMajor="0" xmlns:DTS="www.microsoft.com/SqlServer/Dts">
+<DTS:Executable DTS:CreationDate="09/24/2016 09:28:32" DTS:CreationName="Microsoft.Package" DTS:CreatorComputerName="DESKTOP-27AKM97" DTS:CreatorName="sirki" DTS:DTSID="{31D98CB0-6C38-4A7C-A343-8EBAF19DB64F}" DTS:ExecutableType="Microsoft.Package" DTS:LastModifiedProductVersion="" DTS:LocaleID="1033" DTS:ObjectName="PickupLoad" DTS:ProtectionLevel="0" DTS:refId="Package" DTS:VersionBuild="0" DTS:VersionGUID="{3486FBD4-7A8C-4734-B875-7B94BDF39F5E}" DTS:VersionMajor="0" xmlns:DTS="www.microsoft.com/SqlServer/Dts">
   <DTS:Property DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager DTS:CreationName="FLATFILE" DTS:DTSID="{0E01E0DA-1787-4F23-8A0E-FB258DD4697E}" DTS:ObjectName="FF Pickup" DTS:refId="Package.ConnectionManagers[FF Pickup]">
+    <DTS:ConnectionManager DTS:CreationName="FLATFILE" DTS:DTSID="{E3506E95-6A84-4454-A7A1-A0B96894142D}" DTS:ObjectName="FF Pickup" DTS:refId="Package.ConnectionManagers[FF Pickup]">
       <DTS:ObjectData>
         <DTS:ConnectionManager DTS:CodePage="1252" DTS:ColumnNamesInFirstDataRow="True" DTS:ConnectionString="C:\Users\sirki\Desktop\42012.txt" DTS:Format="RaggedRight" DTS:HeaderRowDelimiter="_x000A_" DTS:HeaderRowsToSkip="1" DTS:LocaleID="1033" DTS:RowDelimiter="" DTS:TextQualifier="_x003C_none_x003E_">
           <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{EFABBB1E-7DA1-438D-AD04-C9CFD4380473}" DTS:MaximumWidth="4" DTS:ObjectName="#YY"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{6DD8775B-2805-46E8-B342-6220D61D6896}" DTS:MaximumWidth="3" DTS:ObjectName="MM"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{01AB2DF3-E1AB-4955-B6DB-78700E2FDCB4}" DTS:MaximumWidth="3" DTS:ObjectName="DD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{2F3957A7-5FFA-4031-B279-A46C7DD85FBB}" DTS:MaximumWidth="3" DTS:ObjectName="hh"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{AB2A3734-1C43-44F9-B130-D2B0AE760A15}" DTS:MaximumWidth="3" DTS:ObjectName="minutes"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{CA064EFC-6B49-429E-92CB-E68F4B564440}" DTS:MaximumWidth="5" DTS:ObjectName="WDIR"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{6920ADBE-09E4-4419-8473-0C011218BB21}" DTS:MaximumWidth="5" DTS:ObjectName="WSPD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{20DBDB68-17BA-4A64-A6C5-6F0B6CE2C3A5}" DTS:MaximumWidth="4" DTS:ObjectName="GST"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{E3053C97-CD08-4CD7-95FD-83A84FB3885D}" DTS:MaximumWidth="6" DTS:ObjectName="WVHT"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{38F9852D-6EC6-48E0-B4A4-D497404B5F4C}" DTS:MaximumWidth="6" DTS:ObjectName="DPD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{C9976C72-4B77-41FE-B0A0-CD8ADEB2F53F}" DTS:MaximumWidth="6" DTS:ObjectName="APD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{2C2EB50A-9605-45E0-9711-801F1BADCF09}" DTS:MaximumWidth="5" DTS:ObjectName="MWD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{6FFB0418-FDB4-4066-A104-A334D75043C7}" DTS:MaximumWidth="6" DTS:ObjectName="PRES"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{090B75B2-79DB-417D-8632-3165DB9987DD}" DTS:MaximumWidth="6" DTS:ObjectName="ATMP"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{9A81617C-0217-4EB2-AB08-82888798D655}" DTS:MaximumWidth="6" DTS:ObjectName="WTMP"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="_x000A_" DTS:ColumnWidth="50" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{35404976-E0FB-40BA-BD80-C695BFA249CD}" DTS:MaximumWidth="50" DTS:ObjectName="DEWP  VIS  TIDE"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{50C40A62-F9F3-4B4C-AA46-CB8BE23B97F5}" DTS:MaximumWidth="4" DTS:ObjectName="#YY"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{65A8FD23-B6B6-4BB5-8B8B-1C3E44645305}" DTS:MaximumWidth="3" DTS:ObjectName="MM"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{299D9D4B-3DB9-4FA2-9FDF-27EB7ACBC2C8}" DTS:MaximumWidth="3" DTS:ObjectName="DD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{D35EBE8F-7C99-44B1-B0FE-F8E2317220D5}" DTS:MaximumWidth="3" DTS:ObjectName="hh"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{ACEA134B-251B-4FC3-B512-8DE28DB6CCC4}" DTS:MaximumWidth="3" DTS:ObjectName="minutes"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{2D44B96A-DD34-485B-AA8D-B82644B7062B}" DTS:MaximumWidth="5" DTS:ObjectName="WDIR"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{7E4DA298-13E0-412C-80EB-6EFEADE89E8C}" DTS:MaximumWidth="5" DTS:ObjectName="WSPD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{B1570BD2-DFA1-4678-B6D4-B86AE27250AF}" DTS:MaximumWidth="4" DTS:ObjectName="GST"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{C1340274-C30C-4363-897B-99B80340ECF3}" DTS:MaximumWidth="6" DTS:ObjectName="WVHT"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{C1A64B78-BE21-46FF-95C9-A91B43C6F8B6}" DTS:MaximumWidth="6" DTS:ObjectName="DPD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{53314CA8-94E7-487D-B5D3-3B899F7B69E9}" DTS:MaximumWidth="6" DTS:ObjectName="APD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{0840617B-7A66-49B8-A5FA-577B5CADB1E6}" DTS:MaximumWidth="5" DTS:ObjectName="MWD"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{014AF9A0-CD7B-45FC-AE35-329A6C36CD7E}" DTS:MaximumWidth="6" DTS:ObjectName="PRES"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{2E5D7DB6-48E0-46AD-8BE3-217150AB453B}" DTS:MaximumWidth="6" DTS:ObjectName="ATMP"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{7C57D083-14B7-463F-95D1-5290BEAF7F3A}" DTS:MaximumWidth="6" DTS:ObjectName="WTMP"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn DTS:ColumnDelimiter="_x000A_" DTS:ColumnWidth="50" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{8BCFC80A-64E8-4AF4-AD9C-9B40EFCB1777}" DTS:MaximumWidth="50" DTS:ObjectName="DEWP  VIS  TIDE"></DTS:FlatFileColumn>
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Executables>
-    <DTS:Executable DTS:CreationName="Microsoft.Pipeline" DTS:DTSID="{E06F818F-9465-4EDA-A95D-329A42EBCD6F}" DTS:ExecutableType="Microsoft.Pipeline" DTS:LocaleID="-1" DTS:ObjectName="DFT Load Pickups" DTS:refId="Package\DFT Load Pickups" DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+    <DTS:Executable DTS:CreationName="Microsoft.Pipeline" DTS:DTSID="{CE6F91CC-4B62-4B6D-A835-BD727D34503C}" DTS:ExecutableType="Microsoft.Pipeline" DTS:LocaleID="-1" DTS:ObjectName="DFT Load Pickups" DTS:refId="Package\DFT Load Pickups" DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:ObjectData>
         <pipeline BLOBTempStoragePath="" bufferTempStoragePath="" version="1">
           <components>
             <component componentClassID="Microsoft.FlatFileSource" contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1" localeId="1033" name="OLE_SRC Pickup" refId="Package\DFT Load Pickups\OLE_SRC Pickup" usesDispositions="true" version="1">
               <connections>
-                <connection connectionManagerID="{0E01E0DA-1787-4F23-8A0E-FB258DD4697E}:external" connectionManagerRefId="Package.ConnectionManagers[FF Pickup]" name="FlatFileConnection" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Connections[FlatFileConnection]"></connection>
+                <connection connectionManagerID="{E3506E95-6A84-4454-A7A1-A0B96894142D}:external" connectionManagerRefId="Package.ConnectionManagers[FF Pickup]" name="FlatFileConnection" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Connections[FlatFileConnection]"></connection>
               </connections>
               <outputs>
                 <output name="Output" refId="Package\DFT Load Pickups\OLE_SRC Pickup.Outputs[Output]">
@@ -173,5 +173,84 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.Pipeline" DTS:DTSID="{200356FB-85C9-467F-819F-38829E5AFE1D}" DTS:ExecutableType="Microsoft.Pipeline" DTS:LocaleID="-1" DTS:ObjectName="Cache Source" DTS:refId="Package\Cache Source" DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <pipeline BLOBTempStoragePath="" bufferTempStoragePath="" version="1">
+          <components>
+            <component componentClassID="Microsoft.OLEDBSource" contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7" name="NOAA Source" refId="Package\Cache Source\NOAA Source" usesDispositions="true" version="7">
+              <connections>
+                <connection connectionManagerID="{6DA2C064-6FC6-40BE-B55B-309813C915B5}:external" connectionManagerRefId="Project.ConnectionManagers[NOAA MS SQL]" description="The OLE DB runtime connection used to access the database." name="OleDbConnection" refId="Package\Cache Source\NOAA Source.Connections[OleDbConnection]"></connection>
+              </connections>
+              <outputs>
+                <output name="Output" refId="Package\Cache Source\NOAA Source.Outputs[Output]">
+                  <externalMetadataColumns isUsed="True">
+                    <externalMetadataColumn dataType="dbTimeStamp" name="Date" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[Date]"></externalMetadataColumn>
+                    <externalMetadataColumn codePage="1252" dataType="str" length="5" name="StationId" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[StationId]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="i4" name="WindDirection" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WindDirection]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="r8" name="WindSpeed" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WindSpeed]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="r8" name="WindGust" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WindGust]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="r8" name="WaveHeight" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WaveHeight]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="i4" name="DominantWavePeriod" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[DominantWavePeriod]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="r8" name="AverageWavePeriod" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[AverageWavePeriod]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="i4" name="WaveDirection" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WaveDirection]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="r8" name="SeaLevelPressue" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[SeaLevelPressue]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="r8" name="AirTemperature" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[AirTemperature]"></externalMetadataColumn>
+                    <externalMetadataColumn dataType="r8" name="WaterTemperature" refId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WaterTemperature]"></externalMetadataColumn>
+                  </externalMetadataColumns>
+                  <outputColumns>
+                    <outputColumn dataType="dbTimeStamp" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[Date]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[Date]" name="Date" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[Date]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[StationId]" length="5" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[StationId]" name="StationId" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[StationId]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="i4" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WindDirection]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WindDirection]" name="WindDirection" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WindDirection]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WindSpeed]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WindSpeed]" name="WindSpeed" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WindSpeed]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WindGust]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WindGust]" name="WindGust" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WindGust]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WaveHeight]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WaveHeight]" name="WaveHeight" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WaveHeight]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="i4" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[DominantWavePeriod]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[DominantWavePeriod]" name="DominantWavePeriod" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[DominantWavePeriod]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[AverageWavePeriod]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[AverageWavePeriod]" name="AverageWavePeriod" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[AverageWavePeriod]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="i4" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WaveDirection]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WaveDirection]" name="WaveDirection" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WaveDirection]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[SeaLevelPressue]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[SeaLevelPressue]" name="SeaLevelPressue" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[SeaLevelPressue]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[AirTemperature]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[AirTemperature]" name="AirTemperature" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[AirTemperature]" truncationRowDisposition="FailComponent"></outputColumn>
+                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Source\NOAA Source.Outputs[Output].ExternalColumns[WaterTemperature]" lineageId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WaterTemperature]" name="WaterTemperature" refId="Package\Cache Source\NOAA Source.Outputs[Output].Columns[WaterTemperature]" truncationRowDisposition="FailComponent"></outputColumn>
+                  </outputColumns>
+                </output>
+                <output isErrorOut="true" name="Error" refId="Package\Cache Source\NOAA Source.Outputs[Error]">
+                  <externalMetadataColumns></externalMetadataColumns>
+                  <outputColumns>
+                    <outputColumn dataType="dbTimeStamp" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[Date]" name="Date" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[Date]"></outputColumn>
+                    <outputColumn codePage="1252" dataType="str" length="5" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[StationId]" name="StationId" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[StationId]"></outputColumn>
+                    <outputColumn dataType="i4" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WindDirection]" name="WindDirection" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WindDirection]"></outputColumn>
+                    <outputColumn dataType="r8" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WindSpeed]" name="WindSpeed" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WindSpeed]"></outputColumn>
+                    <outputColumn dataType="r8" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WindGust]" name="WindGust" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WindGust]"></outputColumn>
+                    <outputColumn dataType="r8" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WaveHeight]" name="WaveHeight" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WaveHeight]"></outputColumn>
+                    <outputColumn dataType="i4" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[DominantWavePeriod]" name="DominantWavePeriod" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[DominantWavePeriod]"></outputColumn>
+                    <outputColumn dataType="r8" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[AverageWavePeriod]" name="AverageWavePeriod" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[AverageWavePeriod]"></outputColumn>
+                    <outputColumn dataType="i4" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WaveDirection]" name="WaveDirection" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WaveDirection]"></outputColumn>
+                    <outputColumn dataType="r8" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[SeaLevelPressue]" name="SeaLevelPressue" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[SeaLevelPressue]"></outputColumn>
+                    <outputColumn dataType="r8" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[AirTemperature]" name="AirTemperature" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[AirTemperature]"></outputColumn>
+                    <outputColumn dataType="r8" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WaterTemperature]" name="WaterTemperature" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[WaterTemperature]"></outputColumn>
+                    <outputColumn dataType="i4" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[ErrorCode]" name="ErrorCode" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[ErrorCode]" specialFlags="1"></outputColumn>
+                    <outputColumn dataType="i4" lineageId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[ErrorColumn]" name="ErrorColumn" refId="Package\Cache Source\NOAA Source.Outputs[Error].Columns[ErrorColumn]" specialFlags="2"></outputColumn>
+                  </outputColumns>
+                </output>
+              </outputs>
+              <properties>
+                <property dataType="System.Int32" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." name="CommandTimeout">0</property>
+                <property dataType="System.String" description="Specifies the name of the database object used to open a rowset." name="OpenRowset"></property>
+                <property dataType="System.String" description="Specifies the variable that contains the name of the database object used to open a rowset." name="OpenRowsetVariable"></property>
+                <property dataType="System.String" description="The SQL command to be executed." name="SqlCommand" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
+                        [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological]</property>
+                <property dataType="System.String" description="The variable that contains the SQL command to be executed." name="SqlCommandVariable"></property>
+                <property dataType="System.Int32" description="Specifies the column code page to use when code page information is unavailable from the data source." name="DefaultCodePage">1252</property>
+                <property dataType="System.Boolean" description="Forces the use of the DefaultCodePage property value when describing character data." name="AlwaysUseDefaultCodePage">false</property>
+                <property dataType="System.Int32" description="Specifies the mode used to access the database." name="AccessMode" typeConverter="AccessMode">2</property>
+                <property dataType="System.String" description="The mappings between the parameters in the SQL command and variables." name="ParameterMapping"></property>
+              </properties>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint DTS:CreationName="" DTS:DTSID="{B08E6415-8B76-414B-81FF-AFED44289F13}" DTS:From="Package\DFT Load Pickups" DTS:LogicalAnd="True" DTS:ObjectName="Constraint_DFT Load Pickups_To_Cache Source" DTS:refId="Package.PrecedenceConstraints[Constraint_DFT Load Pickups_To_Cache Source]" DTS:To="Package\Cache Source"></DTS:PrecedenceConstraint>
+  </DTS:PrecedenceConstraints>
 </DTS:Executable>

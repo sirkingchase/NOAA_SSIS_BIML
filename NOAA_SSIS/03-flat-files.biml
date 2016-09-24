@@ -1,0 +1,41 @@
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+<FileFormats>
+    <RawFileFormat Name="RFF Meteorological Cache">
+        <Columns>
+        <# var metoColumns = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological")).Columns;
+           var insertPos = new Dictionary<string, int>() { { "Date", 1 }, { "StationId", 2 } };
+        #>
+        <# foreach(var column in metoColumns){#>
+            <Column Name="<#=column.Name#>" IndexPosition="<#=insertPos.FirstOrDefault(w => w.Key == column.Name).Value#>"
+            DataType="<#=column.DataType#>" Length="<#=column.Length#>"/>
+        <#}#>
+            
+        </Columns>
+    </RawFileFormat>
+    <FlatFileFormat Name="FFF Meteorological Flat File" FlatFileType="RaggedRight" HeaderRowDelimiter="LF" HeaderRowsToSkip="1" ColumnNamesInFirstDataRow="true" IsUnicode="false"  > 
+        <Columns>
+            <Column Name="#YY" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth" TextQualified="false"/>
+			<Column Name="MM" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="DD" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="hh" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="minutes" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="WDIR" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"   TextQualified="false"/>
+            <Column Name="WSPD" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="GST" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="WVHT" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="DPD" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="APD" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="MWD" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="PRES" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
+            <Column Name="ATMP" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
+            <Column Name="WTMP" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
+            <Column Name="DEWP  VIS  TIDE" Length="50"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false" Delimiter="LF"/>						
+        </Columns>
+    </FlatFileFormat>
+</FileFormats>
+<Connections>
+    <FlatFileConnection Name="FF Meteorological" FileFormat="FFF Meteorological Flat File" FilePath="C:\Users\sirki\Desktop\42012.txt" CreateInProject="false"/>
+    <CacheConnection Name="MeteorologicalLookupCache" CreateInProject="1" RawFileFormatName="RFF Meteorological Cache"></CacheConnection>
+</Connections>
+</Biml>
+<#@ template language="C#" tier="3"#>

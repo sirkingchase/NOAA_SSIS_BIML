@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-27AKM97</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAACS/uX2NmZIn2bDSU9ODVuSw6sJTgD8uzY3u7O9ZG36fQAAAAAOgAAAAAIAACAAAABNS54cxr3SX3/zSjwyVuOiR7EfRFuFVQiK7CUB8/S1B5AAAACMH2VU4GglH9dW9B0RhYbvkK/+I1lgtsy7OeIGlslKMXPNRPAJHCXTlpKbt8S2X94MzO2flZctFryKLW/XGwAT682NPqdhO4UW1gTupYqTpCcTHlIfR7RNvZoj5QBxPErwZrM+ooRTmdzxUhqyRtxTA5sYG6J468WD8x4mwQsRSd2bVPh7K6irTDwSaoPM3g1AAAAAC9niOkawsxBIs5MPkHqE3sn8OAK5Sz7EAVFEoNV/oglur7Gkh39l0+6q7G0ouA/OJG7m9IAJnLCkVRmWRfUSrw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAACMADXOlXzt+SI4mL8TVMD6CYC1lNeOTAlN9PJy5EVRwgAAAAAOgAAAAAIAACAAAADEmek02zFGij7Ye50iahX1KKmM5Yk4NPLiB8deZpsA85AAAACQVzg/KrW9B1ndREPIC6kYxWffe8WHwXuDb8wnWmJuuVh8AT7l9SpfmoLdqwxH7itCGvopefzhKCrYPuQhC7YKk6d/3Tl583EfRP35KN9i4M4sDEGMgoSmPH5OpRCXoz0XfKNoSex+JRrfE44iUe6X2dgcAfCyDd2lFSn6wj/RTNCx25O2Gru/zgoFUJUjtnxAAAAAozz6FZKxk9uQZ3I0GyrrhhjTFoQqnRDtsEi9i89ObRsj361a49JAbBIrpx+LQpF+heYBPGfuUMmcrEptOBM8AQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -34,9 +34,100 @@
           <SSIS:Package SSIS:Name="NDBC_RealTime_FF2SQL_MSSQL.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="PickupLoad.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
-        <SSIS:ConnectionManagers />
+        <SSIS:ConnectionManagers>
+          <SSIS:ConnectionManager SSIS:Name="NOAA MS SQL.conmgr" />
+        </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
-          <SSIS:ProjectConnectionParameters />
+          <SSIS:ProjectConnectionParameters>
+            <SSIS:Parameter SSIS:Name="CM.NOAA MS SQL.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">server=.;initial catalog=NOAA;provider=SQLNCLI11.1;integrated security=SSPI;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.NOAA MS SQL.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">NOAA</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.NOAA MS SQL.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.NOAA MS SQL.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.NOAA MS SQL.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">.</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.NOAA MS SQL.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+          </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="NDBC_RealTime_FF2SQL.dtsx">
               <SSIS:Properties>
@@ -690,10 +781,10 @@
                 <SSIS:Property SSIS:Name="Name">NDBC_RealTime_FF2SQL_MSSQL</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">85</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">91</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{938F28AF-F7E1-4764-824D-030C1F609575}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{353BF98D-5FDF-4A51-BD27-CDDF3795BDF6}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1263,14 +1354,14 @@
             </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="PickupLoad.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{2CAF1595-9C42-4330-81E9-76D433C37A45}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{31D98CB0-6C38-4A7C-A343-8EBAF19DB64F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">PickupLoad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D7FF0972-0A0E-41DA-87A2-28A7A890AD25}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{3486FBD4-7A8C-4734-B875-7B94BDF39F5E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1394,7 +1485,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">1</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1424,8 +1515,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property xml:space="preserve" SSIS:Name="Value">
-</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1469,8 +1560,24 @@
   <ControlFlowParts />
   <Miscellaneous>
     <ProjectItem>
+      <Name>01-connections.biml</Name>
+      <FullPath>01-connections.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>03-flat-files.biml</Name>
+      <FullPath>03-flat-files.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>BimlScript.biml</Name>
       <FullPath>BimlScript.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>02-models.biml</Name>
+      <FullPath>02-models.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MeteorologicalVariables.biml</Name>
+      <FullPath>MeteorologicalVariables.biml</FullPath>
     </ProjectItem>
   </Miscellaneous>
   <Configurations>

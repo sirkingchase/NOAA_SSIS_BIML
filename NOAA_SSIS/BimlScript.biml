@@ -1,37 +1,22 @@
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
-    <FileFormats>
-        <FlatFileFormat FlatFileType="RaggedRight" HeaderRowDelimiter="LF" HeaderRowsToSkip="1" ColumnNamesInFirstDataRow="true" Name="FFF Pickup" IsUnicode="false"  > 
-            <Columns>
-                <Column Name="#YY" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth" TextQualified="false"/>
-				<Column Name="MM" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="DD" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="hh" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="minutes" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="WDIR" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"   TextQualified="false"/>
-                <Column Name="WSPD" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="GST" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="WVHT" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="DPD" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="APD" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="MWD" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-                <Column Name="PRES" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
-                <Column Name="ATMP" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
-                <Column Name="WTMP" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
-                <Column Name="DEWP  VIS  TIDE" Length="50"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false" Delimiter="LF"/>						
-            </Columns>
-        </FlatFileFormat>
-    </FileFormats>
-    <Connections>
-        <FlatFileConnection   Name="FF Pickup" FileFormat="FFF Pickup" FilePath="C:\Users\sirki\Desktop\42012.txt" CreateInProject="false"/>
-    </Connections>
-
 <Packages>
     <Package Name="PickupLoad" ConstraintMode="Linear" ProtectionLevel="DontSaveSensitive"  >
         <Tasks>
             <Dataflow Name="DFT Load Pickups" >
                 <Transformations  >
-                    <FlatFileSource  Name="OLE_SRC Pickup" ConnectionName="FF Pickup" RetainNulls="true" >
+                    <FlatFileSource  Name="OLE_SRC Meteorological" ConnectionName="FF Meteorological" RetainNulls="true" >
                     </FlatFileSource>
+                </Transformations>
+            </Dataflow>
+            <Dataflow Name="Cache Meteorological Data">
+                <Transformations>
+                    <OleDbSource Name="Meteorological Source" ConnectionName="NOAA MS SQL">
+                        <DirectInput >SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
+                        [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological]</DirectInput>
+                    </OleDbSource>
+                    <Cache Name="Meteorological Cache" ConnectionName="MeteorologicalLookupCache">
+                        <InputPath OutputPathName="Meteorological Source.Output"></InputPath>
+                    </Cache>
                 </Transformations>
             </Dataflow>
         </Tasks>

@@ -1,0 +1,6 @@
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+    <Connections>
+        <OleDbConnection Name ="NOAA MS SQL" ConnectionString="Server=.;Initial Catalog=NOAA;Provider=SQLNCLI11.1;Integrated Security=SSPI;" CreateInProject="true"></OleDbConnection>
+    </Connections>
+</Biml>
+<#@ template language="C#" tier="1"#>

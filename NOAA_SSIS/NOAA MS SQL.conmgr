@@ -1,0 +1,3 @@
+<ConnectionManager p1:ObjectName="NOAA MS SQL" p1:DTSID="{6DA2C064-6FC6-40BE-B55B-309813C915B5}" p1:refId="Package.ConnectionManagers[NOAA MS SQL]" p1:CreationName="OLEDB" xmlns:p1="www.microsoft.com/SqlServer/Dts" xmlns="www.microsoft.com/SqlServer/Dts">
+    <p1:ObjectData><DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:ConnectionString="server=.;initial catalog=NOAA;provider=SQLNCLI11.1;integrated security=SSPI"></DTS:ConnectionManager></p1:ObjectData>
+</ConnectionManager>

@@ -1,0 +1,7 @@
+<Variable Name="URL_FF_Meteorological" DataType="String">http://www.ndbc.noaa.gov/data/realtime2/42012.txt</Variable>
+<Variable Name="SourceCacheQuery" DataType="String"></Variable>
+<Variable Name="FF_Directory" DataType="String">C:\Users\sirki\</Variable>
+<Variable Name="Buoy" DataType="String">42012</Variable>
+<Variable Name="Count_Duplicate_Errors" DataType="Int32">0</Variable>
+<Variable Name="Count_Matches" DataType="Int32">0</Variable>
+<Variable Name="Count_Inserted" DataType="Int32">0</Variable>

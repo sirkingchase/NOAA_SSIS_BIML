@@ -1,0 +1,62 @@
+<Script ProjectCoreName="ST_232fecafb70a4e8a904cc21f8870eed0" Name="ScriptTask 1">
+    <ScriptTaskProject>
+        <ScriptTaskProject ProjectCoreName="ST_c41ad4bf47544c49ad46f4440163feae" Name="TaskScriptProject1">
+            <ReadOnlyVariables>
+                <Variable Namespace="User" VariableName="Buoy" DataType="String" />
+                <Variable Namespace="User" VariableName="FF_Directory" DataType="String" />
+            </ReadOnlyVariables>
+            <AssemblyReferences>
+                <AssemblyReference AssemblyPath="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.SqlServer.ManagedDTS\v4.0_12.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.ManagedDTS.dll" />
+                <AssemblyReference AssemblyPath="C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Tasks\Microsoft.SqlServer.ScriptTask.dll" />
+                <AssemblyReference AssemblyPath="System" />
+                <AssemblyReference AssemblyPath="System.AddIn" />
+                <AssemblyReference AssemblyPath="System.Data" />
+                <AssemblyReference AssemblyPath="System.Windows.Forms" />
+                <AssemblyReference AssemblyPath="System.Xml" />
+            </AssemblyReferences>
+            <Files>
+                <File Path="ScriptMain.cs">
+                    using System;
+                    using System.Data;
+                    using Microsoft.SqlServer.Dts.Runtime;
+                    using System.Windows.Forms;
+    
+                    // if SSIS2012, use the following line:
+                    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    
+                    // if earlier version, use the next line instead of the above line:
+                    // [System.AddIn.AddIn("ScriptMain", Version = "1.0", Publisher = "", Description = "")]
+                    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+                    {
+                    enum ScriptResults
+                    {
+                    Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+                    Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+                    };
+    
+            		public void Main()
+            		{
+                        try
+                        {
+                            Microsoft.SqlServer.Dts.Runtime.HttpClientConnection httpConn;
+                            Object obj;
+                            obj = Dts.Connections["Realtime NDBC Meteorological"].AcquireConnection(null);
+                            httpConn = new HttpClientConnection(obj);
+                            //httpConn.DownloadFile("C:\\Users\\sirki\\Desktop\\42067.txt", true);
+                            
+                            var file = (string)Dts.Variables["User::FF_Directory"].Value + (string)Dts.Variables["User::Buoy"].Value + ".txt";
+                            httpConn.DownloadFile(file, true);
+                        }
+                        catch (Exception e)
+                        {
+                            Dts.Events.FireError(1, e.TargetSite.ToString(), e.Message, "", 0);
+                        }
+                        // TODO: Add your code here
+                        Dts.TaskResult = (int)ScriptResults.Success;
+                    }
+                    }
+                </File>
+            </Files>
+        </ScriptTaskProject>
+    </ScriptTaskProject>
+</Script>

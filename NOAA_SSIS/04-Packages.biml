@@ -1,0 +1,31 @@
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+<Packages>
+    <Package Name="PickupLoad" ConstraintMode="Linear" ProtectionLevel="EncryptSensitiveWithUserKey"  >
+        <Connections>
+            <!--  Force creating connection managers  -->
+            <Connection ConnectionName="Realtime NDBC Meteorological" />
+            <Connection ConnectionName="FF Meteorological" />                
+        </Connections>
+        <Variables>
+            <#@ include file="Variables.biml" #>
+        </Variables>
+        <Tasks>
+            <Dataflow Name="Cache Meteorological Data">
+                <Transformations>
+                    <OleDbSource Name="Meteorological Source" ConnectionName="NOAA MS SQL" >
+                        <DirectInput>SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
+                        [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological];
+                        </DirectInput>
+                    </OleDbSource>
+                    <Cache Name="Meteorological Cache" ConnectionName="MeteorologicalLookupCache">
+                        <InputPath OutputPathName="Meteorological Source.Output"></InputPath>
+                    </Cache>
+                </Transformations>
+            </Dataflow>
+            <#=CallBimlScript(@"NDBC_Meteo_Script_Task.biml") #>
+            <Dataflow Name="Process FF"></Dataflow>
+        </Tasks>
+    </Package>
+</Packages>
+</Biml>
+<#@ template language="C#" tier="4"#>	

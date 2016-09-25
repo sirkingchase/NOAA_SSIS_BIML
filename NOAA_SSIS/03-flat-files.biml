@@ -19,13 +19,14 @@
         <#} }#>
         </Columns>
     </RawFileFormat>
-    <FlatFileFormat Name="FFF Meteorological Flat File" FlatFileType="RaggedRight" HeaderRowDelimiter="LF" HeaderRowsToSkip="1" ColumnNamesInFirstDataRow="true" IsUnicode="false"  > 
+    <FlatFileFormat Name="FFF Meteorological Flat File" FlatFileType="RaggedRight" HeaderRowDelimiter="LF" HeaderRowsToSkip="1" 
+    ColumnNamesInFirstDataRow="true" IsUnicode="false"   > 
         <Columns>
             <Column Name="YY" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth" TextQualified="false"/>
 			<Column Name="MM" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
             <Column Name="DD" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
             <Column Name="hh" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
-            <Column Name="minutes" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
+            <Column Name="mi" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
             <Column Name="WDIR" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"   TextQualified="false"/>
             <Column Name="WSPD" Length="05"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
             <Column Name="GST" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
@@ -36,7 +37,7 @@
             <Column Name="PRES" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
             <Column Name="ATMP" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
             <Column Name="WTMP" Length="06"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>		
-            <Column Name="DEWP  VIS  TIDE" Length="50"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false" Delimiter="LF"/>						
+            <Column Name="Ignore" DataType="AnsiString" TextQualified="false" Delimiter="LF" />						
         </Columns>
     </FlatFileFormat>
 </FileFormats>

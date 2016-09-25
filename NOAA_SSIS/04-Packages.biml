@@ -1,3 +1,4 @@
+
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
 <Packages>
     <Package Name="PickupLoad" ConstraintMode="Linear" ProtectionLevel="EncryptSensitiveWithUserKey"  >
@@ -12,21 +13,21 @@
         <Tasks>
             <Dataflow Name="Cache Meteorological Data">
                 <Transformations>
-                    <OleDbSource Name="Meteorological Source" ConnectionName="NOAA MS SQL" >
+                    <OleDbSource Name="SRC Meteorological" ConnectionName="NOAA MS SQL">
                         <DirectInput>SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
                         [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological];
                         </DirectInput>
                     </OleDbSource>
                     <Cache Name="Meteorological Cache" ConnectionName="MeteorologicalLookupCache">
-                        <InputPath OutputPathName="Meteorological Source.Output"></InputPath>
+                        <InputPath OutputPathName="SRC Meteorological.Output"></InputPath>
                     </Cache>
                 </Transformations>
             </Dataflow>
             <#=CallBimlScript(@"NDBC_Meteo_Script_Task.biml") #>
             <Dataflow Name="Process FF">
                 <Transformations>
-                    <FlatFileSource ConnectionName="FF Meteorological" Name="FF SRC"></FlatFileSource>
-                    <DataConversion Name="FF DataType Conv" >
+                    <FlatFileSource ConnectionName="FF Meteorological" Name="FF SRC" ValidateExternalMetadata="false"></FlatFileSource>
+                    <DataConversion Name="FF DT Conv" >
                         <ErrorHandling ErrorRowDisposition="IgnoreFailure" TruncationRowDisposition="IgnoreFailure" />
                         <InputPath OutputPathName="FF SRC.Output"></InputPath>
                         <Columns>
@@ -40,8 +41,8 @@
                         <#  } #>
                         </Columns>
                     </DataConversion>
-                    <DerivedColumns Name="Column Value Calculation">
-                        <InputPath OutputPathName="FF DataType Conv.Output"></InputPath>
+                    <DerivedColumns Name="COL VAL Calculation">
+                        <InputPath OutputPathName="FF DT Conv.Output"></InputPath>
                         <Columns>
                         <# 
                         foreach(var column in metoColumns.Where(w => ! string.IsNullOrEmpty(w.GetTag("D_Expr")) ) ) {
@@ -60,6 +61,16 @@
                         <#} }#>
                         </Columns>
                     </DerivedColumns>
+                <Lookup Name="LK Meteorological" CacheConnectionName="MeteorologicalLookupCache" NoMatchBehavior="RedirectRowsToNoMatchOutput" >
+                    <Inputs>
+                        <Column SourceColumn="Date" />
+                        <Column SourceColumn="StationId" />
+                    </Inputs>
+                    <Outputs>
+                        <Column SourceColumn="Date" />
+                        <Column SourceColumn="StationId" />
+                    </Outputs>
+                </Lookup>
                 </Transformations>
             </Dataflow>
         </Tasks>

@@ -1,334 +1,887 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DTS:Executable DTS:CreationDate="09/24/2016 16:09:49" DTS:CreationName="Microsoft.Package" DTS:CreatorComputerName="DESKTOP-27AKM97" DTS:CreatorName="sirki" DTS:DTSID="{D2AEF926-A171-4B39-84CE-2134A12A6171}" DTS:ExecutableType="Microsoft.Package" DTS:LastModifiedProductVersion="" DTS:LocaleID="1033" DTS:ObjectName="PickupLoad" DTS:refId="Package" DTS:VersionBuild="0" DTS:VersionGUID="{17F0A313-85EC-490F-896A-26359343864D}" DTS:VersionMajor="0" xmlns:DTS="www.microsoft.com/SqlServer/Dts">
-  <DTS:Property DTS:Name="PackageFormatVersion">8</DTS:Property>
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/25/2016 11:21:15 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-27AKM97"
+  DTS:CreatorName="sirki"
+  DTS:DTSID="{5E36AE3D-8B90-41D1-9A5C-0A883B14A608}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.2150.2"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="PickupLoad"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{991E9BCB-6AE5-4702-8466-36129F03159B}"
+  DTS:VersionMajor="0">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager DTS:CreationName="HTTP" DTS:DTSID="{248AAB30-D16D-44E5-B5FB-4BAED00BB428}" DTS:ObjectName="Realtime NDBC Meteorological" DTS:refId="Package.ConnectionManagers[Realtime NDBC Meteorological]">
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FF Meteorological]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5A3B631F-973A-41AD-9166-632B116D0D1B}"
+      DTS:ObjectName="FF Meteorological">
       <DTS:ObjectData>
-        <DTS:ConnectionManager DTS:ConnectionString="http://www.ndbc.noaa.gov/data/realtime2/42012.txt">
-          <DTS:HttpConnection DTS:ServerURL="http://www.ndbc.noaa.gov/data/realtime2/42012.txt">
-            <DTS:Property DTS:Name="ServerPassword" Encrypted="1" Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAADdSGPsGRQ+oEA9euC5pFtO7CYe7o+y+UIwbEQxOz5Y+QAAAAAOgAAAAAIAACAAAAAo8zhuELlr+02GKRhLg1X4zzTVzs6s6DGe0kc7ZrIB6BAAAACurWCeclPxUTjAtRfKE9kYQAAAAPT7K1FZjo2EDntow0v4nnfhYUi/3aZpvS8xEuQQopQeQbMcB8qrRRSkcz9SZIzOvN7nDwgbrER9l0WIxFqIXhA</DTS:Property>
-            <DTS:Property DTS:Name="ProxyPassword" Encrypted="1" Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAABy+WAvtKB8blYMNqCXpjfJbMCts4Fiyrr3XnBPvNghngAAAAAOgAAAAAIAACAAAAA0ZGqnPst6lzKxT9rAJQgdOlUAcRrxUO6Ym5TGCdZRHBAAAAAwjHmi0NgknlB/FwwcQIMfQAAAAE9/BvLUPPXn+3to7Uwv83oT+7c9mHEC/A5GG5fJLaw93x2sRfEOPjJtICp22/fbcHvpIHyBxsra1CAkldqjcNE</DTS:Property>
-          </DTS:HttpConnection>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager DTS:CreationName="FLATFILE" DTS:DTSID="{9D3DB6B3-9AE3-4035-B470-13015FFFF730}" DTS:ObjectName="FF Meteorological" DTS:refId="Package.ConnectionManagers[FF Meteorological]">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager DTS:CodePage="1252" DTS:ColumnNamesInFirstDataRow="True" DTS:ConnectionString="C:\Users\sirki\Desktop\42012.txt" DTS:Format="RaggedRight" DTS:HeaderRowDelimiter="_x000A_" DTS:HeaderRowsToSkip="1" DTS:LocaleID="1033" DTS:RowDelimiter="" DTS:TextQualifier="_x003C_none_x003E_">
+        <DTS:ConnectionManager
+          DTS:Format="RaggedRight"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowsToSkip="1"
+          DTS:HeaderRowDelimiter="_x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\sirki\Desktop\42012.txt">
           <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{28B225FC-AAD9-4AD7-BF9C-6FC8052213E5}" DTS:MaximumWidth="4" DTS:ObjectName="#YY"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{71FDFAFF-AE2E-4C67-8F0A-BD1D6915352E}" DTS:MaximumWidth="3" DTS:ObjectName="MM"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{0C70A4FC-19F9-4584-A3AA-E0FDC8C4F6F8}" DTS:MaximumWidth="3" DTS:ObjectName="DD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{FA3F0EC1-4F76-41B1-9CED-702C3EEF5DBA}" DTS:MaximumWidth="3" DTS:ObjectName="hh"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="3" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{6CF8898A-7A5C-42D5-AFAB-86170D44CE2E}" DTS:MaximumWidth="3" DTS:ObjectName="minutes"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{8EE57DF5-E25E-46DE-B932-C1E98933B2DC}" DTS:MaximumWidth="5" DTS:ObjectName="WDIR"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{D6A0231F-06D2-41A2-9DEF-03BFE89A900A}" DTS:MaximumWidth="5" DTS:ObjectName="WSPD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="4" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{E28B5D37-6634-4533-858F-73EBA203ACA6}" DTS:MaximumWidth="4" DTS:ObjectName="GST"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{88F20288-9CB9-48B6-B329-7595F83F4877}" DTS:MaximumWidth="6" DTS:ObjectName="WVHT"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{247FC172-53AF-43F4-856C-CAF93C234FBA}" DTS:MaximumWidth="6" DTS:ObjectName="DPD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{51214783-24F0-4B5D-B0C7-8CA73E31EEA6}" DTS:MaximumWidth="6" DTS:ObjectName="APD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="5" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{959CF5C5-249C-4DE4-900B-0BF310289472}" DTS:MaximumWidth="5" DTS:ObjectName="MWD"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{9F06F374-5682-490C-A275-F7206BC8206B}" DTS:MaximumWidth="6" DTS:ObjectName="PRES"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{BEEBD080-8379-427A-96C3-70F1D9F98775}" DTS:MaximumWidth="6" DTS:ObjectName="ATMP"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="" DTS:ColumnWidth="6" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{BD250071-C259-428A-8834-1435F74A67A1}" DTS:MaximumWidth="6" DTS:ObjectName="WTMP"></DTS:FlatFileColumn>
-            <DTS:FlatFileColumn DTS:ColumnDelimiter="_x000A_" DTS:ColumnWidth="50" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{BD9B92A5-BBEF-4270-BAF4-39AFB5DCA682}" DTS:MaximumWidth="50" DTS:ObjectName="DEWP  VIS  TIDE"></DTS:FlatFileColumn>
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="4"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:ObjectName="YY"
+              DTS:DTSID="{2AC17672-3495-46A0-B220-392753D473CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="3"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:ObjectName="MM"
+              DTS:DTSID="{BC540506-D0D1-4A39-A476-EF3C146F012E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="3"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:ObjectName="DD"
+              DTS:DTSID="{6B17D820-0F3F-439A-8C79-7F9A6A0ABD9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="3"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:ObjectName="hh"
+              DTS:DTSID="{C061A0CE-24C3-41F0-9277-6A0C65915C3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="3"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:ObjectName="minutes"
+              DTS:DTSID="{B4CE9AE1-5A9F-4DBA-B681-E557E87BE18A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:ObjectName="WDIR"
+              DTS:DTSID="{987883DC-4E31-4EC2-833B-650BB51324E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:ObjectName="WSPD"
+              DTS:DTSID="{B8B2660F-CAE0-4CC0-90EB-8336D7B2CF35}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="4"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:ObjectName="GST"
+              DTS:DTSID="{00C9A2B1-C701-4761-9B5D-657FFB49B571}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="WVHT"
+              DTS:DTSID="{B945D4F2-37D7-40B8-BA9A-03EAB8BCB389}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="DPD"
+              DTS:DTSID="{EC267748-4AFA-4323-A03F-D93BA2F3670B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="APD"
+              DTS:DTSID="{66FCA3A6-3D65-4B4A-8383-8EF646103127}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:ObjectName="MWD"
+              DTS:DTSID="{B12A12DC-3DD1-4F60-8B8F-CAC5226603F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="PRES"
+              DTS:DTSID="{1FEE6AF2-9F5B-4D01-91ED-BEFBE9354B2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="ATMP"
+              DTS:DTSID="{6AC1DCBA-3517-4992-80A3-AF00C4498569}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="WTMP"
+              DTS:DTSID="{756C3C2F-C7D4-4378-8190-67E2B2ECA67E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:ColumnWidth="50"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:ObjectName="DEWP  VIS  TIDE"
+              DTS:DTSID="{F1560FA0-9400-4515-A6AE-DF1773031EA8}"
+              DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager DTS:CreationName="OLEDB" DTS:DTSID="{9E808298-D0D4-4479-AA63-57199CD741E5}" DTS:ObjectName="NOAA MS SQL" DTS:refId="Package.ConnectionManagers[NOAA MS SQL]">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager DTS:ConnectionString="server=localhost;initial catalog=NOAA;provider=SQLNCLI11.1;integrated security=SSPI"></DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager DTS:CreationName="CACHE" DTS:DTSID="{B8E1FA66-2718-4FA8-87D8-5E3778D473E8}" DTS:ObjectName="MeteorologicalLookupCache" DTS:refId="Package.ConnectionManagers[MeteorologicalLookupCache]">
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MeteorologicalLookupCache]"
+      DTS:CreationName="CACHE"
+      DTS:DTSID="{68091FF4-3B41-415E-B376-93C5D8B25114}"
+      DTS:ObjectName="MeteorologicalLookupCache">
       <DTS:ObjectData>
         <DTS:ConnectionManager>
           <DTS:CacheColumns>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="135" DTS:DTSID="{5597EC4B-554A-4F3B-A443-93C6EE249500}" DTS:IndexPosition="1" DTS:ObjectName="Date"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CodePage="1252" DTS:CreationName="" DTS:DataType="129" DTS:DTSID="{0A8F6C2E-265F-483F-A693-28374C6FD65E}" DTS:IndexPosition="2" DTS:Length="10" DTS:ObjectName="StationId"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="3" DTS:DTSID="{7B53536D-4992-4329-A2ED-58EE72B4F92E}" DTS:ObjectName="WindDirection"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="5" DTS:DTSID="{BDF0C7F7-C579-4FF8-9A91-2EB62ED2B36B}" DTS:ObjectName="WindSpeed"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="5" DTS:DTSID="{5B54AD0C-543F-4FE8-AD1D-912DC9AF9C10}" DTS:ObjectName="WindGust"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="5" DTS:DTSID="{8564B4BC-B618-431C-8FE3-C3F26D9FB715}" DTS:ObjectName="WaveHeight"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="3" DTS:DTSID="{E05ECB97-B5E7-4672-8A38-D3AFA9593B2F}" DTS:ObjectName="DominantWavePeriod"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="5" DTS:DTSID="{E049160D-E88A-4968-BDC7-BBB7D26F69FD}" DTS:ObjectName="AverageWavePeriod"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="3" DTS:DTSID="{8A0EAD9D-5314-4BA2-BF70-DCB2E30F0192}" DTS:ObjectName="WaveDirection"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="5" DTS:DTSID="{05EA593A-F5B2-474A-B5D7-DB19E41C0936}" DTS:ObjectName="SeaLevelPressue"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="5" DTS:DTSID="{D066B565-FCC1-4C69-A5A7-6A9153FE403F}" DTS:ObjectName="AirTemperature"></DTS:CacheColumn>
-            <DTS:CacheColumn DTS:CreationName="" DTS:DataType="5" DTS:DTSID="{3136AC39-1F3F-4BB5-9E1D-72ED80864523}" DTS:ObjectName="WaterTemperature"></DTS:CacheColumn>
+            <DTS:CacheColumn
+              DTS:DataType="135"
+              DTS:IndexPosition="1"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{F76379D6-1759-453B-924B-3E4DA8C7D7AB}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="10"
+              DTS:CodePage="1252"
+              DTS:IndexPosition="2"
+              DTS:ObjectName="StationId"
+              DTS:DTSID="{33A8EBC8-ADBD-418D-8954-0E7EF8358944}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="3"
+              DTS:ObjectName="WindDirection"
+              DTS:DTSID="{B7E007BB-CFEB-4ABA-8273-032E38C723E4}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="5"
+              DTS:ObjectName="WindSpeed"
+              DTS:DTSID="{899E7E4A-53BB-4571-8365-BEEAF9948C7A}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="5"
+              DTS:ObjectName="WindGust"
+              DTS:DTSID="{5C830E3F-7C09-486A-8D49-026BB8503DA3}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="5"
+              DTS:ObjectName="WaveHeight"
+              DTS:DTSID="{76E58101-799E-4B8E-B267-80B7AA882DFB}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="3"
+              DTS:ObjectName="DominantWavePeriod"
+              DTS:DTSID="{D132610C-6463-48C3-BABA-89CF67C9E1EB}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="5"
+              DTS:ObjectName="AverageWavePeriod"
+              DTS:DTSID="{8732D42D-3157-4F50-876F-B45B2D675E13}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="3"
+              DTS:ObjectName="WaveDirection"
+              DTS:DTSID="{DDB68381-E782-40E9-9E4F-D691B812FA32}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="5"
+              DTS:ObjectName="SeaLevelPressue"
+              DTS:DTSID="{C977C8B7-6287-4823-A026-07DB9EA94FBD}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="5"
+              DTS:ObjectName="AirTemperature"
+              DTS:DTSID="{62E49A4C-A4A0-496A-B61B-99D1137664EC}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="5"
+              DTS:ObjectName="WaterTemperature"
+              DTS:DTSID="{776E2EF5-B224-4F28-96FC-4D0F1A1FFD29}"
+              DTS:CreationName="" />
           </DTS:CacheColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[NOAA MS SQL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8FC619EF-D89E-4615-8C79-D7A7190360A4}"
+      DTS:ObjectName="NOAA MS SQL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;initial catalog=NOAA;provider=SQLNCLI11.1;integrated security=SSPI;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Realtime NDBC Meteorological]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{22A96D3E-961B-42AE-8108-1A7FC855EDE3}"
+      DTS:ObjectName="Realtime NDBC Meteorological">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="http://www.ndbc.noaa.gov/data/realtime2/42012.txt">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://www.ndbc.noaa.gov/data/realtime2/42012.txt">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAARD082dUmdRj/a0nrREgWkqE3ktBHzoxgCO5rBDfleVAAAAAAOgAAAAAIAACAAAAAxZ6xqPPw9qtWOJLPLvrUCuy5DpLKiSy1NeD7s6D4GWxAAAAD1qlEq0ApJZJq618jtPlWxQAAAAEsWjZyXkyTKQNpFnHqajSfNo+9+7DTLm7XQc0BhyEemqtG+AD5HqDxI7c2ACAKk8W6e8X4hgAHUKgRFPKA3LHY</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA+dlY5HxnKoEUelxuqHNkrVQ6E1T1/oBr+sQM0a7sqZAAAAAAOgAAAAAIAACAAAAAB0hl9yy3TRaCIhgOKzE6Fn8ar+MX1cGbzeBMZqfJK9BAAAABCKVTZBHiuo/v7D8RbWWEyQAAAAGDYBEIWMN+3er/Zc8qXFCkvlgMreMDOmbEOVDeebWz3aHgb6daMnh/PRUfMQQNoZ3e9gJvX4+e4bC1HoAe0lWE</DTS:Property>
+          </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
-    <DTS:Variable DTS:CreationName="" DTS:DTSID="{DE998388-8C2F-45BA-B360-1A5C977BC11E}" DTS:IncludeInDebugDump="2345" DTS:Namespace="User" DTS:ObjectName="URL_FF_Meteorological">
-      <DTS:VariableValue DTS:DataType="8">http://www.ndbc.noaa.gov/data/realtime2/42012.txt</DTS:VariableValue>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{08605FDF-176F-4018-A0C5-2CEE94321D91}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Buoy">
+      <DTS:VariableValue
+        DTS:DataType="8">42012</DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable DTS:CreationName="" DTS:DTSID="{AAE5789A-198C-43F3-B304-58549D040EE1}" DTS:IncludeInDebugDump="2345" DTS:Namespace="User" DTS:ObjectName="SourceCacheQuery">
-      <DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0374F873-D199-496A-814B-69BC635E44BC}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count_Duplicate_Errors">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable DTS:CreationName="" DTS:DTSID="{995C4BC2-C638-4288-8CB8-1076F62158AA}" DTS:IncludeInDebugDump="2345" DTS:Namespace="User" DTS:ObjectName="FF_Directory">
-      <DTS:VariableValue DTS:DataType="8">C:\Users\sirki\</DTS:VariableValue>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{45E6474D-8FFF-4355-819A-7AAB6BDEF419}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count_Inserted">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable DTS:CreationName="" DTS:DTSID="{0D23BB11-CFFE-4174-8719-84D41EDAB38E}" DTS:IncludeInDebugDump="2345" DTS:Namespace="User" DTS:ObjectName="Buoy">
-      <DTS:VariableValue DTS:DataType="8">42012</DTS:VariableValue>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7E39302F-552A-461C-B630-6EA9BB104CA0}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count_Matches">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable DTS:CreationName="" DTS:DTSID="{90D128E5-8077-4FE9-8D72-13D77FBAB4CA}" DTS:IncludeInDebugDump="6789" DTS:Namespace="User" DTS:ObjectName="Count_Duplicate_Errors">
-      <DTS:VariableValue DTS:DataType="3">0</DTS:VariableValue>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F5B54F4B-F499-40F4-8FFD-C55F92E1D869}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FF_Directory">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\sirki\</DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable DTS:CreationName="" DTS:DTSID="{C122F95D-85BD-40ED-AE1A-D000ADA9E661}" DTS:IncludeInDebugDump="6789" DTS:Namespace="User" DTS:ObjectName="Count_Matches">
-      <DTS:VariableValue DTS:DataType="3">0</DTS:VariableValue>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8DC60CE9-C440-45E5-B279-D1FE1B128F7F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceCacheQuery">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable DTS:CreationName="" DTS:DTSID="{CF7781B0-A1E9-4C3E-BF30-21D413F06199}" DTS:IncludeInDebugDump="6789" DTS:Namespace="User" DTS:ObjectName="Count_Inserted">
-      <DTS:VariableValue DTS:DataType="3">0</DTS:VariableValue>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CBCF426D-2D21-42EB-846F-2987C3974002}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="URL_FF_Meteorological">
+      <DTS:VariableValue
+        DTS:DataType="8">http://www.ndbc.noaa.gov/data/realtime2/42012.txt</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
-    <DTS:Executable DTS:CreationName="Microsoft.Pipeline" DTS:DTSID="{8042F805-D4D2-410C-BE42-162F8AB30F6D}" DTS:ExecutableType="Microsoft.Pipeline" DTS:LocaleID="-1" DTS:ObjectName="Cache Meteorological Data" DTS:refId="Package\Cache Meteorological Data" DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+    <DTS:Executable
+      DTS:refId="Package\Cache Meteorological Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DTSID="{EA480925-1BEA-46A4-9F13-751C74B3841D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cache Meteorological Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
       <DTS:ObjectData>
-        <pipeline BLOBTempStoragePath="" bufferTempStoragePath="" version="1">
+        <pipeline
+          BLOBTempStoragePath=""
+          bufferTempStoragePath=""
+          version="1">
           <components>
-            <component componentClassID="Microsoft.OLEDBSource" contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7" name="Meteorological Source" refId="Package\Cache Meteorological Data\Meteorological Source" usesDispositions="true" version="7">
-              <connections>
-                <connection connectionManagerID="{9E808298-D0D4-4479-AA63-57199CD741E5}:external" connectionManagerRefId="Package.ConnectionManagers[NOAA MS SQL]" description="The OLE DB runtime connection used to access the database." name="OleDbConnection" refId="Package\Cache Meteorological Data\Meteorological Source.Connections[OleDbConnection]"></connection>
-              </connections>
-              <outputs>
-                <output name="Output" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output]">
-                  <externalMetadataColumns isUsed="True">
-                    <externalMetadataColumn dataType="dbTimeStamp" name="Date" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[Date]"></externalMetadataColumn>
-                    <externalMetadataColumn codePage="1252" dataType="str" length="10" name="StationId" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[StationId]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="i4" name="WindDirection" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindDirection]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="r8" name="WindSpeed" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindSpeed]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="r8" name="WindGust" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindGust]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="r8" name="WaveHeight" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveHeight]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="i4" name="DominantWavePeriod" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[DominantWavePeriod]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="r8" name="AverageWavePeriod" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AverageWavePeriod]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="i4" name="WaveDirection" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveDirection]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="r8" name="SeaLevelPressue" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[SeaLevelPressue]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="r8" name="AirTemperature" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AirTemperature]"></externalMetadataColumn>
-                    <externalMetadataColumn dataType="r8" name="WaterTemperature" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaterTemperature]"></externalMetadataColumn>
-                  </externalMetadataColumns>
-                  <outputColumns>
-                    <outputColumn dataType="dbTimeStamp" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[Date]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[Date]" name="Date" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[Date]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn codePage="1252" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[StationId]" length="10" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[StationId]" name="StationId" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[StationId]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="i4" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindDirection]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindDirection]" name="WindDirection" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindDirection]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindSpeed]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindSpeed]" name="WindSpeed" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindSpeed]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindGust]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindGust]" name="WindGust" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindGust]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveHeight]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveHeight]" name="WaveHeight" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveHeight]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="i4" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[DominantWavePeriod]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[DominantWavePeriod]" name="DominantWavePeriod" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[DominantWavePeriod]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AverageWavePeriod]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AverageWavePeriod]" name="AverageWavePeriod" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AverageWavePeriod]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="i4" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveDirection]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveDirection]" name="WaveDirection" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveDirection]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[SeaLevelPressue]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[SeaLevelPressue]" name="SeaLevelPressue" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[SeaLevelPressue]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AirTemperature]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AirTemperature]" name="AirTemperature" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AirTemperature]" truncationRowDisposition="FailComponent"></outputColumn>
-                    <outputColumn dataType="r8" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaterTemperature]" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaterTemperature]" name="WaterTemperature" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaterTemperature]" truncationRowDisposition="FailComponent"></outputColumn>
-                  </outputColumns>
-                </output>
-                <output isErrorOut="true" name="Error" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error]">
-                  <externalMetadataColumns></externalMetadataColumns>
-                  <outputColumns>
-                    <outputColumn dataType="dbTimeStamp" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[Date]" name="Date" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[Date]"></outputColumn>
-                    <outputColumn codePage="1252" dataType="str" length="10" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[StationId]" name="StationId" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[StationId]"></outputColumn>
-                    <outputColumn dataType="i4" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindDirection]" name="WindDirection" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindDirection]"></outputColumn>
-                    <outputColumn dataType="r8" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindSpeed]" name="WindSpeed" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindSpeed]"></outputColumn>
-                    <outputColumn dataType="r8" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindGust]" name="WindGust" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindGust]"></outputColumn>
-                    <outputColumn dataType="r8" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveHeight]" name="WaveHeight" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveHeight]"></outputColumn>
-                    <outputColumn dataType="i4" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[DominantWavePeriod]" name="DominantWavePeriod" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[DominantWavePeriod]"></outputColumn>
-                    <outputColumn dataType="r8" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AverageWavePeriod]" name="AverageWavePeriod" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AverageWavePeriod]"></outputColumn>
-                    <outputColumn dataType="i4" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveDirection]" name="WaveDirection" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveDirection]"></outputColumn>
-                    <outputColumn dataType="r8" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[SeaLevelPressue]" name="SeaLevelPressue" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[SeaLevelPressue]"></outputColumn>
-                    <outputColumn dataType="r8" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AirTemperature]" name="AirTemperature" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AirTemperature]"></outputColumn>
-                    <outputColumn dataType="r8" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaterTemperature]" name="WaterTemperature" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaterTemperature]"></outputColumn>
-                    <outputColumn dataType="i4" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorCode]" name="ErrorCode" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorCode]" specialFlags="1"></outputColumn>
-                    <outputColumn dataType="i4" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorColumn]" name="ErrorColumn" refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorColumn]" specialFlags="2"></outputColumn>
-                  </outputColumns>
-                </output>
-              </outputs>
+            <component
+              refId="Package\Cache Meteorological Data\Meteorological Cache"
+              componentClassID="Microsoft.Cache"
+              contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              name="Meteorological Cache"
+              version="1">
               <properties>
-                <property dataType="System.Int32" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." name="CommandTimeout">0</property>
-                <property dataType="System.String" description="Specifies the name of the database object used to open a rowset." name="OpenRowset"></property>
-                <property dataType="System.String" description="Specifies the variable that contains the name of the database object used to open a rowset." name="OpenRowsetVariable"></property>
-                <property dataType="System.String" description="The SQL command to be executed." name="SqlCommand" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
-                        [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological];
-                        </property>
-                <property dataType="System.String" description="The variable that contains the SQL command to be executed." name="SqlCommandVariable"></property>
-                <property dataType="System.Int32" description="Specifies the column code page to use when code page information is unavailable from the data source." name="DefaultCodePage">1252</property>
-                <property dataType="System.Boolean" description="Forces the use of the DefaultCodePage property value when describing character data." name="AlwaysUseDefaultCodePage">false</property>
-                <property dataType="System.Int32" description="Specifies the mode used to access the database." name="AccessMode" typeConverter="AccessMode">2</property>
-                <property dataType="System.String" description="The mappings between the parameters in the SQL command and variables." name="ParameterMapping"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
               </properties>
-            </component>
-            <component componentClassID="Microsoft.Cache" contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1" name="Meteorological Cache" refId="Package\Cache Meteorological Data\Meteorological Cache" version="1">
               <connections>
-                <connection connectionManagerID="{B8E1FA66-2718-4FA8-87D8-5E3778D473E8}:external" connectionManagerRefId="Package.ConnectionManagers[MeteorologicalLookupCache]" description="The connection used to access the cache." name="CacheConnection" refId="Package\Cache Meteorological Data\Meteorological Cache.Connections[CacheConnection]"></connection>
+                <connection
+                  refId="Package\Cache Meteorological Data\Meteorological Cache.Connections[CacheConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MeteorologicalLookupCache]"
+                  connectionManagerRefId="Package.ConnectionManagers[MeteorologicalLookupCache]"
+                  description="The connection used to access the cache."
+                  name="CacheConnection" />
               </connections>
               <inputs>
-                <input hasSideEffects="true" name="Meteorological Source_Output_Meteorological Cache" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache]">
-                  <externalMetadataColumns></externalMetadataColumns>
+                <input
+                  refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache]"
+                  hasSideEffects="true"
+                  name="Meteorological Source_Output_Meteorological Cache">
                   <inputColumns>
-                    <inputColumn cachedDataType="dbTimeStamp" cachedName="Date" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[Date]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[Date]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[Date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Date"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[Date]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">Date</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">Date</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedCodepage="1252" cachedDataType="str" cachedLength="10" cachedName="StationId" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[StationId]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[StationId]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[StationId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="StationId"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[StationId]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">StationId</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">StationId</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="i4" cachedName="WindDirection" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindDirection]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WindDirection]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WindDirection]"
+                      cachedDataType="i4"
+                      cachedName="WindDirection"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindDirection]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">WindDirection</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">WindDirection</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="r8" cachedName="WindSpeed" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindSpeed]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WindSpeed]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WindSpeed]"
+                      cachedDataType="r8"
+                      cachedName="WindSpeed"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindSpeed]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">WindSpeed</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">WindSpeed</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="r8" cachedName="WindGust" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindGust]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WindGust]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WindGust]"
+                      cachedDataType="r8"
+                      cachedName="WindGust"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindGust]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">WindGust</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">WindGust</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="r8" cachedName="WaveHeight" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveHeight]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WaveHeight]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WaveHeight]"
+                      cachedDataType="r8"
+                      cachedName="WaveHeight"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveHeight]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">WaveHeight</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">WaveHeight</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="i4" cachedName="DominantWavePeriod" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[DominantWavePeriod]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[DominantWavePeriod]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[DominantWavePeriod]"
+                      cachedDataType="i4"
+                      cachedName="DominantWavePeriod"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[DominantWavePeriod]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">DominantWavePeriod</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">DominantWavePeriod</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="r8" cachedName="AverageWavePeriod" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AverageWavePeriod]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[AverageWavePeriod]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[AverageWavePeriod]"
+                      cachedDataType="r8"
+                      cachedName="AverageWavePeriod"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AverageWavePeriod]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">AverageWavePeriod</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">AverageWavePeriod</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="i4" cachedName="WaveDirection" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveDirection]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WaveDirection]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WaveDirection]"
+                      cachedDataType="i4"
+                      cachedName="WaveDirection"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveDirection]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">WaveDirection</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">WaveDirection</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="r8" cachedName="SeaLevelPressue" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[SeaLevelPressue]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[SeaLevelPressue]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[SeaLevelPressue]"
+                      cachedDataType="r8"
+                      cachedName="SeaLevelPressue"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[SeaLevelPressue]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">SeaLevelPressue</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">SeaLevelPressue</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="r8" cachedName="AirTemperature" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AirTemperature]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[AirTemperature]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[AirTemperature]"
+                      cachedDataType="r8"
+                      cachedName="AirTemperature"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AirTemperature]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">AirTemperature</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">AirTemperature</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn cachedDataType="r8" cachedName="WaterTemperature" lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaterTemperature]" refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WaterTemperature]">
+                    <inputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache].Columns[WaterTemperature]"
+                      cachedDataType="r8"
+                      cachedName="WaterTemperature"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaterTemperature]">
                       <properties>
-                        <property dataType="System.String" description="The cache column associated with the input column." name="CacheColumnName">WaterTemperature</property>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">WaterTemperature</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
+                  <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
-                <output name="Output" refId="Package\Cache Meteorological Data\Meteorological Cache.Outputs[Output]" synchronousInputId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache]">
-                  <externalMetadataColumns></externalMetadataColumns>
+                <output
+                  refId="Package\Cache Meteorological Data\Meteorological Cache.Outputs[Output]"
+                  name="Output"
+                  synchronousInputId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache]">
+                  <externalMetadataColumns />
                 </output>
               </outputs>
+            </component>
+            <component
+              refId="Package\Cache Meteorological Data\Meteorological Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              name="Meteorological Source"
+              usesDispositions="true"
+              version="7">
               <properties>
-                <property dataType="System.Boolean" description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used." name="TreatDuplicateKeysAsError">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
+                        [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological];
+                        </property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
               </properties>
+              <connections>
+                <connection
+                  refId="Package\Cache Meteorological Data\Meteorological Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[NOAA MS SQL]"
+                  connectionManagerRefId="Package.ConnectionManagers[NOAA MS SQL]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[Date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[Date]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[StationId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[StationId]"
+                      length="10"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[StationId]"
+                      name="StationId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindDirection]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindDirection]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindDirection]"
+                      name="WindDirection"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindSpeed]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindSpeed]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindSpeed]"
+                      name="WindSpeed"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindGust]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindGust]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WindGust]"
+                      name="WindGust"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveHeight]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveHeight]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveHeight]"
+                      name="WaveHeight"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[DominantWavePeriod]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[DominantWavePeriod]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[DominantWavePeriod]"
+                      name="DominantWavePeriod"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AverageWavePeriod]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AverageWavePeriod]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AverageWavePeriod]"
+                      name="AverageWavePeriod"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveDirection]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveDirection]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaveDirection]"
+                      name="WaveDirection"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[SeaLevelPressue]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[SeaLevelPressue]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[SeaLevelPressue]"
+                      name="SeaLevelPressue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AirTemperature]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AirTemperature]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[AirTemperature]"
+                      name="AirTemperature"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaterTemperature]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaterTemperature]"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].Columns[WaterTemperature]"
+                      name="WaterTemperature"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[Date]"
+                      dataType="dbTimeStamp"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[StationId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="StationId" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindDirection]"
+                      dataType="i4"
+                      name="WindDirection" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindSpeed]"
+                      dataType="r8"
+                      name="WindSpeed" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WindGust]"
+                      dataType="r8"
+                      name="WindGust" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveHeight]"
+                      dataType="r8"
+                      name="WaveHeight" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[DominantWavePeriod]"
+                      dataType="i4"
+                      name="DominantWavePeriod" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AverageWavePeriod]"
+                      dataType="r8"
+                      name="AverageWavePeriod" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaveDirection]"
+                      dataType="i4"
+                      name="WaveDirection" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[SeaLevelPressue]"
+                      dataType="r8"
+                      name="SeaLevelPressue" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[AirTemperature]"
+                      dataType="r8"
+                      name="AirTemperature" />
+                    <externalMetadataColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output].ExternalColumns[WaterTemperature]"
+                      dataType="r8"
+                      name="WaterTemperature" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error]"
+                  isErrorOut="true"
+                  name="Error">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[Date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[StationId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[StationId]"
+                      name="StationId" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindDirection]"
+                      dataType="i4"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindDirection]"
+                      name="WindDirection" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindSpeed]"
+                      dataType="r8"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindSpeed]"
+                      name="WindSpeed" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindGust]"
+                      dataType="r8"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WindGust]"
+                      name="WindGust" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveHeight]"
+                      dataType="r8"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveHeight]"
+                      name="WaveHeight" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[DominantWavePeriod]"
+                      dataType="i4"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[DominantWavePeriod]"
+                      name="DominantWavePeriod" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AverageWavePeriod]"
+                      dataType="r8"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AverageWavePeriod]"
+                      name="AverageWavePeriod" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveDirection]"
+                      dataType="i4"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaveDirection]"
+                      name="WaveDirection" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[SeaLevelPressue]"
+                      dataType="r8"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[SeaLevelPressue]"
+                      name="SeaLevelPressue" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AirTemperature]"
+                      dataType="r8"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[AirTemperature]"
+                      name="AirTemperature" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaterTemperature]"
+                      dataType="r8"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[WaterTemperature]"
+                      name="WaterTemperature" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Error].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
             </component>
           </components>
           <paths>
-            <path endId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache]" name="Meteorological Source_Output_Meteorological Cache" refId="Package\Cache Meteorological Data.Paths[Meteorological Source_Output_Meteorological Cache]" startId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output]"></path>
+            <path
+              refId="Package\Cache Meteorological Data.Paths[Meteorological Source_Output_Meteorological Cache]"
+              endId="Package\Cache Meteorological Data\Meteorological Cache.Inputs[Meteorological Source_Output_Meteorological Cache]"
+              name="Meteorological Source_Output_Meteorological Cache"
+              startId="Package\Cache Meteorological Data\Meteorological Source.Outputs[Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable DTS:CreationName="Microsoft.ScriptTask" DTS:DTSID="{416148B1-BDCA-443E-A30C-4CE6E1D28906}" DTS:ExecutableType="Microsoft.ScriptTask" DTS:LocaleID="-1" DTS:ObjectName="ScriptTask 1" DTS:refId="Package\ScriptTask 1">
+    <DTS:Executable
+      DTS:refId="Package\Fetch Meteorological FF"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:DTSID="{D8125713-BCCA-4FA4-ADC8-E9C0C193EB16}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Fetch Meteorological FF"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
       <DTS:ObjectData>
-        <ScriptProject Language="CSharp" Name="ST_232fecafb70a4e8a904cc21f8870eed0" ReadOnlyVariables="User::Buoy,User::FF_Directory" VSTAMajorVersion="3" VSTAMinorVersion="0">
-          <BinaryItem Name="\bin\release\ST_232fecafb70a4e8a904cc21f8870eed0.csproj.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1vZGUuDQ0KJAAAAAAAAABQRQAATAEDAJ7r5lcAAAAAAAAAAOAAAiELAQsAAA4AAAAGAAAAAAAAji0AAAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAAABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAADwtAABPAAAAAEAAADADAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAlA0AAAAgAAAADgAAAAIAAAAAAAAAAAAAAAAAACAAAGAucnNyYwAAADADAAAAQAAAAAQAAAAQAAAAAAAAAAAAAAAAAABAAABALnJlbG9jAAAMAAAAAGAAAAACAAAAFAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABwLQAAAAAAAEgAAAACAAUAkCEAAKwLAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBgCvAAAAAQAAEQIoBAAACm8FAAAKcgEAAHBvBgAAChRvBwAACgsHcwgAAAoKAigEAAAKbwkAAApyOwAAcG8KAAAKbwsAAAp0EAAAAQIoBAAACm8JAAAKcmEAAHBvCgAACm8LAAAKdBAAAAFydwAAcCgMAAAKDAYIF28NAAAK3iwNAigEAAAKbw4AAAoXCW8PAAAKbxAAAAoJbxEAAApygQAAcBZvEgAACibeAAIoBAAAChZvEwAACioAARAAAAAAAAB2dgAsEgAAAR4CKBQAAAoqGn4EAAAEKi5zBAAABoAEAAAEKh4CKBYAAAoqHgIoGQAACioAEzACAC0AAAACAAARfgUAAAQtIHKDAABw0AUAAAIoGgAACm8bAAAKcxwAAAoKBoAFAAAEfgUAAAQqGn4GAAAEKh4CgAYAAAQqQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAhAMAACN+AADwAwAAWAUAACNTdHJpbmdzAAAAAEgJAAAEAQAAI1VTAEwKAAAQAAAAI0dVSUQAAABcCgAAUAEAACNCbG9iAAAAAAAAAAIAAAFXHaIBCQIAAAD6JTMAFgAAAQAAABsAAAAFAAAABgAAAAkAAAABAAAAHQAAAAIAAAAJAAAAAgAAAAIAAAADAAAABAAAAAEAAAAEAAAAAQAAAAAACgABAAAAAAAGAOMAugAKAA8BCAEOACkBFAEKAEEBCAEKAKABjwEKANEBvAEKAEcCJwIKAGcCJwIGALACugAGANICugASACsDCwMSAEcDCwMSAHQDCwMSAIkDCwMSAKEDCwMKALQDCAEGAM8DugAKAO4DCAEKAAoE+AMKAFIEJwIOAIwEdAQKALYEowQKANMECAEKANgECAEKAPwE+AMOACgFEgUOAEEFEgUAAAAAAQAAAAAAAQABAAEAEAA5AAAABQABAAEAAwEAAEQAAAAJAAEAAwAAARAAUgBbAA0ABAADAAAAEACRAFsAEQAFAAYABgZTARcAVoBbARoAVoBjARoAEQBrASgAEQCwATYAEQDdAToAUCAAAAAAhgBIARMAAQAcIQAAAACGGE0BEwABACQhAAAAAJYIewEsAAEANyEAAAAAhhhNARMAAQArIQAAAACRGG0EswABAD8hAAAAAIMYTQETAAEASCEAAAAAkwjtAT4AAQCBIQAAAACTCAECQwABAIghAAAAAJMIDQJIAAEAAAABACECOQBNAVgAQQBNARMASQBNARMACQDkAl0AUQA3A2IAWQBZA2cAYQBiA20AaQBNAXIAUQCTA3cAcQBZA3wAeQCqA4IAgQC7A4YAaQDCA40AUQDjA5MAkQAVBJgAIQAkBJ0AkQAtBJ0AiQA5BKEAUQBDBFgACQBNARMAoQBNARMAGQBNARMAqQBNAbcAsQBNARMAIQBNARMAuQDqBP4AuQAFBQUBKQBNAQoB0QBNARYBCAAIAB4ACAAMACMALgALACUBLgATAC4BQwAbACMASQDrABwBaQDrABwBgQCrACMAowCrACMAowDDACMAowC7AL0AqgARAQQAAQAFAAIAAACHATEAAACgAU4AAAAZAlMAAgADAAMAAgAHAAUAAgAIAAcAAQAJAAcABIAAAAAAAAAAAAAAAAAAAAAAhQIAAAwAAAAAAAAAAAAAAAEAmwAAAAAABAAAAAAAAAAAAAAACgD/AAAAAAAEAAAAAAAAAAAAAAAKAAgBAAAAAAwAAAAAAAAAAAAAAAEA7AIAAAAAAwACAAAAADxNb2R1bGU+AFNUXzIzMmZlY2FmYjcwYTRlOGE5MDRjYzIxZjg4NzBlZWQwLmNzcHJvai5kbGwAU2NyaXB0TWFpbgBTY3JpcHRSZXN1bHRzAFNldHRpbmdzAFNUXzIzMmZlY2FmYjcwYTRlOGE5MDRjYzIxZjg4NzBlZWQwLmNzcHJvai5Qcm9wZXJ0aWVzAFJlc291cmNlcwBNaWNyb3NvZnQuU3FsU2VydmVyLlNjcmlwdFRhc2sATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuVGFza3MuU2NyaXB0VGFzawBWU1RBUlRTY3JpcHRPYmplY3RNb2RlbEJhc2UAbXNjb3JsaWIAU3lzdGVtAEVudW0AU3lzdGVtLkNvbmZpZ3VyYXRpb24AQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAT2JqZWN0AE1haW4ALmN0b3IAdmFsdWVfXwBTdWNjZXNzAEZhaWx1cmUAZGVmYXVsdEluc3RhbmNlAGdldF9EZWZhdWx0AERlZmF1bHQAU3lzdGVtLlJlc291cmNlcwBSZXNvdXJjZU1hbmFnZXIAcmVzb3VyY2VNYW4AU3lzdGVtLkdsb2JhbGl6YXRpb24AQ3VsdHVyZUluZm8AcmVzb3VyY2VDdWx0dXJlAGdldF9SZXNvdXJjZU1hbmFnZXIAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAQ3VsdHVyZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAU1RfMjMyZmVjYWZiNzBhNGU4YTkwNGNjMjFmODg3MGVlZDAuY3Nwcm9qAFNTSVNTY3JpcHRUYXNrRW50cnlQb2ludEF0dHJpYnV0ZQBTY3JpcHRPYmplY3RNb2RlbABnZXRfRHRzAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lAENvbm5lY3Rpb25zAGdldF9Db25uZWN0aW9ucwBDb25uZWN0aW9uTWFuYWdlcgBnZXRfSXRlbQBBY3F1aXJlQ29ubmVjdGlvbgBIdHRwQ2xpZW50Q29ubmVjdGlvbgBWYXJpYWJsZXMAZ2V0X1ZhcmlhYmxlcwBWYXJpYWJsZQBnZXRfVmFsdWUAU3RyaW5nAENvbmNhdABEb3dubG9hZEZpbGUARXZlbnRzT2JqZWN0V3JhcHBlcgBnZXRfRXZlbnRzAEV4Y2VwdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBNZXRob2RCYXNlAGdldF9UYXJnZXRTaXRlAFRvU3RyaW5nAGdldF9NZXNzYWdlAEZpcmVFcnJvcgBzZXRfVGFza1Jlc3VsdABDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0ZQAuY2N0b3IAU3lzdGVtLkNvZGVEb20uQ29tcGlsZXIAR2VuZXJhdGVkQ29kZUF0dHJpYnV0ZQBTeXN0ZW0uRGlhZ25vc3RpY3MARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBUeXBlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAEFzc2VtYmx5AGdldF9Bc3NlbWJseQBTeXN0ZW0uQ29tcG9uZW50TW9kZWwARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZVN0YXRlAAAAADlSAGUAYQBsAHQAaQBtAGUAIABOAEQAQgBDACAATQBlAHQAZQBvAHIAbwBsAG8AZwBpAGMAYQBsAAAlVQBzAGUAcgA6ADoARgBGAF8ARABpAHIAZQBjAHQAbwByAHkAABVVAHMAZQByADoAOgBCAHUAbwB5AAAJLgB0AHgAdAAAAQB/UwBUAF8AMgAzADIAZgBlAGMAYQBmAGIANwAwAGEANABlADgAYQA5ADAANABjAGMAMgAxAGYAOAA4ADcAMABlAGUAZAAwAC4AYwBzAHAAcgBvAGoALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAACkW0kZVxNlRqbzQZxX2VEYAAiJhF3NgIDMkQi3elxWGTTgiQMgAAECBggDBhEMBAAAAAAEAQAAAAMGEhAEAAASEAQIABIQAwYSFQMGEhkEAAASFQQAABIZBQABARIZBAgAEhUECAASGQQgAQEIBCAAEikEIAASLQUgARIxHAQgARwcBCABARwEIAASOQUgARI9HAMgABwGAAMODg4OBSACAQ4CBCAAEkUEIAASTQMgAA4IIAUCCA4ODggIBwQSNRwOEkkDAAABBSACAQ4OQAEAM1N5c3RlbS5SZXNvdXJjZXMuVG9vbHMuU3Ryb25nbHlUeXBlZFJlc291cmNlQnVpbGRlcgcyLjAuMC4wAAAGAAESXRFhBCAAEmUGIAIBDhJlBAcBEhUFIAEBEW0IAQACAAAAAAAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBAAAAZC0AAAAAAAAAAAAAfi0AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAtAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhAAADUAgAAAAAAAAAAAADUAjQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv/gAAAQAAAAAAAAAAAAAAAAAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAAALAENAIAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAEAIAAAEAMAAwADAAMAAwADQAYgAwAAAALAACAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAACAAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADAALgAwAC4AMAAuADAAAACAAC8AAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADIAMwAyAGYAZQBjAGEAZgBiADcAMABhADQAZQA4AGEAOQAwADQAYwBjADIAMQBmADgAOAA3ADAAZQBlAGQAMAAuAGMAcwBwAHIAbwBqAC4AZABsAGwAAAAAACgAAgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAACAAAACIAC8AAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBUAF8AMgAzADIAZgBlAGMAYQBmAGIANwAwAGEANABlADgAYQA5ADAANABjAGMAMgAxAGYAOAA4ADcAMABlAGUAZAAwAC4AYwBzAHAAcgBvAGoALgBkAGwAbAAAAAAANAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMAAuADAALgAwAC4AMAAAADgACAABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAwAC4AMAAuADAALgAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAADAAAAJA9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
-          <ProjectItem Encoding="UTF8" Name="ScriptMain.cs"><![CDATA[
-                    using System;
-                    using System.Data;
-                    using Microsoft.SqlServer.Dts.Runtime;
-                    using System.Windows.Forms;
-    
-                    // if SSIS2012, use the following line:
-                    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
-    
-                    // if earlier version, use the next line instead of the above line:
-                    // [System.AddIn.AddIn("ScriptMain", Version = "1.0", Publisher = "", Description = "")]
-                    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
-                    {
-                    enum ScriptResults
-                    {
-                    Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
-                    Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
-                    };
-    
-            		public void Main()
-            		{
-                        try
-                        {
-                            Microsoft.SqlServer.Dts.Runtime.HttpClientConnection httpConn;
-                            Object obj;
-                            obj = Dts.Connections["Realtime NDBC Meteorological"].AcquireConnection(null);
-                            httpConn = new HttpClientConnection(obj);
-                            //httpConn.DownloadFile("C:\\Users\\sirki\\Desktop\\42067.txt", true);
-                            
-                            var file = (string)Dts.Variables["User::FF_Directory"].Value + (string)Dts.Variables["User::Buoy"].Value + ".txt";
-                            httpConn.DownloadFile(file, true);
-                        }
-                        catch (Exception e)
-                        {
-                            Dts.Events.FireError(1, e.TargetSite.ToString(), e.Message, "", 0);
-                        }
-                        // TODO: Add your code here
-                        Dts.TaskResult = (int)ScriptResults.Success;
-                    }
-                    }
-                ]]></ProjectItem>
-          <ProjectItem Encoding="UTF8" Name="Properties\Settings.settings"><![CDATA[<?xml version="1.0" encoding="iso-8859-1"?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)"  >
-    <Profiles>
-        <Profile Name="(Default)" />
-    </Profiles>
-    <Settings /></SettingsFile>
-]]></ProjectItem>
-          <ProjectItem Encoding="UTF8" Name="Properties\Settings.Designer.cs"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Settings.get_Default():ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Settings")]
-
-namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties
-{
-
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-
-        public static Settings Default
-        {
-            get
-            {
-                return defaultInstance;
-            }
-        }
-
-    }
-}]]></ProjectItem>
-          <ProjectItem Encoding="UTF8" Name="Properties\Resources.resx"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+        <ScriptProject
+          Name="ST_232fecafb70a4e8a904cc21f8870eed0"
+          VSTAMajorVersion="3"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::Buoy,User::FF_Directory">
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
     <!-- 
     Microsoft ResX Schema 
@@ -447,80 +1000,10 @@ namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    </root>
-]]></ProjectItem>
-          <ProjectItem Encoding="UTF8" Name="Properties\Resources.Designer.cs"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources.get_ResourceManager():System.Resources.ResourceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources.get_Culture():System.Globalization.CultureInfo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources.set_Culture(System.Globalization.CultureInfo):Void")]
-
-namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties {
-    using System;
-
-
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "2.0.0.0")]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
-        private static global::System.Resources.ResourceManager resourceMan;
-
-        private static global::System.Globalization.CultureInfo resourceCulture;
-
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
-        }
-
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get {
-                if ((resourceMan == null))
-                {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
-        }
-
-    }
-}]]></ProjectItem>
-          <ProjectItem Encoding="UTF16LE" Name="ST_232fecafb70a4e8a904cc21f8870eed0.csproj"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+    </root>]]></ProjectItem>
+          <ProjectItem
+            Name="ST_232fecafb70a4e8a904cc21f8870eed0.csproj"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
 	    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -599,7 +1082,7 @@ namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties {
     <ProjectExtensions>
         <VisualStudio>
             <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-                <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\InstallDir#\devenv.exe" />
+                <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" />
                 <Host Name="SSIS_ScriptTask" />
                 <ProjectClient>
                     <HostIdentifier>SSIS_ST120</HostIdentifier>
@@ -612,12 +1095,56 @@ namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties {
     </PropertyGroup>
     <PropertyGroup>
         <TargetFrameworkProfile></TargetFrameworkProfile>
-    </PropertyGroup></Project>
-]]></ProjectItem>
-          <ProjectItem Encoding="UTF16LE" Name="Project"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+    </PropertyGroup></Project>]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[
+                    using System;
+                    using System.Data;
+                    using Microsoft.SqlServer.Dts.Runtime;
+                    using System.Windows.Forms;
+    
+                    // if SSIS2012, use the following line:
+                    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    
+                    // if earlier version, use the next line instead of the above line:
+                    // [System.AddIn.AddIn("ScriptMain", Version = "1.0", Publisher = "", Description = "")]
+                    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+                    {
+                    enum ScriptResults
+                    {
+                    Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+                    Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+                    };
+    
+            		public void Main()
+            		{
+                        try
+                        {
+                            Microsoft.SqlServer.Dts.Runtime.HttpClientConnection httpConn;
+                            Object obj;
+                            obj = Dts.Connections["Realtime NDBC Meteorological"].AcquireConnection(null);
+                            httpConn = new HttpClientConnection(obj);
+                            //httpConn.DownloadFile("C:\\Users\\sirki\\Desktop\\42067.txt", true);
+                            
+                            var file = (string)Dts.Variables["User::FF_Directory"].Value + (string)Dts.Variables["User::Buoy"].Value + ".txt";
+                            httpConn.DownloadFile(file, true);
+                        }
+                        catch (Exception e)
+                        {
+                            Dts.Events.FireError(1, e.TargetSite.ToString(), e.Message, "", 0);
+                        }
+                        // TODO: Add your code here
+                        Dts.TaskResult = (int)ScriptResults.Success;
+                    }
+                    }
+                ]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:ProjectId>{4d711c1b-1bbc-450d-b964-964e8bfb4f9f}</msb:ProjectId>
+		<msb:ProjectId>{03d8cb8b-adb8-42cd-bc8a-50d39f47e3e9}</msb:ProjectId>
 		<msb:NoContent>Reference;Import;Folder</msb:NoContent>
 		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>ST_232fecafb70a4e8a904cc21f8870eed0</msb:DisplayName>
@@ -632,17 +1159,1480 @@ namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties {
 						<msb:Project Include="ST_232fecafb70a4e8a904cc21f8870eed0.csproj"/>
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Settings.get_Default():ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Settings")]
+
+namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties
+{
+
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
+
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+
+        public static Settings Default
+        {
+            get
+            {
+                return defaultInstance;
+            }
+        }
+
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="iso-8859-1"?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)"  >
+    <Profiles>
+        <Profile Name="(Default)" />
+    </Profiles>
+    <Settings /></SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources.get_ResourceManager():System.Resources.ResourceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources.get_Culture():System.Globalization.CultureInfo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources.set_Culture(System.Globalization.CultureInfo):Void")]
+
+namespace ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties {
+    using System;
+
+
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "2.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    internal class Resources
+    {
+
+        private static global::System.Resources.ResourceManager resourceMan;
+
+        private static global::System.Globalization.CultureInfo resourceCulture;
+
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager
+        {
+            get {
+                if ((resourceMan == null))
+                {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_232fecafb70a4e8a904cc21f8870eed0.csproj.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture
+        {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="\bin\release\ST_232fecafb70a4e8a904cc21f8870eed0.csproj.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAHz551cAAAAAAAAAAOAAAiELAQsAAA4AAAAGAAAAAAAAji0A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAADwtAABPAAAAAEAAADADAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAlA0AAAAgAAAADgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAADADAAAAQAAAAAQAAAAQAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAFAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABw
+LQAAAAAAAEgAAAACAAUAkCEAAKwLAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBgCvAAAAAQAAEQIoBAAACm8FAAAKcgEAAHBvBgAAChRv
+BwAACgsHcwgAAAoKAigEAAAKbwkAAApyOwAAcG8KAAAKbwsAAAp0EAAAAQIoBAAACm8JAAAKcmEA
+AHBvCgAACm8LAAAKdBAAAAFydwAAcCgMAAAKDAYIF28NAAAK3iwNAigEAAAKbw4AAAoXCW8PAAAK
+bxAAAAoJbxEAAApygQAAcBZvEgAACibeAAIoBAAAChZvEwAACioAARAAAAAAAAB2dgAsEgAAAR4C
+KBQAAAoqGn4EAAAEKi5zBAAABoAEAAAEKh4CKBYAAAoqHgIoGQAACioAEzACAC0AAAACAAARfgUA
+AAQtIHKDAABw0AUAAAIoGgAACm8bAAAKcxwAAAoKBoAFAAAEfgUAAAQqGn4GAAAEKh4CgAYAAAQq
+QlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAhAMAACN+AADwAwAAWAUAACNTdHJp
+bmdzAAAAAEgJAAAEAQAAI1VTAEwKAAAQAAAAI0dVSUQAAABcCgAAUAEAACNCbG9iAAAAAAAAAAIA
+AAFXHaIBCQIAAAD6JTMAFgAAAQAAABsAAAAFAAAABgAAAAkAAAABAAAAHQAAAAIAAAAJAAAAAgAA
+AAIAAAADAAAABAAAAAEAAAAEAAAAAQAAAAAACgABAAAAAAAGAOMAugAKAA8BCAEOACkBFAEKAEEB
+CAEKAKABjwEKANEBvAEKAEcCJwIKAGcCJwIGALACugAGANICugASACsDCwMSAEcDCwMSAHQDCwMS
+AIkDCwMSAKEDCwMKALQDCAEGAM8DugAKAO4DCAEKAAoE+AMKAFIEJwIOAIwEdAQKALYEowQKANME
+CAEKANgECAEKAPwE+AMOACgFEgUOAEEFEgUAAAAAAQAAAAAAAQABAAEAEAA5AAAABQABAAEAAwEA
+AEQAAAAJAAEAAwAAARAAUgBbAA0ABAADAAAAEACRAFsAEQAFAAYABgZTARcAVoBbARoAVoBjARoA
+EQBrASgAEQCwATYAEQDdAToAUCAAAAAAhgBIARMAAQAcIQAAAACGGE0BEwABACQhAAAAAJYIewEs
+AAEANyEAAAAAhhhNARMAAQArIQAAAACRGG0EswABAD8hAAAAAIMYTQETAAEASCEAAAAAkwjtAT4A
+AQCBIQAAAACTCAECQwABAIghAAAAAJMIDQJIAAEAAAABACECOQBNAVgAQQBNARMASQBNARMACQDk
+Al0AUQA3A2IAWQBZA2cAYQBiA20AaQBNAXIAUQCTA3cAcQBZA3wAeQCqA4IAgQC7A4YAaQDCA40A
+UQDjA5MAkQAVBJgAIQAkBJ0AkQAtBJ0AiQA5BKEAUQBDBFgACQBNARMAoQBNARMAGQBNARMAqQBN
+AbcAsQBNARMAIQBNARMAuQDqBP4AuQAFBQUBKQBNAQoB0QBNARYBCAAIAB4ACAAMACMALgALACUB
+LgATAC4BQwAbACMASQDrABwBaQDrABwBgQCrACMAowCrACMAowDDACMAowC7AL0AqgARAQQAAQAF
+AAIAAACHATEAAACgAU4AAAAZAlMAAgADAAMAAgAHAAUAAgAIAAcAAQAJAAcABIAAAAAAAAAAAAAA
+AAAAAAAAhQIAAAwAAAAAAAAAAAAAAAEAmwAAAAAABAAAAAAAAAAAAAAACgD/AAAAAAAEAAAAAAAA
+AAAAAAAKAAgBAAAAAAwAAAAAAAAAAAAAAAEA7AIAAAAAAwACAAAAADxNb2R1bGU+AFNUXzIzMmZl
+Y2FmYjcwYTRlOGE5MDRjYzIxZjg4NzBlZWQwLmNzcHJvai5kbGwAU2NyaXB0TWFpbgBTY3JpcHRS
+ZXN1bHRzAFNldHRpbmdzAFNUXzIzMmZlY2FmYjcwYTRlOGE5MDRjYzIxZjg4NzBlZWQwLmNzcHJv
+ai5Qcm9wZXJ0aWVzAFJlc291cmNlcwBNaWNyb3NvZnQuU3FsU2VydmVyLlNjcmlwdFRhc2sATWlj
+cm9zb2Z0LlNxbFNlcnZlci5EdHMuVGFza3MuU2NyaXB0VGFzawBWU1RBUlRTY3JpcHRPYmplY3RN
+b2RlbEJhc2UAbXNjb3JsaWIAU3lzdGVtAEVudW0AU3lzdGVtLkNvbmZpZ3VyYXRpb24AQXBwbGlj
+YXRpb25TZXR0aW5nc0Jhc2UAT2JqZWN0AE1haW4ALmN0b3IAdmFsdWVfXwBTdWNjZXNzAEZhaWx1
+cmUAZGVmYXVsdEluc3RhbmNlAGdldF9EZWZhdWx0AERlZmF1bHQAU3lzdGVtLlJlc291cmNlcwBS
+ZXNvdXJjZU1hbmFnZXIAcmVzb3VyY2VNYW4AU3lzdGVtLkdsb2JhbGl6YXRpb24AQ3VsdHVyZUlu
+Zm8AcmVzb3VyY2VDdWx0dXJlAGdldF9SZXNvdXJjZU1hbmFnZXIAZ2V0X0N1bHR1cmUAc2V0X0N1
+bHR1cmUAQ3VsdHVyZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAENvbXBp
+bGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUA
+U1RfMjMyZmVjYWZiNzBhNGU4YTkwNGNjMjFmODg3MGVlZDAuY3Nwcm9qAFNTSVNTY3JpcHRUYXNr
+RW50cnlQb2ludEF0dHJpYnV0ZQBTY3JpcHRPYmplY3RNb2RlbABnZXRfRHRzAE1pY3Jvc29mdC5T
+cWxTZXJ2ZXIuTWFuYWdlZERUUwBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lAENvbm5l
+Y3Rpb25zAGdldF9Db25uZWN0aW9ucwBDb25uZWN0aW9uTWFuYWdlcgBnZXRfSXRlbQBBY3F1aXJl
+Q29ubmVjdGlvbgBIdHRwQ2xpZW50Q29ubmVjdGlvbgBWYXJpYWJsZXMAZ2V0X1ZhcmlhYmxlcwBW
+YXJpYWJsZQBnZXRfVmFsdWUAU3RyaW5nAENvbmNhdABEb3dubG9hZEZpbGUARXZlbnRzT2JqZWN0
+V3JhcHBlcgBnZXRfRXZlbnRzAEV4Y2VwdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBNZXRob2RCYXNl
+AGdldF9UYXJnZXRTaXRlAFRvU3RyaW5nAGdldF9NZXNzYWdlAEZpcmVFcnJvcgBzZXRfVGFza1Jl
+c3VsdABDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0ZQAuY2N0b3IAU3lzdGVtLkNvZGVEb20uQ29t
+cGlsZXIAR2VuZXJhdGVkQ29kZUF0dHJpYnV0ZQBTeXN0ZW0uRGlhZ25vc3RpY3MARGVidWdnZXJO
+b25Vc2VyQ29kZUF0dHJpYnV0ZQBUeXBlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFu
+ZGxlAEFzc2VtYmx5AGdldF9Bc3NlbWJseQBTeXN0ZW0uQ29tcG9uZW50TW9kZWwARWRpdG9yQnJv
+d3NhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZVN0YXRlAAAAADlSAGUAYQBsAHQAaQBtAGUA
+IABOAEQAQgBDACAATQBlAHQAZQBvAHIAbwBsAG8AZwBpAGMAYQBsAAAlVQBzAGUAcgA6ADoARgBG
+AF8ARABpAHIAZQBjAHQAbwByAHkAABVVAHMAZQByADoAOgBCAHUAbwB5AAAJLgB0AHgAdAAAAQB/
+UwBUAF8AMgAzADIAZgBlAGMAYQBmAGIANwAwAGEANABlADgAYQA5ADAANABjAGMAMgAxAGYAOAA4
+ADcAMABlAGUAZAAwAC4AYwBzAHAAcgBvAGoALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMA
+bwB1AHIAYwBlAHMAAABIvURc5FHKQryY2WK22lTIAAiJhF3NgIDMkQi3elxWGTTgiQMgAAECBggD
+BhEMBAAAAAAEAQAAAAMGEhAEAAASEAQIABIQAwYSFQMGEhkEAAASFQQAABIZBQABARIZBAgAEhUE
+CAASGQQgAQEIBCAAEikEIAASLQUgARIxHAQgARwcBCABARwEIAASOQUgARI9HAMgABwGAAMODg4O
+BSACAQ4CBCAAEkUEIAASTQMgAA4IIAUCCA4ODggIBwQSNRwOEkkDAAABBSACAQ4OQAEAM1N5c3Rl
+bS5SZXNvdXJjZXMuVG9vbHMuU3Ryb25nbHlUeXBlZFJlc291cmNlQnVpbGRlcgcyLjAuMC4wAAAG
+AAESXRFhBCAAEmUGIAIBDhJlBAcBEhUFIAEBEW0IAQACAAAAAAAIAQAIAAAAAAAeAQABAFQCFldy
+YXBOb25FeGNlcHRpb25UaHJvd3MBAAAAZC0AAAAAAAAAAAAAfi0AAAAgAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAHAtAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAA
+AAAASAAAAFhAAADUAgAAAAAAAAAAAADUAjQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYA
+TwAAAAAAvQTv/gAAAQAAAAAAAAAAAAAAAAAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAA
+AEQAAAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkA
+bwBuAAAAAAAAALAENAIAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAEAIAAAEAMAAw
+ADAAMAAwADQAYgAwAAAALAACAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAACAA
+AAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADAALgAwAC4AMAAuADAAAACAAC8AAQBJ
+AG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADIAMwAyAGYAZQBjAGEAZgBiADcAMABhADQA
+ZQA4AGEAOQAwADQAYwBjADIAMQBmADgAOAA3ADAAZQBlAGQAMAAuAGMAcwBwAHIAbwBqAC4AZABs
+AGwAAAAAACgAAgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAACAAAACIAC8AAQBPAHIA
+aQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBUAF8AMgAzADIAZgBlAGMAYQBmAGIANwAw
+AGEANABlADgAYQA5ADAANABjAGMAMgAxAGYAOAA4ADcAMABlAGUAZAAwAC4AYwBzAHAAcgBvAGoA
+LgBkAGwAbAAAAAAANAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMAAuADAALgAw
+AC4AMAAAADgACAABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAwAC4AMAAuADAA
+LgAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAADAAAAJA9
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </ScriptProject>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable DTS:CreationName="Microsoft.Pipeline" DTS:DTSID="{D00F2DD0-90A1-420E-90A8-FFB7D0ABED44}" DTS:ExecutableType="Microsoft.Pipeline" DTS:LocaleID="-1" DTS:ObjectName="Process FF" DTS:refId="Package\Process FF" DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+    <DTS:Executable
+      DTS:refId="Package\Process FF"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DTSID="{CA909913-523E-483C-B2C7-B0641329B027}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Process FF"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
       <DTS:ObjectData>
-        <pipeline BLOBTempStoragePath="" bufferTempStoragePath="" version="1"></pipeline>
+        <pipeline
+          BLOBTempStoragePath=""
+          bufferTempStoragePath=""
+          version="1">
+          <components>
+            <component
+              refId="Package\Process FF\Column Value Calculation"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              name="Column Value Calculation"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation]"
+                  name="FF DataType Conv_Output_Column Value Calculation">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[YY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="YY"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[YY]" />
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[MM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="MM"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[MM]" />
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[DD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="DD"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[DD]" />
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[hh]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="hh"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[hh]" />
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[minutes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="minutes"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[minutes]" />
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[WindSpeed]"
+                      cachedDataType="r8"
+                      cachedName="WindSpeed"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindSpeed]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ROUND](#{Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindSpeed]} * 2.23694,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ROUND(WindSpeed * 2.23694,1)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[WindGust]"
+                      cachedDataType="r8"
+                      cachedName="WindGust"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindGust]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ROUND](#{Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindGust]} * 2.23694,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ROUND(WindGust * 2.23694,1)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[WaveHeight]"
+                      cachedDataType="r8"
+                      cachedName="WaveHeight"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaveHeight]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ROUND](#{Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaveHeight]} * 3.28084,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ROUND(WaveHeight * 3.28084,1)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[AirTemperature]"
+                      cachedDataType="r8"
+                      cachedName="AirTemperature"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[AirTemperature]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ROUND](#{Package\Process FF\FF DataType Conv.Outputs[Output].Columns[AirTemperature]} * 1.8 + 32,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ROUND(AirTemperature * 1.8 + 32,1)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation].Columns[WaterTemperature]"
+                      cachedDataType="r8"
+                      cachedName="WaterTemperature"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaterTemperature]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ROUND](#{Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaterTemperature]} * 1.8 + 32,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ROUND(WaterTemperature * 1.8 + 32,1)</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Process FF\Column Value Calculation.Outputs[Output]"
+                  exclusionGroup="1"
+                  name="Output"
+                  synchronousInputId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Process FF\Column Value Calculation.Outputs[Output].Columns[Date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Process FF\Column Value Calculation.Outputs[Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIMESTAMP)([SUBSTRING]([TRIM](#{Package\Process FF\FF SRC.Outputs[Output].Columns[YY]}),1,4) + "-" + [SUBSTRING]([TRIM](#{Package\Process FF\FF SRC.Outputs[Output].Columns[MM]}),1,2) + "-" + [SUBSTRING]([TRIM](#{Package\Process FF\FF SRC.Outputs[Output].Columns[DD]}),1,2) + " " + [SUBSTRING]([TRIM](#{Package\Process FF\FF SRC.Outputs[Output].Columns[hh]}),1,2) + ":" + [SUBSTRING]([TRIM](#{Package\Process FF\FF SRC.Outputs[Output].Columns[minutes]}),1,2))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(SUBSTRING(TRIM(YY),1,4) + "-" + SUBSTRING(TRIM(MM),1,2) + "-" + SUBSTRING(TRIM(DD),1,2) + " " + SUBSTRING(TRIM(hh),1,2) + ":" + SUBSTRING(TRIM(minutes),1,2))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\Column Value Calculation.Outputs[Output].Columns[StationId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\Process FF\Column Value Calculation.Outputs[Output].Columns[StationId]"
+                      name="StationId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::Buoy]</property>
+                        <property
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::Buoy]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Process FF\Column Value Calculation.Outputs[Error]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Error"
+                  synchronousInputId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Process FF\Column Value Calculation.Outputs[Error].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Process FF\Column Value Calculation.Outputs[Error].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Process FF\Column Value Calculation.Outputs[Error].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Process FF\Column Value Calculation.Outputs[Error].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Process FF\FF DataType Conv"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              name="FF DataType Conv"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv]"
+                  name="FF SRC_Output_FF DataType Conv">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[WDIR]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="WDIR"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WDIR]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[WSPD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="WSPD"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WSPD]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[GST]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="GST"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[GST]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[WVHT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="WVHT"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WVHT]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[DPD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="DPD"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[DPD]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[APD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="APD"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[APD]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[MWD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="MWD"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[MWD]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[PRES]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="PRES"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[PRES]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[ATMP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="ATMP"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[ATMP]" />
+                    <inputColumn
+                      refId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv].Columns[WTMP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="WTMP"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WTMP]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Process FF\FF DataType Conv.Outputs[Output]"
+                  exclusionGroup="1"
+                  name="Output"
+                  synchronousInputId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindDirection]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindDirection]"
+                      name="WindDirection"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[WDIR]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindSpeed]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindSpeed]"
+                      name="WindSpeed"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[WSPD]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindGust]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WindGust]"
+                      name="WindGust"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[GST]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaveHeight]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaveHeight]"
+                      name="WaveHeight"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[WVHT]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[DominantWavePeriod]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[DominantWavePeriod]"
+                      name="DominantWavePeriod"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[DPD]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[AverageWavePeriod]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[AverageWavePeriod]"
+                      name="AverageWavePeriod"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[APD]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaveDirection]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaveDirection]"
+                      name="WaveDirection"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[MWD]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[SeaLevelPressue]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[SeaLevelPressue]"
+                      name="SeaLevelPressue"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[PRES]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[AirTemperature]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[AirTemperature]"
+                      name="AirTemperature"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[ATMP]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaterTemperature]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Output].Columns[WaterTemperature]"
+                      name="WaterTemperature"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Process FF\FF SRC.Outputs[Output].Columns[WTMP]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Process FF\FF DataType Conv.Outputs[Error]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Error"
+                  synchronousInputId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Error].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Error].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Process FF\FF DataType Conv.Outputs[Error].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Process FF\FF DataType Conv.Outputs[Error].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Process FF\FF SRC"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              localeId="1033"
+              name="FF SRC"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Process FF\FF SRC.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FF Meteorological]"
+                  connectionManagerRefId="Package.ConnectionManagers[FF Meteorological]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Process FF\FF SRC.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[YY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[YY]"
+                      length="4"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[YY]"
+                      name="YY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[MM]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[MM]"
+                      length="3"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[MM]"
+                      name="MM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[DD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[DD]"
+                      length="3"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[DD]"
+                      name="DD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[hh]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[hh]"
+                      length="3"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[hh]"
+                      name="hh"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[minutes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[minutes]"
+                      length="3"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[minutes]"
+                      name="minutes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[WDIR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WDIR]"
+                      length="5"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WDIR]"
+                      name="WDIR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[WSPD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WSPD]"
+                      length="5"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WSPD]"
+                      name="WSPD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[GST]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[GST]"
+                      length="4"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[GST]"
+                      name="GST"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[WVHT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WVHT]"
+                      length="6"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WVHT]"
+                      name="WVHT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[DPD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[DPD]"
+                      length="6"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[DPD]"
+                      name="DPD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[APD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[APD]"
+                      length="6"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[APD]"
+                      name="APD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[MWD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[MWD]"
+                      length="5"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[MWD]"
+                      name="MWD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[PRES]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[PRES]"
+                      length="6"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[PRES]"
+                      name="PRES"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[ATMP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[ATMP]"
+                      length="6"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[ATMP]"
+                      name="ATMP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[WTMP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WTMP]"
+                      length="6"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[WTMP]"
+                      name="WTMP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].Columns[DEWP  VIS  TIDE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[DEWP  VIS  TIDE]"
+                      length="50"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Output].Columns[DEWP  VIS  TIDE]"
+                      name="DEWP  VIS  TIDE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[YY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="YY" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[MM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="MM" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[DD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="DD" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[hh]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="hh" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[minutes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="minutes" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WDIR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="WDIR" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WSPD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="WSPD" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[GST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="GST" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WVHT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="WVHT" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[DPD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="DPD" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[APD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="APD" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[MWD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="MWD" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[PRES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="PRES" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[ATMP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="ATMP" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[WTMP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="WTMP" />
+                    <externalMetadataColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Output].ExternalColumns[DEWP  VIS  TIDE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DEWP  VIS  TIDE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Process FF\FF SRC.Outputs[Error]"
+                  isErrorOut="true"
+                  name="Error">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Error].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Error].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Error].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Error].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Process FF\FF SRC.Outputs[Error].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Process FF\FF SRC.Outputs[Error].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Process FF.Paths[FF DataType Conv_Output_Column Value Calculation]"
+              endId="Package\Process FF\Column Value Calculation.Inputs[FF DataType Conv_Output_Column Value Calculation]"
+              name="FF DataType Conv_Output_Column Value Calculation"
+              startId="Package\Process FF\FF DataType Conv.Outputs[Output]" />
+            <path
+              refId="Package\Process FF.Paths[FF SRC_Output_FF DataType Conv]"
+              endId="Package\Process FF\FF DataType Conv.Inputs[FF SRC_Output_FF DataType Conv]"
+              name="FF SRC_Output_FF DataType Conv"
+              startId="Package\Process FF\FF SRC.Outputs[Output]" />
+          </paths>
+        </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
-    <DTS:PrecedenceConstraint DTS:CreationName="" DTS:DTSID="{E99E8A84-78FE-4C80-A796-DEA4C5F1A0E1}" DTS:From="Package\Cache Meteorological Data" DTS:LogicalAnd="True" DTS:ObjectName="Constraint_Cache Meteorological Data_To_ScriptTask 1" DTS:refId="Package.PrecedenceConstraints[Constraint_Cache Meteorological Data_To_ScriptTask 1]" DTS:To="Package\ScriptTask 1"></DTS:PrecedenceConstraint>
-    <DTS:PrecedenceConstraint DTS:CreationName="" DTS:DTSID="{632EAC87-71AD-41D3-AEC9-A9876C7603F9}" DTS:From="Package\ScriptTask 1" DTS:LogicalAnd="True" DTS:ObjectName="Constraint_ScriptTask 1_To_Process FF" DTS:refId="Package.PrecedenceConstraints[Constraint_ScriptTask 1_To_Process FF]" DTS:To="Package\Process FF"></DTS:PrecedenceConstraint>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint_Cache Meteorological Data_To_Fetch Meteorological FF]"
+      DTS:CreationName=""
+      DTS:DTSID="{0DD76D2E-2759-47A3-9100-8FF6AF026468}"
+      DTS:From="Package\Cache Meteorological Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint_Cache Meteorological Data_To_Fetch Meteorological FF"
+      DTS:To="Package\Fetch Meteorological FF" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint_Fetch Meteorological FF_To_Process FF]"
+      DTS:CreationName=""
+      DTS:DTSID="{8ED28E3E-9772-49DB-AD63-C2CF2DBBF418}"
+      DTS:From="Package\Fetch Meteorological FF"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint_Fetch Meteorological FF_To_Process FF"
+      DTS:To="Package\Process FF" />
   </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql12">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Cache Meteorological Data"
+          TopLeft="5.50000000000001,5.5" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Fetch Meteorological FF"
+          TopLeft="12.5,107.5" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Process FF"
+          TopLeft="43,209.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint_Cache Meteorological Data_To_Fetch Meteorological FF]"
+          TopLeft="107.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint_Fetch Meteorological FF_To_Process FF]"
+          TopLeft="107.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Process FF">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Process FF\FF DataType Conv"
+          TopLeft="22,107.5" />
+        <NodeLayout
+          Size="112,42"
+          Id="Package\Process FF\FF SRC"
+          TopLeft="48.5,5.5" />
+        <NodeLayout
+          Size="198,42"
+          Id="Package\Process FF\Column Value Calculation"
+          TopLeft="5.50000000000003,209.5" />
+        <EdgeLayout
+          Id="Package\Process FF.Paths[FF SRC_Output_FF DataType Conv]"
+          TopLeft="104.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Process FF.Paths[FF DataType Conv_Output_Column Value Calculation]"
+          TopLeft="104.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

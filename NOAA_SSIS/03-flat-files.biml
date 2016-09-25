@@ -21,7 +21,7 @@
     </RawFileFormat>
     <FlatFileFormat Name="FFF Meteorological Flat File" FlatFileType="RaggedRight" HeaderRowDelimiter="LF" HeaderRowsToSkip="1" ColumnNamesInFirstDataRow="true" IsUnicode="false"  > 
         <Columns>
-            <Column Name="#YY" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth" TextQualified="false"/>
+            <Column Name="YY" Length="04"  DataType="AnsiString"  ColumnType="FixedWidth" TextQualified="false"/>
 			<Column Name="MM" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
             <Column Name="DD" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>
             <Column Name="hh" Length="03"  DataType="AnsiString"  ColumnType="FixedWidth"  TextQualified="false"/>

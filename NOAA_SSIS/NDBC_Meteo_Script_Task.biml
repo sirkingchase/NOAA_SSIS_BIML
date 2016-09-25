@@ -1,4 +1,4 @@
-<Script ProjectCoreName="ST_232fecafb70a4e8a904cc21f8870eed0" Name="ScriptTask 1">
+<Script ProjectCoreName="ST_232fecafb70a4e8a904cc21f8870eed0" Name="Fetch Meteorological FF">
     <ScriptTaskProject>
         <ScriptTaskProject ProjectCoreName="ST_c41ad4bf47544c49ad46f4440163feae" Name="TaskScriptProject1">
             <ReadOnlyVariables>

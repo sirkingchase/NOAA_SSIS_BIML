@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDBC_RealTime_FF2SQL_MSSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="91"
-  DTS:VersionGUID="{353BF98D-5FDF-4A51-BD27-CDDF3795BDF6}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{80928A8A-3577-4DB0-9EBA-FDBF06B42C25}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -268,11 +268,11 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABjB+oBv30x/7IW64x/MFO4mv2Ipe11okm7V69UCEnSqwAAAAAOgAAAAAIAACAAAACD+mEIHRV+wjY9WBTU/o9gES2EvgpxtvnJ6my49GTkZBAAAAAbP90z81PuzrNG3BsWCLJfQAAAAEWDogJeuW17MIsIilOP/xbAyod8UAGL7C4/2DF8fpfrRQTLwX8C4DPkjTrVqQLpDw6etba3XNtsHnNmzaiTNlE</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADq4S5yoLDsUQkwYBlh3Vbezdpu/IXIKQ3WUjaH36sZQAAAAAAOgAAAAAIAACAAAABz5iFGp/HgUx6pSaRLnkgObrPh0pBmOAqzkvv3wXv87BAAAABABXmNIlFKR1VEldD0JHlLQAAAAKQhwj0bjBeHeBdxMi9uNKer0eWYC3EQgWGV23f4cOYmvOF1Y9BL0EgUE+kLT5DAez0sG3q3jbMplC/8Hf/NgBQ</DTS:Property>
             <DTS:Property
               DTS:Name="ProxyPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADCs2Gu577myL7y4xD7jF4LdtzEyVJfRY/Px7Lu4taJKQAAAAAOgAAAAAIAACAAAACAVsdalCCygsKuedbk73SHs4AKx16gypIf5vZiOKBeIRAAAAB+GGWE21RGtqpJNhMNDMCgQAAAACsanVcSDZRlKO+0l0KpfNJEMBzfEDEtRxtbpcv7CXi3AfNITD/nBTt1nlL1cgYHYYRtD+UsiGPAdm8p0yplBFY</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADT1hz0Aipx6mkw7d2D4lVWcXc0B+pUPmCLCYcoUoxOJQAAAAAOgAAAAAIAACAAAADq+eS4Gxu6K3vmAhqdUPTcYW60hB6Ap2Puy3MH66vEiBAAAAAvR66kTUSVwDaNnpJd5QKxQAAAAJSLO7R0hevQsDUraaRMVNvZ75wkaqCLyGxjZfODN0uMGUWiUF+9LfvEbE/QGmA1KOFSri8mKd+Uu48okNo1s9Q</DTS:Property>
           </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -417,35 +417,14 @@
               Language="CSharp"
               ReadOnlyVariables="User::CurentBuoy,User::FileDirectory">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_85d7fbfed4104faea05cc36930b4e788")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_85d7fbfed4104faea05cc36930b4e788")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -831,14 +810,35 @@ namespace ST_85d7fbfed4104faea05cc36930b4e788.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_85d7fbfed4104faea05cc36930b4e788")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_85d7fbfed4104faea05cc36930b4e788")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1090,88 +1090,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorRowDisposition="RedirectRow"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WindDirection]"
-                          cachedDataType="i2"
-                          cachedName="WindDirection"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WindDirection]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[WindDirection]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WindSpeed]"
-                          cachedDataType="decimal"
-                          cachedName="WindSpeed"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WindSpeed]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[WindSpeed]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WindGust]"
-                          cachedDataType="decimal"
-                          cachedName="WindGust"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WindGust]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[WindGust]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WaveHeight]"
-                          cachedDataType="decimal"
-                          cachedName="WaveHeight"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WaveHeight]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[WaveHeight]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[DominantWavePeriod]"
-                          cachedDataType="i2"
-                          cachedName="DominantWavePeriod"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DominantWavePeriod]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[DominantWavePeriod]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AverageWavePeriod]"
-                          cachedDataType="decimal"
-                          cachedName="AverageWavePeriod"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AverageWavePeriod]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[AverageWavePeriod]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WaveDirection]"
-                          cachedDataType="i2"
-                          cachedName="WaveDirection"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WaveDirection]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[WaveDirection]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AirTemperature]"
-                          cachedDataType="decimal"
-                          cachedName="AirTemperature"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AirTemperature]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[AirTemperature]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WaterTemperature]"
-                          cachedDataType="decimal"
-                          cachedName="WaterTemperature"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WaterTemperature]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[WaterTemperature]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Date]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="Date"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Date]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Derived Column.Outputs[Derived Column Output].Columns[Date]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[StationId]"
-                          cachedDataType="wstr"
-                          cachedLength="5"
-                          cachedName="StationId"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StationId]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Derived Column.Outputs[Derived Column Output].Columns[StationId]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SeaLevelPressure]"
-                          cachedDataType="decimal"
-                          cachedName="SeaLevelPressure"
-                          cachedScale="1"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SeaLevelPressue]"
-                          lineageId="Package\Foreach Loop Container\Process Flat File\Data Conversion.Outputs[Data Conversion Output].Columns[SeaLevelPressure]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
@@ -1181,7 +1099,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StationId]"
                           dataType="wstr"
-                          length="5"
+                          length="10"
                           name="StationId" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Process Flat File\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WindDirection]"
@@ -3484,25 +3402,13 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="154,42"
-          Id="Package\Foreach Loop Container\Process Flat File\Derived Column"
-          TopLeft="354,108" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Foreach Loop Container\Process Flat File\Duplicate Error"
-          TopLeft="767,195" />
-        <NodeLayout
           Size="113,42"
           Id="Package\Foreach Loop Container\Process Flat File\Lookup"
           TopLeft="118,198" />
         <NodeLayout
           Size="156,42"
           Id="Package\Foreach Loop Container\Process Flat File\Data Conversion"
-          TopLeft="356,32" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Foreach Loop Container\Process Flat File\ADO NET Destination"
-          TopLeft="394,201" />
+          TopLeft="355,32" />
         <NodeLayout
           Size="118,42"
           Id="Package\Foreach Loop Container\Process Flat File\Matches"
@@ -3511,6 +3417,18 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
           Size="151,42"
           Id="Package\Foreach Loop Container\Process Flat File\Flat File Source"
           TopLeft="92,27" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Derived Column"
+          TopLeft="354,108" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Foreach Loop Container\Process Flat File\ADO NET Destination"
+          TopLeft="394,201" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Duplicate Error"
+          TopLeft="767,195" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Process Flat File.Paths[Lookup No Match Output]"
           TopLeft="231,220.5">
@@ -3577,22 +3495,20 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="113,0"
+              EndConnector="112,0"
               Start="0,0"
-              End="105.5,0">
+              End="104.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="105.5,0" />
+                    End="104.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3626,14 +3542,12 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container\Process Flat File.Paths[Data Conversion Output]"
-          TopLeft="432.5,74">
+          TopLeft="432,74">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3650,9 +3564,7 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout

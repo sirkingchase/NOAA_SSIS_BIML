@@ -23,9 +23,48 @@
                 </Transformations>
             </Dataflow>
             <#=CallBimlScript(@"NDBC_Meteo_Script_Task.biml") #>
-            <Dataflow Name="Process FF"></Dataflow>
+            <Dataflow Name="Process FF">
+                <Transformations>
+                    <FlatFileSource ConnectionName="FF Meteorological" Name="FF SRC"></FlatFileSource>
+                    <DataConversion Name="FF DataType Conv" >
+                        <ErrorHandling ErrorRowDisposition="IgnoreFailure" TruncationRowDisposition="IgnoreFailure" />
+                        <InputPath OutputPathName="FF SRC.Output"></InputPath>
+                        <Columns>
+                        <# 
+                        var metoColumns = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological")).Columns;
+                        var dataType = new Dictionary<DbType, string>() { { DbType.AnsiStringFixedLength, "AnsiString" } };
+                        foreach(var column in metoColumns.Where(w => ! string.IsNullOrEmpty(w.GetTag("FF_COL")) ) ) {
+                        #>
+                            <Column SourceColumn="<#=column.GetTag("FF_COL")#>"  TargetColumn="<#=column.Name#>" 
+                            DataType="<#=column.DataType#>"  />
+                        <#  } #>
+                        </Columns>
+                    </DataConversion>
+                    <DerivedColumns Name="Column Value Calculation">
+                        <InputPath OutputPathName="FF DataType Conv.Output"></InputPath>
+                        <Columns>
+                        <# 
+                        foreach(var column in metoColumns.Where(w => ! string.IsNullOrEmpty(w.GetTag("D_Expr")) ) ) {
+                            string columnType = dataType.FirstOrDefault(w => w.Key == column.DataType).Value;
+                            if (string.IsNullOrEmpty(columnType)) { 
+                            #>
+                            <Column Name="<#=column.Name#>" DataType="<#=column.DataType#>" 
+                                ReplaceExisting="<#=( ! string.IsNullOrEmpty(column.GetTag("FF_COL")) ).ToString().ToLower()#>">
+                            <#=column.GetTag("D_Expr")#>
+                            </Column>
+                          <#  } else {  #>
+                            <Column Name="<#=column.Name#>"  DataType="<#=columnType#>" Length="<#=column.Length#>" CodePage="1252"
+                                ReplaceExisting="<#=( ! string.IsNullOrEmpty(column.GetTag("FF_COL")) ).ToString().ToLower()#>">
+                            <#=column.GetTag("D_Expr")#>
+                            </Column>
+                        <#} }#>
+                        </Columns>
+                    </DerivedColumns>
+                </Transformations>
+            </Dataflow>
         </Tasks>
     </Package>
 </Packages>
 </Biml>
 <#@ template language="C#" tier="4"#>	
+<#@ import namespace="System.Data" #>	

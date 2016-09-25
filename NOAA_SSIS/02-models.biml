@@ -1,3 +1,5 @@
+<#@ include file="i-utilities.biml" #>
+<#@ include file="i-common-variables.biml" #>
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
 <# 		
     var importSrcSchemas = new[] {"dbo"};
@@ -14,16 +16,24 @@
 		<# } #>  
 	</Schemas>
 	<Tables>
-	<# foreach (var tableNode in srcDB.TableNodes) {  #>
-			<Table Name="<#=tableNode.Name#>" SchemaName="NOAA.<#=tableNode.SchemaName#>">
+		<# foreach (var tableNode in srcDB.TableNodes ) { #>
+			<Table Name="<#=tableNode.Name#>" SchemaName="NOAA.<#=tableNode.SchemaName#>">			
 				<Columns>
-					<#=tableNode.Columns.GetBiml()#>
+					<# foreach(var columnNode in tableNode.Columns) { #>
+						<Column Name="<#=columnNode.Name#>" Length="<#=columnNode.Length.ToString()#>" DataType="<#=columnNode.DataType.ToString()#>">
+							<Annotations> 	
+							  <# AstTableColumnBaseNode aColumn = GetSqlServerExtendedProperties(noaaConnString, tableNode, columnNode); 
+								foreach(var annotation in aColumn.Annotations) { #>
+									<#=annotation.GetBiml()#>
+							  <# } #>
+							</Annotations>
+						</Column>
+					<# } #>
 				</Columns>
-			</Table>
-		<# } #>  
+			 </Table>
+        <# } #>
 	</Tables>
-	  <Packages>
-
+	<Packages>
   </Packages>
 </Biml>
 <#@ template language="C#" tier="2"#>	

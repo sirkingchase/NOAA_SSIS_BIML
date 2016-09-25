@@ -1,0 +1,3 @@
+<#
+    var noaaConnString = "Server=localhost;Initial Catalog=NOAA;Provider=SQLNCLI11.1;Integrated Security=SSPI;" ;
+#>

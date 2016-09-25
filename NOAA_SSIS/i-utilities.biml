@@ -1,0 +1,16 @@
+
+<#+
+
+	public AstTableColumnBaseNode GetSqlServerExtendedProperties(string conn, AstTableNode table,  AstTableColumnBaseNode column)
+	{
+		var query = "SELECT value,name FROM fn_listextendedproperty (NULL,'schema','" + table.SchemaName + "', 'table', '" + table.Name + "', 'column', '" + column.Name + "')" ;
+		var extProps = ExternalDataAccess.GetDataTable(conn, query);
+		foreach (DataRow extProp in extProps.Rows){ 
+			column.AddAnnotation(AnnotationType.Tag, extProp["value"].ToString(), extProp["name"].ToString());
+			}
+		return column;
+	}
+	
+#>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Data" #>

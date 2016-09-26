@@ -1,15 +1,21 @@
-
+<#@ include file="i-common-variables.biml" #>
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
 <Packages>
     <Package Name="PickupLoad" ConstraintMode="Linear" ProtectionLevel="EncryptSensitiveWithUserKey"  >
+            <Variables>
+            <#@ include file="Variables.biml" #>
+            <Variable Name="URL_FF_Meteorological" DataType="String">http://www.ndbc.noaa.gov/data/realtime2/<#=buoy#>.txt</Variable>
+            <Variable Name="Buoy" DataType="String"><#=buoy#></Variable>
+        </Variables>
         <Connections>
             <!--  Force creating connection managers  -->
-            <Connection ConnectionName="Realtime NDBC Meteorological" />
+            <Connection ConnectionName="Realtime NDBC Meteorological">
+        		<Expressions>
+        			<Expression PropertyName="Realtime NDBC Meteorological.ServerURL">@[User::URL_FF_Meteorological] </Expression>
+                </Expressions>
+            </Connection>
             <Connection ConnectionName="FF Meteorological" />                
         </Connections>
-        <Variables>
-            <#@ include file="Variables.biml" #>
-        </Variables>
         <Tasks>
             <Dataflow Name="Cache Meteorological Data">
                 <Transformations>

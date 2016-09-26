@@ -13,7 +13,7 @@ GO
 
 CREATE TABLE [dbo].[ndbc_meteorological](
 	[Date] [datetime] NOT NULL,
-	[StationId] [char](10) NOT NULL,
+	[StationId] [varchar](10) NOT NULL,
 	[WindDirection] [int] NULL,
 	[WindSpeed] [float] NULL,
 	[WindGust] [float] NULL,

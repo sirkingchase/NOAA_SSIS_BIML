@@ -1,11 +1,18 @@
 <#@ include file="i-common-variables.biml" #>
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
 <Packages>
-    <Package Name="PickupLoad" ConstraintMode="Linear" ProtectionLevel="EncryptSensitiveWithUserKey"  >
+<#
+string packageName = string.Format("NDBC STA {0} R TM MET",buoy);
+#>
+    <Package Name="<#=packageName#>" ConstraintMode="Linear" ProtectionLevel="EncryptSensitiveWithUserKey"  >
             <Variables>
             <#@ include file="Variables.biml" #>
             <Variable Name="URL_FF_Meteorological" DataType="String">http://www.ndbc.noaa.gov/data/realtime2/<#=buoy#>.txt</Variable>
             <Variable Name="Buoy" DataType="String"><#=buoy#></Variable>
+            <Variable Name="PKG_N" DataType="String"><#=packageName#></Variable>
+            <Variable Name="FF_LOC" DataType="String" EvaluateAsExpression="true">
+                @[User::FF_Directory] + @[User::PKG_N] + ".txt"
+            </Variable>
         </Variables>
         <Connections>
             <!--  Force creating connection managers  -->
@@ -14,14 +21,20 @@
         			<Expression PropertyName="Realtime NDBC Meteorological.ServerURL">@[User::URL_FF_Meteorological] </Expression>
                 </Expressions>
             </Connection>
-            <Connection ConnectionName="FF Meteorological" />                
+            <Connection ConnectionName="FF Meteorological" >       
+                <Expressions>
+        			<Expression PropertyName="FF Meteorological.ConnectionString">@[User::FF_LOC] </Expression>
+                </Expressions>
+            </Connection>        
         </Connections>
         <Tasks>
             <Dataflow Name="Cache Meteorological Data">
                 <Transformations>
                     <OleDbSource Name="SRC Meteorological" ConnectionName="NOAA MS SQL">
-                        <DirectInput>SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
-                        [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological];
+                        <DirectInput>
+                            SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
+                            [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] FROM [NOAA].[dbo].[ndbc_meteorological]
+                            WHERE "Date" > DATEADD(d,-50,GETDATE()) AND StationId = '<#=buoy#>';
                         </DirectInput>
                     </OleDbSource>
                     <Cache Name="Meteorological Cache" ConnectionName="MeteorologicalLookupCache">

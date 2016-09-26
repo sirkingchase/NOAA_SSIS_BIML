@@ -1,0 +1,130 @@
+<#@ include file="i-common-variables.biml" #>
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+<Packages>
+<#
+    List<string> childPackages = new List<string>();
+    int startYear = 2009;
+    int endYear = 2016;
+    string masterPackageName = string.Format("MSTR PKG NDBC STA {0} YR {1} - {2} HISTORIC MET", buoy, startYear, endYear );
+    for(int year = startYear; year < endYear; year++)
+    {
+    string sqlStart = new DateTime(year, 1, 1).AddDays(-1).ToString();
+    string sqlEnd = new DateTime(year, 12, 31).AddDays(1).ToString();
+    string packageName = string.Format("NDBC STA {0} YR {1} HISTORIC MET", buoy, year);
+    string url = string.Format(@"<![CDATA[http://www.ndbc.noaa.gov/view_text_file.php?filename={0}h{1}.txt.gz&dir=data/historical/stdmet/]]>",
+                    buoy, year);
+    childPackages.Add(packageName);
+#>
+    <Package Name="<#=packageName#>" ConstraintMode="Linear" ProtectionLevel="EncryptSensitiveWithUserKey"  >
+            <Variables>
+            <#@ include file="Variables.biml" #>
+            <Variable Name="URL_FF_Meteorological" DataType="String">
+                <#=url#>
+            </Variable>
+            <Variable Name="PKG_N" DataType="String"><#=packageName#></Variable>
+            <Variable Name="Buoy" DataType="String"><#=buoy#></Variable>
+            <Variable Name="FF_LOC" DataType="String" EvaluateAsExpression="true">
+                @[User::FF_Directory] + @[User::PKG_N] + ".txt"
+            </Variable>
+        </Variables>
+        <Connections>
+            <!--  Force creating connection managers  -->
+            <Connection ConnectionName="Realtime NDBC Meteorological">
+        		<Expressions>
+        			<Expression PropertyName="Realtime NDBC Meteorological.ServerURL">@[User::URL_FF_Meteorological] </Expression>
+                </Expressions>
+            </Connection>
+            <Connection ConnectionName="FF Meteorological" >       
+                <Expressions>
+        			<Expression PropertyName="FF Meteorological.ConnectionString">@[User::FF_LOC] </Expression>
+                </Expressions>
+            </Connection>
+        </Connections>
+        <Tasks>
+            <Dataflow Name="Cache Meteorological Data">
+                <Transformations>
+                    <OleDbSource Name="SRC Meteorological" ConnectionName="NOAA MS SQL">
+                        <DirectInput>
+                            SELECT [Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
+                            [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature] 
+                            FROM [NOAA].[dbo].[ndbc_meteorological]
+                            WHERE "Date" BETWEEN '<#=sqlStart#>' AND '<#=sqlEnd#>'
+                                   AND StationId = '<#=buoy#>';
+                        </DirectInput>
+                    </OleDbSource>
+                    <Cache Name="Meteorological Cache" ConnectionName="MeteorologicalLookupCache">
+                        <InputPath OutputPathName="SRC Meteorological.Output"></InputPath>
+                    </Cache>
+                </Transformations>
+            </Dataflow>
+            <#=CallBimlScript(@"NDBC_Meteo_Script_Task.biml") #>
+            <Dataflow Name="Process FF">
+                <Transformations>
+                    <FlatFileSource ConnectionName="FF Meteorological" Name="FF SRC" ValidateExternalMetadata="false"></FlatFileSource>
+                    <DataConversion Name="FF DT Conv" >
+                        <ErrorHandling ErrorRowDisposition="IgnoreFailure" TruncationRowDisposition="IgnoreFailure" />
+                        <InputPath OutputPathName="FF SRC.Output"></InputPath>
+                        <Columns>
+                        <# 
+                        var metoColumns = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological")).Columns;
+                        foreach(var column in metoColumns.Where(w => ! string.IsNullOrEmpty(w.GetTag("FF_COL")) ) ) {
+                        #>
+                            <Column SourceColumn="<#=column.GetTag("FF_COL")#>"  TargetColumn="<#=column.Name#>" 
+                            DataType="<#=column.DataType.ToString()#>"  />
+                        <#  } #>
+                        </Columns>
+                    </DataConversion>
+                    <DerivedColumns Name="COL VAL Calculation">
+                        <InputPath OutputPathName="FF DT Conv.Output"></InputPath>
+                        <Columns>
+                        <# 
+                        foreach(var column in metoColumns.Where(w => ! string.IsNullOrEmpty(w.GetTag("D_Expr")) ) ) {
+                            #>
+                            <Column Name="<#=column.Name#>" Length="<#=column.Length#>"
+                                DataType="<#=column.DataType.ToString()#>" 
+                                ReplaceExisting="<#=( ! string.IsNullOrEmpty(column.GetTag("FF_COL")) ).ToString().ToLower()#>">
+                                <#=column.GetTag("D_Expr")#>
+                            </Column>
+                        <# }#>
+                        </Columns>
+                    </DerivedColumns>
+                    <Lookup Name="LK Meteorological" CacheConnectionName="MeteorologicalLookupCache" NoMatchBehavior="RedirectRowsToNoMatchOutput" >
+                        <Inputs>
+                            <Column SourceColumn="Date" />
+                            <Column SourceColumn="StationId" />
+                        </Inputs>
+                        <Outputs>
+                            <Column SourceColumn="Date" />
+                            <Column SourceColumn="StationId" />
+                        </Outputs>
+                    </Lookup>
+                    <RowCount Name="CNT Meteorological Match" VariableName="User.Count_Matches">
+                        <InputPath  OutputPathName="LK Meteorological.Match"></InputPath>
+                    </RowCount>
+                    <OleDbDestination ConnectionName="NOAA MS SQL" Name="DST Meteorological">
+                        <ErrorHandling ErrorRowDisposition="RedirectRow" TruncationRowDisposition="FailComponent" />
+                        <InputPath  OutputPathName="LK Meteorological.NoMatch"></InputPath>
+                        <ExternalTableOutput Table="ndbc_meteorological" />
+                    </OleDbDestination>
+                    <RowCount Name="CNT Duplicate Error" VariableName="User.Count_Duplicate_Errors">
+                        <InputPath  OutputPathName="DST Meteorological.Error"></InputPath>
+                    </RowCount>
+                </Transformations>
+            </Dataflow>
+        </Tasks>
+    </Package>
+<#}#>
+    <Package ConstraintMode="Linear" Name="<#=masterPackageName#>" ProtectionLevel="EncryptSensitiveWithUserKey" >
+        <Tasks>
+            <#foreach(string packageName in childPackages){#>
+            <ExecutePackage Name="<#=packageName#>" DelayValidation="true">
+                <ExternalProjectPackage Package="<#=string.Format("{0}.dtsx",packageName)#>"></ExternalProjectPackage>
+            </ExecutePackage>
+            <#}#>
+        </Tasks>
+    </Package>
+    
+</Packages>
+</Biml>
+<#@ template language="C#" tier="4"#>	
+<#@ import namespace="System.Data" #>	

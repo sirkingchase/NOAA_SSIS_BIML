@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-27AKM97</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAACOXyuMMpoun0vuQgm5AYB9MN++kHJHhZhLJJjox+7DpQAAAAAOgAAAAAIAACAAAABd1qNWYu9xd9y9QnwQd0O48V1wLG4RC7RYQN3F5tkf55AAAACIMHo5YOTS+8mj0gcxZs/AkDoFhN1ovqehd2deMviWLGCbhlSYnDK2XAzzImoHSYzMjINlkomRUztQ4KhrgBZltOOs1Z5xnVW8NgEBbxmC7gWvzpU6NcERTOhWmwO/yXxNFrofNMAsWWfsCOmu2zSLyEARS1bFmLak2+FJADogsCcMev1lRdfuGy91kKjpWYlAAAAAV0PTFd7nZj42xQULg6/SL650oRutxqRFWLbbLm3UFgyu/1VlC9Uz0eNHbGoYQsYfHUCC7CVsrAh+cm+0tP7CtA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAAAJhS07erAUaqeyDpkY+uBkT1VbEr2LU+hNeVH6UvZ5GAAAAAAOgAAAAAIAACAAAAAjqdaZkffNtrcIRO99Zkq3iSaBqksvOMvhy6SrKV9eEJAAAADQudNs9voyJDPMChuAcGI9IDAN1sEMOX2Z7iMEeqKL5Y7yoOo08jfE4kVqroWWH41HpJVeqSO+5zsH1PFnYs4lS7idzySp+HOhHfZ1CLjRHxWNQWaj/s4yAIzEcIYAogKbPTtx79GpJ31u0xrbjXQRB9MElus5aa0vFxDn81Wwu3+v2PiR5aZBm52AyDN+tFRAAAAAU4RNpl4ZvLFKkA97uMEwx/CLehZ+MRbeS6jn5n+n9dgX6don93j28aF4FlpiU5Q3682VKxhnobghvkN8ps+doA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -781,10 +781,10 @@
                 <SSIS:Property SSIS:Name="Name">NDBC_RealTime_FF2SQL_MSSQL</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">93</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">94</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{80928A8A-3577-4DB0-9EBA-FDBF06B42C25}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DCAC5998-45E0-4713-B826-841D0DD6AD96}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1354,14 +1354,14 @@
             </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="PickupLoad.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{558BE1E2-1EFF-4A79-AFB6-014E4B5260FA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{1FCADC17-E86C-4380-B304-5F2983FF1395}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">PickupLoad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{EEAD55A8-AD2F-405C-BA0F-2B5E7D047501}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{28E0C4F4-4A12-41CA-9EDC-34B29FA21FC6}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1994,6 +1994,10 @@
     <ProjectItem>
       <Name>NDBC_Meteo_Script_Task.biml</Name>
       <FullPath>NDBC_Meteo_Script_Task.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ndbc_meteorological_create.sql</Name>
+      <FullPath>ndbc_meteorological_create.sql</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Variables.biml</Name>

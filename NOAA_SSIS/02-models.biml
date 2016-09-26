@@ -20,7 +20,8 @@
 			<Table Name="<#=tableNode.Name#>" SchemaName="NOAA.<#=tableNode.SchemaName#>">			
 				<Columns>
 					<# foreach(var columnNode in tableNode.Columns) { #>
-						<Column Name="<#=columnNode.Name#>" Length="<#=columnNode.Length.ToString()#>" DataType="<#=columnNode.DataType.ToString()#>">
+						<Column Name="<#=columnNode.Name#>" Length="<#=columnNode.Length.ToString()#>" 
+						DataType="<#=columnNode.DataType.ToString()#>">
 							<Annotations> 	
 							  <# AstTableColumnBaseNode aColumn = GetSqlServerExtendedProperties(noaaConnString, tableNode, columnNode); 
 								foreach(var annotation in aColumn.Annotations) { #>

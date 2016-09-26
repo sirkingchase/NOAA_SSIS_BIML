@@ -1,6 +1,7 @@
 <#@ include file="i-common-variables.biml" #>
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Connections>
+        <AdoNetConnection Name="ADO NET NOAA MSSQL" ConnectionString="<#=noaaADOsrc#>" Provider="System.Data.SqlClient" />
         <OleDbConnection Name ="NOAA MS SQL" ConnectionString="<#=noaaConnString#>" CreateInProject="false"></OleDbConnection>
         <HttpConnection Name = "Realtime NDBC Meteorological" ServerUrl="http://www.ndbc.noaa.gov/data/realtime2/42012.txt"></HttpConnection> 
     </Connections>

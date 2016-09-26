@@ -33,11 +33,10 @@
                         <Columns>
                         <# 
                         var metoColumns = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological")).Columns;
-                        var dataType = new Dictionary<DbType, string>() { { DbType.AnsiStringFixedLength, "AnsiString" } };
                         foreach(var column in metoColumns.Where(w => ! string.IsNullOrEmpty(w.GetTag("FF_COL")) ) ) {
                         #>
                             <Column SourceColumn="<#=column.GetTag("FF_COL")#>"  TargetColumn="<#=column.Name#>" 
-                            DataType="<#=column.DataType#>"  />
+                            DataType="<#=column.DataType.ToString()#>"  />
                         <#  } #>
                         </Columns>
                     </DataConversion>
@@ -46,19 +45,13 @@
                         <Columns>
                         <# 
                         foreach(var column in metoColumns.Where(w => ! string.IsNullOrEmpty(w.GetTag("D_Expr")) ) ) {
-                            string columnType = dataType.FirstOrDefault(w => w.Key == column.DataType).Value;
-                            if (string.IsNullOrEmpty(columnType)) { 
                             #>
-                            <Column Name="<#=column.Name#>" DataType="<#=column.DataType#>" 
+                            <Column Name="<#=column.Name#>" Length="<#=column.Length#>"
+                                DataType="<#=column.DataType.ToString()#>" 
                                 ReplaceExisting="<#=( ! string.IsNullOrEmpty(column.GetTag("FF_COL")) ).ToString().ToLower()#>">
-                            <#=column.GetTag("D_Expr")#>
+                                <#=column.GetTag("D_Expr")#>
                             </Column>
-                          <#  } else {  #>
-                            <Column Name="<#=column.Name#>"  DataType="<#=columnType#>" Length="<#=column.Length#>" CodePage="1252"
-                                ReplaceExisting="<#=( ! string.IsNullOrEmpty(column.GetTag("FF_COL")) ).ToString().ToLower()#>">
-                            <#=column.GetTag("D_Expr")#>
-                            </Column>
-                        <#} }#>
+                        <# }#>
                         </Columns>
                     </DerivedColumns>
                     <Lookup Name="LK Meteorological" CacheConnectionName="MeteorologicalLookupCache" NoMatchBehavior="RedirectRowsToNoMatchOutput" >

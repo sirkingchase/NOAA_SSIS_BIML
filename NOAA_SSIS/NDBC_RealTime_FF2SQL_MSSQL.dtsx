@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDBC_RealTime_FF2SQL_MSSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="94"
-  DTS:VersionGUID="{DCAC5998-45E0-4713-B826-841D0DD6AD96}">
+  DTS:VersionBuild="96"
+  DTS:VersionGUID="{A0EA49EF-C390-49C7-A2E9-FBD8E60B1333}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -268,11 +268,11 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADsZn4Eq+F4yzp4qs91b7C/YRswcYdCFdYmoD8Wb/+uYgAAAAAOgAAAAAIAACAAAAC9kDZZWmOfCb5T2NV5yKS0IKGhlUpgems5Z8Opg1IY8RAAAAACEii+3kpf4pGiWHLhFwhfQAAAANyu12eSVkhbPS6e16D5TL4O68w0N5ijr4Dp3ifQ4E+uzShdrokyEZk9Ci8PiCw/CzjTwN+CXpO+w/IWZl++pSY</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeRZ86qoztUaK0iW8OEBDzwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAAn0LLJGIb+l19a68JQoN9AAAAAASAAACgAAAAEAAAAPhhPqGwUp7AsIV87nqEXT0IAAAAuXjMJmSzlyMUAAAA7WVoqaFfow0wMa8Z0aI+crsw494</DTS:Property>
             <DTS:Property
               DTS:Name="ProxyPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACApmdwT4lZ9YC8xSFrXBJazXxfK3AioZBWj1JN3LZ1NgAAAAAOgAAAAAIAACAAAAC7u5UCn/vCvb8w4ZzSmUUuHhOBG6i2pVVTE7MH32094hAAAAB6ATP9DgrjXY/PrYoG18HbQAAAAENFEv+znvC5OjM/fwyyumK0B57Mk9vyp7VJF2sefYt+Kee5vjmacsfTgIwt7xxrj6WHxlA42NiVgpNicEBJUvU</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeRZ86qoztUaK0iW8OEBDzwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAdb4aeKZzL0iTxnmJIm9wSAAAAAASAAACgAAAAEAAAAF2syKCf+gpwKaI6UCR3PgMIAAAAXy18PfFmxpMUAAAADe7UpLVi0E9NLnbLWETDPUUCYbI</DTS:Property>
           </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -417,35 +417,14 @@
               Language="CSharp"
               ReadOnlyVariables="User::CurentBuoy,User::FileDirectory">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_85d7fbfed4104faea05cc36930b4e788")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_85d7fbfed4104faea05cc36930b4e788")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -831,14 +810,35 @@ namespace ST_85d7fbfed4104faea05cc36930b4e788.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_85d7fbfed4104faea05cc36930b4e788")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_85d7fbfed4104faea05cc36930b4e788")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -3484,6 +3484,14 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="154,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Derived Column"
+          TopLeft="354,108" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Foreach Loop Container\Process Flat File\Duplicate Error"
+          TopLeft="767,195" />
+        <NodeLayout
           Size="113,42"
           Id="Package\Foreach Loop Container\Process Flat File\Lookup"
           TopLeft="118,198" />
@@ -3492,6 +3500,10 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
           Id="Package\Foreach Loop Container\Process Flat File\Data Conversion"
           TopLeft="355,32" />
         <NodeLayout
+          Size="179,42"
+          Id="Package\Foreach Loop Container\Process Flat File\ADO NET Destination"
+          TopLeft="394,201" />
+        <NodeLayout
           Size="118,42"
           Id="Package\Foreach Loop Container\Process Flat File\Matches"
           TopLeft="105,298" />
@@ -3499,18 +3511,6 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
           Size="151,42"
           Id="Package\Foreach Loop Container\Process Flat File\Flat File Source"
           TopLeft="92,27" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Foreach Loop Container\Process Flat File\Derived Column"
-          TopLeft="354,108" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Foreach Loop Container\Process Flat File\ADO NET Destination"
-          TopLeft="394,201" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Foreach Loop Container\Process Flat File\Duplicate Error"
-          TopLeft="767,195" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Process Flat File.Paths[Lookup No Match Output]"
           TopLeft="231,220.5">
@@ -3694,14 +3694,6 @@ where [refTable].[Date] = ? and [refTable].[StationId] = ?</property>
         <Value
           type="q4:string">0</Value>
       </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Process Flat File\ADO NET Destination">
-    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

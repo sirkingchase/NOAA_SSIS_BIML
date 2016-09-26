@@ -4,19 +4,13 @@
         <Columns>
         <# var metoColumns = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological")).Columns;
            var insertPos = new Dictionary<string, int>() { { "Date", 1 }, { "StationId", 2 } };
-           var dataType = new Dictionary<DbType, string>() { { DbType.AnsiStringFixedLength, "AnsiString" } };
         #>
         <# 
          foreach(var column in metoColumns){
-            string columnType = dataType.FirstOrDefault(w => w.Key == column.DataType).Value;
-            if (string.IsNullOrEmpty(columnType)) { 
         #>
             <Column Name="<#=column.Name#>" IndexPosition="<#=insertPos.FirstOrDefault(w => w.Key.Equals(column.Name)).Value#>"
-            DataType="<#=column.DataType#>" Length="<#=column.Length#>"/>
-        <#  } else {  #>
-            <Column Name="<#=column.Name#>" IndexPosition="<#=insertPos.FirstOrDefault(w => w.Key.Equals(column.Name)).Value#>"
-            DataType="<#=columnType#>" Length="<#=column.Length#>" CodePage="1252"/>
-        <#} }#>
+            DataType="<#=column.DataType#>"  Length="<#=column.Length#>" CodePage="<#=column.DataType.ToString().Contains("Ansi") ? "1252" : "0"#>"/>
+        <#} #>
         </Columns>
     </RawFileFormat>
     <FlatFileFormat Name="FFF Meteorological Flat File" FlatFileType="RaggedRight" HeaderRowDelimiter="LF" HeaderRowsToSkip="1" 
@@ -42,7 +36,7 @@
     </FlatFileFormat>
 </FileFormats>
 <Connections>
-    <FlatFileConnection Name="FF Meteorological" FileFormat="FFF Meteorological Flat File" FilePath="C:\Users\sirki\Desktop\42012.txt" CreateInProject="false"/>
+    <FlatFileConnection Name="FF Meteorological" FileFormat="FFF Meteorological Flat File" FilePath="C:\Users\coubre\42012.txt" CreateInProject="false"/>
     <CacheConnection Name="MeteorologicalLookupCache" CreateInProject="1" RawFileFormatName="RFF Meteorological Cache"></CacheConnection>
 </Connections>
 </Biml>

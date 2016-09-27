@@ -1,0 +1,36 @@
+<#@ include file="i-common-variables.biml" #>
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+<Packages>
+<#
+    List<string> childPackages = new List<string>();
+    int year = DateTime.Now.Year;
+    int recentMonth =  DateTime.Now.AddMonths(-1).Month;
+    string currMonth = DateTimeFormatInfo.InvariantInfo.GetAbbreviatedMonthName(DateTime.Now.Month);
+    string masterPackageName = string.Format("MSTR PKG NDBC STA {0} MONTHS THRU {1}-{2} HISTORIC MET", buoy, currMonth, year );
+    var metoTable = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological"));
+    for (int mon = 1; mon < DateTime.Now.Month; mon++)
+    {
+    string month = DateTimeFormatInfo.InvariantInfo.GetAbbreviatedMonthName(mon);
+    string sqlStart = new DateTime(year, mon, 1).AddDays(-1).ToString();
+    string sqlEnd = new DateTime(year, mon, 1).AddMonths(1).ToString();
+    string cacheSQL = string.Format(@"{0} WHERE [Date] BETWEEN '{1}' AND '{2}' AND StationId = '{3}';",baseSQL,sqlStart,sqlEnd,buoy);
+    string packageName = string.Format("NDBC STA {0} MONTH {1}-{2} HISTORIC MET", buoy, month, year);
+    string ffName = packageName;
+    
+    string archivedUrl = string.Format(@"<![CDATA[http://www.ndbc.noaa.gov/view_text_file.php?filename={0}{1}{2}.txt.gz&dir=data/stdmet/{3}/]]>",
+    buoy, mon, year, month );
+    string recentUrl = string.Format(@"<![CDATA[http://www.ndbc.noaa.gov/data/stdmet/{0}/{1}.txt]]>", month, buoy);
+    
+    string url = ( mon == recentMonth ? recentUrl : archivedUrl );
+    
+
+    
+    childPackages.Add(packageName);
+#>
+    <#=CallBimlScript("Package-Meteorological.biml", buoy, url, cacheSQL, packageName, ffName, metoTable)#>
+<#}#>
+    <#=CallBimlScript("Package-Master.biml", masterPackageName, childPackages)#>
+</Packages>
+</Biml>
+<#@ template language="C#" tier="4"#>	
+<#@ import namespace="System.Globalization" #>	

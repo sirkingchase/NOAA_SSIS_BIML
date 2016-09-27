@@ -2,7 +2,6 @@
     <ScriptTaskProject>
         <ScriptTaskProject ProjectCoreName="ST_c41ad4bf47544c49ad46f4440163feae" Name="TaskScriptProject1">
             <ReadOnlyVariables>
-                <Variable Namespace="User" VariableName="Buoy" DataType="String" />
                 <Variable Namespace="User" VariableName="FF_LOC" DataType="String" /> 
             </ReadOnlyVariables>
             <AssemblyReferences>
@@ -42,8 +41,6 @@
                             Object obj;
                             obj = Dts.Connections["Realtime NDBC Meteorological"].AcquireConnection(null);
                             httpConn = new HttpClientConnection(obj);
-                            //httpConn.DownloadFile("C:\\Users\\sirki\\Desktop\\42067.txt", true);
-                            
                             var file = (string)Dts.Variables["User::FF_LOC"].Value;
                             httpConn.DownloadFile(file, true);
                         }

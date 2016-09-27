@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "NOAA_SSIS", "NOAA_SSIS\NOAA_SSIS.dtproj", "{09A61623-CE6C-4701-A0B0-617529CBC5A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1BAD481-A4E1-457A-8CAC-66F7B5FD5EC1}"
+	ProjectSection(SolutionItems) = preProject
+		NOAA_SSIS\ndbc_stations_create.sql = NOAA_SSIS\ndbc_stations_create.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default

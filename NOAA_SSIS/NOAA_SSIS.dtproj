@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-27AKM97</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeRZ86qoztUaK0iW8OEBDzwAAAAACAAAAAAADZgAAwAAAABAAAABvTyCRC7ROGlBcYhHr5hPzAAAAAASAAACgAAAAEAAAABBBUkip9PofH6UuW6ffB7uIAAAAcS+P37KI/hM/Qom3OLhOuePWdnjycMF6/aqgr311B9tVugLpcLeptmX8ZkH0YxFnXL9O7LO0c6ZM4NFudnt4ff28qR2+6nzIkzXMbf3ZY0ZUK2BS0taTZ3mYa4ZRtUjw6v8aGs0tk8AxQPMkILkAlr6Sd4+CadY/n/ixayckYIMiWYoEAfcZBxQAAACc6MtingZ4EChydlU3IZlGXHmq4g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4ZYV146JoEuf+lUtr3pwogAAAAACAAAAAAAQZgAAAAEAACAAAAAdk39F5N5RETr7HNG4ozv1tDZE0wExCsMjk3lOmKC2QgAAAAAOgAAAAAIAACAAAAD+HNJI6xd1Wd0Jzm81S0nb1PmutnHUqdyUqBjNi6sux5AAAADCHSFogFHsBIvdRFAMJ0wYyxGgqSqQxEKauRcI/mRBBgQl0rtByvPgj5Fk43hI3iMDzEf7+n2PdhBNdTvO+HnqaiQAjUJ3YKBRwtY804J+aQw9UwvFPHFGl9F9KI6cSglIpctfEJZJABN5IYlgSETD6YWIbYozXUF5DGyEy+XLtB1eryvTdKt6fjCJTvHcI6FAAAAAcgSWuuAwo4Z0KownN0+uRPlBIbrSZyKy7KtC887TzFMztGq45zZ2MSODYQxNkwv68s5+wlY0yVOe7lIeiOc4Cw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -801,8 +801,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -982,8 +980,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1131,8 +1127,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1162,8 +1156,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1192,8 +1184,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1208,8 +1198,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1224,8 +1212,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1269,8 +1255,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1371,12 +1355,16 @@
       <FullPath>03-flat-files.biml</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>04-Packages-RealTimeMeteorological.biml</Name>
-      <FullPath>04-Packages-RealTimeMeteorological.biml</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>04-Packages-HistoricalYears.biml</Name>
       <FullPath>04-Packages-HistoricalYears.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>04-Packages-RealTime.biml</Name>
+      <FullPath>04-Packages-RealTime.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>04-Packages-HistoricalMonths.biml</Name>
+      <FullPath>04-Packages-HistoricalMonths.biml</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>i-common-variables.biml</Name>
@@ -1393,6 +1381,14 @@
     <ProjectItem>
       <Name>ndbc_meteorological_create.sql</Name>
       <FullPath>ndbc_meteorological_create.sql</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Package-Master.biml</Name>
+      <FullPath>Package-Master.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Package-Meteorological.biml</Name>
+      <FullPath>Package-Meteorological.biml</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Variables.biml</Name>

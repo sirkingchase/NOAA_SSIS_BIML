@@ -1,0 +1,11 @@
+<#@ property name="masterPackageName" type="String" #>
+<#@ property name="childPackages" type="List<String>" #>
+<Package ConstraintMode="Linear" Name="<#=masterPackageName#>" ProtectionLevel="EncryptSensitiveWithUserKey" >
+    <Tasks>
+        <#foreach(string packageName in childPackages){#>
+        <ExecutePackage Name="<#=packageName#>" DelayValidation="true">
+            <ExternalProjectPackage Package="<#=string.Format("{0}.dtsx",packageName)#>"></ExternalProjectPackage>
+        </ExecutePackage>
+        <#}#>
+    </Tasks>
+</Package>

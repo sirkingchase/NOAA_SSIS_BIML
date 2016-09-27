@@ -1,5 +1,4 @@
-<Variable Name="SourceCacheQuery" DataType="String"></Variable>
-<Variable Name="FF_Directory" DataType="String">C:\Users\coubre\</Variable>
+<Variable Name="FF_Directory" DataType="String">C:\Users\sirki\</Variable>
 <Variable Name="Count_Duplicate_Errors" DataType="Int32">0</Variable>
 <Variable Name="Count_Matches" DataType="Int32">0</Variable>
 <Variable Name="Count_Inserted" DataType="Int32">0</Variable>

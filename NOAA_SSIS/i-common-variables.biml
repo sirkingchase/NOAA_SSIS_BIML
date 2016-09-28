@@ -1,6 +1,6 @@
 <#
     var noaaConnString = "Server=localhost;Initial Catalog=NOAA;Provider=SQLNCLI11.1;Integrated Security=SSPI;" ;
-    var buoy = "42012";
+    var buoy = "SSBN7";
     string baseSQL = @"SELECT[Date],[StationId],[WindDirection],[WindSpeed],[WindGust],[WaveHeight],[DominantWavePeriod],[AverageWavePeriod],
                 [WaveDirection],[SeaLevelPressue],[AirTemperature],[WaterTemperature]
                 FROM[NOAA].[dbo].[ndbc_meteorological]";

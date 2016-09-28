@@ -1,0 +1,15 @@
+<#@ include file="i-common-variables.biml" #>
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+<Packages>
+<#
+var metoTable = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological"));
+string packageName = string.Format("NDBC STA {0} R TM MET",buoy);
+string cacheSQL = string.Format(@"{0} WHERE [Date] > DATEADD(d,-50,GETDATE()) AND StationId = '{1}';",baseSQL,buoy);
+string ffName = packageName;
+string url = string.Format(@"<![CDATA[http://www.ndbc.noaa.gov/data/realtime2/{0}.txt]]>", buoy);
+#>
+    <#=CallBimlScript("Package-Meteorological.biml", buoy, url, cacheSQL, packageName, ffName, metoTable)#>
+</Packages>
+</Biml>
+<#@ template language="C#" tier="4"#>
+<#@ import namespace="System.Data" #>	

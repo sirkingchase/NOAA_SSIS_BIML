@@ -9,7 +9,7 @@
 var metoColumns = metoTable.Columns;
 #>
 <Package Name="<#=packageName#>" ConstraintMode="Linear" ProtectionLevel="EncryptSensitiveWithUserKey"  >
-        <Variables>
+    <Variables>
         <#@ include file="Variables.biml" #>
         <Variable Name="Buoy" DataType="String"><#=Buoy#></Variable>
         <Variable Name="URL_FF_Meteorological" DataType="String"><#=httpUrl#></Variable>

@@ -3,7 +3,7 @@
 <Packages>
 <#
     List<string> childPackages = new List<string>();
-    int startYear = 2014;
+    int startYear = 2012;
     int endYear = 2016;
     string masterPackageName = string.Format("MSTR PKG NDBC STA {0} YR {1} - {2} HISTORIC MET", buoy, startYear, endYear );
     var metoTable = RootNode.Tables.First(w => w.Name.Equals("ndbc_meteorological"));
@@ -15,7 +15,7 @@
     string packageName = string.Format("NDBC STA {0} YR {1} HISTORIC MET", buoy, year);
     string ffName = packageName;
     string url = string.Format(@"<![CDATA[http://www.ndbc.noaa.gov/view_text_file.php?filename={0}h{1}.txt.gz&dir=data/historical/stdmet/]]>",
-                    buoy, year);
+                    buoy.ToLower(), year);
     childPackages.Add(packageName);
 #>
     <#=CallBimlScript("Package-Meteorological.biml", buoy, url, cacheSQL, packageName, ffName, metoTable)#>

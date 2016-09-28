@@ -7,6 +7,7 @@ Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "NOAA_SSIS", "NOAA_SSIS\NOAA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1BAD481-A4E1-457A-8CAC-66F7B5FD5EC1}"
 	ProjectSection(SolutionItems) = preProject
+		NOAA_SSIS\BIML Presentation.pptx = NOAA_SSIS\BIML Presentation.pptx
 		NOAA_SSIS\ndbc_stations_create.sql = NOAA_SSIS\ndbc_stations_create.sql
 	EndProjectSection
 EndProject
